@@ -1,0 +1,29 @@
+{
+  "name": "retail-ai-scripts",
+  "version": "1.0.0",
+  "description": "Data generation and seeding scripts for Retail AI",
+  "scripts": {
+    "merge": "npx ts-node scripts/merge-products.ts",
+    "seed:dry": "npx ts-node scripts/generate-inventory.ts --dry-run",
+    "seed": "npx ts-node scripts/generate-inventory.ts",
+    "upload": "npx ts-node scripts/upload-catalog.ts",
+    "embed:dry": "npx ts-node scripts/embed-and-upsert.ts --dry-run",
+    "embed": "npx ts-node scripts/embed-and-upsert.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.600.0",
+    "@aws-sdk/client-dynamodb": "^3.600.0",
+    "@aws-sdk/client-s3": "^3.600.0",
+    "@aws-sdk/lib-dynamodb": "^3.600.0",
+    "@pinecone-database/pinecone": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "aws-cdk": "^2.1112.0",
+    "aws-cdk-lib": "^2.244.0",
+    "constructs": "^10.5.1",
+    "source-map-support": "^0.5.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  }
+}

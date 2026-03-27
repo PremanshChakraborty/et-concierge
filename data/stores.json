@@ -1,0 +1,156 @@
+[
+  {
+    "storeId": "STR-001",
+    "name": "Zara — Select Citywalk",
+    "type": "large",
+    "address": "A-3, District Centre, Saket, New Delhi - 110017",
+    "city": "New Delhi",
+    "coordinates": { "lat": 28.5277, "lng": 77.2189 },
+    "hours": {
+      "Mon": "10:00-22:00",
+      "Tue": "10:00-22:00",
+      "Wed": "10:00-22:00",
+      "Thu": "10:00-22:00",
+      "Fri": "10:00-23:00",
+      "Sat": "10:00-23:00",
+      "Sun": "10:00-22:00"
+    },
+    "phone": "+91-11-40504000",
+    "aisleMap": {
+      "Aisle 1": { "description": "Women's Western Dresses and Tops", "directions": "Enter main doors, turn left" },
+      "Aisle 2": { "description": "Women's Western Bottoms and Co-ords", "directions": "Continue past Aisle 1" },
+      "Aisle 3": { "description": "Women's Ethnic Kurtas and Salwar Sets", "directions": "Turn right at the central pillar" },
+      "Aisle 4": { "description": "Accessories and Jewellery", "directions": "Walk straight past cashier, third section on right" },
+      "Aisle 5": { "description": "Men's Shirts and T-Shirts", "directions": "Ground floor rear" },
+      "Aisle 6": { "description": "Men's Trousers, Suits and Ethnic", "directions": "Ground floor rear right" },
+      "Aisle 7": { "description": "Footwear (Women's)", "directions": "First floor via escalator, immediate left" },
+      "Aisle 8": { "description": "Footwear (Men's)", "directions": "First floor via escalator, immediate right" }
+    }
+  },
+  {
+    "storeId": "STR-002",
+    "name": "H&M — DLF Promenade",
+    "type": "large",
+    "address": "Vasant Kunj, Nelson Mandela Road, New Delhi - 110037",
+    "city": "New Delhi",
+    "coordinates": { "lat": 28.5393, "lng": 77.1572 },
+    "hours": {
+      "Mon": "10:00-22:00",
+      "Tue": "10:00-22:00",
+      "Wed": "10:00-22:00",
+      "Thu": "10:00-22:00",
+      "Fri": "10:00-23:00",
+      "Sat": "10:00-23:00",
+      "Sun": "10:00-22:00"
+    },
+    "phone": "+91-11-46047200",
+    "aisleMap": {
+      "Aisle 1": { "description": "Women's Dresses, Tops and Blouses", "directions": "Ground floor, main entrance left wing" },
+      "Aisle 2": { "description": "Women's Bottoms, Jeans and Co-ords", "directions": "Ground floor, main entrance right wing" },
+      "Aisle 3": { "description": "Women's Ethnic and Fusion Wear", "directions": "Ground floor central" },
+      "Aisle 4": { "description": "Bags, Belts, Sunglasses and Accessories", "directions": "Ground floor rear" },
+      "Aisle 5": { "description": "Men's T-Shirts, Polos and Casual Shirts", "directions": "First floor left" },
+      "Aisle 6": { "description": "Men's Trousers, Jeans and Suits", "directions": "First floor centre" },
+      "Aisle 7": { "description": "Footwear (Women's and Men's combined)", "directions": "First floor right" },
+      "Aisle 8": { "description": "Jewellery, Scarves and Hair Accessories", "directions": "First floor rear" }
+    }
+  },
+  {
+    "storeId": "STR-003",
+    "name": "Mango — Ambience Mall Vasant Kunj",
+    "type": "large",
+    "address": "Level 2, Ambience Mall, NH8, Vasant Kunj, New Delhi - 110070",
+    "city": "New Delhi",
+    "coordinates": { "lat": 28.5439, "lng": 77.1573 },
+    "hours": {
+      "Mon": "10:00-22:00",
+      "Tue": "10:00-22:00",
+      "Wed": "10:00-22:00",
+      "Thu": "10:00-22:00",
+      "Fri": "10:00-23:00",
+      "Sat": "10:00-23:00",
+      "Sun": "10:00-22:00"
+    },
+    "phone": "+91-11-42050000",
+    "aisleMap": {
+      "Aisle 1": { "description": "Women's Dresses (Casual and Evening)", "directions": "Entry level right" },
+      "Aisle 2": { "description": "Women's Tops, Blouses and Camisoles", "directions": "Entry level left" },
+      "Aisle 3": { "description": "Women's Bottoms, Skirts and Trousers", "directions": "Entry level rear" },
+      "Aisle 4": { "description": "Co-ord Sets and Limited Edition Collections", "directions": "Central island displays" },
+      "Aisle 5": { "description": "Bags and Accessories", "directions": "Side wall racks" },
+      "Aisle 6": { "description": "Men's Shirts, T-Shirts and Polos", "directions": "Rear section partition" },
+      "Aisle 7": { "description": "Men's Trousers and Outerwear", "directions": "Rear section right" },
+      "Aisle 8": { "description": "Jewellery, Belts, Sunglasses and Scarves", "directions": "Near checkout counters" }
+    }
+  },
+  {
+    "storeId": "STR-004",
+    "name": "Fabindia — Connaught Place",
+    "type": "small",
+    "address": "N-14, Connaught Place, New Delhi - 110001",
+    "city": "New Delhi",
+    "coordinates": { "lat": 28.6315, "lng": 77.2196 },
+    "hours": {
+      "Mon": "10:30-20:30",
+      "Tue": "10:30-20:30",
+      "Wed": "10:30-20:30",
+      "Thu": "10:30-20:30",
+      "Fri": "10:30-20:30",
+      "Sat": "10:30-20:30",
+      "Sun": "11:00-20:00"
+    },
+    "phone": "+91-11-23413976",
+    "aisleMap": {
+      "Aisle 1": { "description": "Women's Ethnic Kurtas (Straight, A-line, Anarkali)", "directions": "Ground floor front" },
+      "Aisle 2": { "description": "Women's Salwar Sets, Dupattas and Lehengas", "directions": "Ground floor rear" },
+      "Aisle 3": { "description": "Men's Ethnic Kurtas, Nehru Jackets and Sherwanis", "directions": "First floor left" },
+      "Aisle 4": { "description": "Accessories: Ethnic Bags, Jewellery, Juttis and Kolhapuris", "directions": "First floor right" }
+    }
+  },
+  {
+    "storeId": "STR-005",
+    "name": "And — Lajpat Nagar",
+    "type": "small",
+    "address": "Central Market, Lajpat Nagar II, New Delhi - 110024",
+    "city": "New Delhi",
+    "coordinates": { "lat": 28.5677, "lng": 77.2430 },
+    "hours": {
+      "Mon": "11:00-21:00",
+      "Tue": "11:00-21:00",
+      "Wed": "11:00-21:00",
+      "Thu": "11:00-21:00",
+      "Fri": "11:00-21:00",
+      "Sat": "10:00-21:30",
+      "Sun": "10:00-21:30"
+    },
+    "phone": "+91-98100-12345",
+    "aisleMap": {
+      "Aisle 1": { "description": "Women's Fusion Kurtas and Western Dresses", "directions": "Main floor left" },
+      "Aisle 2": { "description": "Women's Tops, Palazzos and Co-ord Sets", "directions": "Main floor right" },
+      "Aisle 3": { "description": "Accessories: Bags, Jewellery and Scarves", "directions": "Rear wall" }
+    }
+  },
+  {
+    "storeId": "STR-006",
+    "name": "The Label Life — Khan Market",
+    "type": "small",
+    "address": "Shop 4, Khan Market, New Delhi - 110003",
+    "city": "New Delhi",
+    "coordinates": { "lat": 28.6012, "lng": 77.2274 },
+    "hours": {
+      "Mon": "11:00-20:30",
+      "Tue": "11:00-20:30",
+      "Wed": "11:00-20:30",
+      "Thu": "11:00-20:30",
+      "Fri": "11:00-20:30",
+      "Sat": "10:30-21:00",
+      "Sun": "11:00-20:00"
+    },
+    "phone": "+91-11-24617734",
+    "aisleMap": {
+      "Aisle 1": { "description": "Curated Women's Dresses, Blouses and Co-ords", "directions": "Entrance display" },
+      "Aisle 2": { "description": "Women's Ethnic: Kurtas and Salwar Sets", "directions": "Central racks" },
+      "Aisle 3": { "description": "Accessories: Bags, Jewellery, Sunglasses and Footwear", "directions": "Wall shelves" }
+    }
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_OTHER",
+  "summary": "Step-by-step AWS console guide to set up the initial data infrastructure for the retail AI project. Covers IAM user and Lambda execution role creation, DynamoDB table creation for StoreInventory (with composite PK, size stock counts, GSI) and Stores (with aisle direction map), and S3 bucket creation for the product catalog. Includes the finalized schema for all tables.",
+  "updatedAt": "2026-03-12T17:04:46.027428500Z"
+}

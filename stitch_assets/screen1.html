@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aura Fashion AI - Premium Light Edition</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7c3bed",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0a0a0a",
+                        "surface-light": "#f9f9f9",
+                        "border-light": "#e5e5e5",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style class="custom-icon-fill">
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #ddd;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #ccc;
+        }
+
+        .premium-gradient {
+            background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+        }
+
+        .premium-gradient-horizontal {
+            background-image: linear-gradient(to right, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+        }
+
+        .user-bubble-container {
+            position: relative;
+            background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+            background-attachment: fixed;
+            background-size: 100vw 100vh;
+        }
+
+        .text-gradient {
+            background-image: linear-gradient(to right, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #store-modal {
+            display: none;
+        }
+        #store-modal.active {
+            display: flex;
+        }
+    </style>
+<style>
+        .material-symbols-outlined.fill-1 {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .font-variation-fill {
+            font-variation-settings: 'FILL' 0;
+        }
+    </style>
+</head>
+<body class="bg-white text-black overflow-hidden font-display">
+<div class="flex h-screen w-full relative">
+<!-- Store Code Modal -->
+<div class="fixed inset-0 z-[100] items-center justify-center p-4 bg-black/20 backdrop-blur-sm" id="store-modal">
+<div class="bg-white w-full max-w-sm rounded-2xl shadow-2xl p-6 border border-border-light animate-in fade-in zoom-in duration-300">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-lg font-bold">Enter Store Code</h3>
+<button class="text-neutral-400 hover:text-black" onclick="document.getElementById('store-modal').classList.remove('active')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="text-sm text-neutral-500 mb-4">Unlock exclusive inventory by entering your localized store code.</p>
+<div class="space-y-4">
+<input class="w-full px-4 py-3 rounded-xl border border-border-light focus:ring-2 focus:ring-black/5 focus:border-black outline-none transition-all uppercase font-medium tracking-wider" placeholder="e.g. LON-042" type="text"/>
+<button class="w-full bg-black text-white font-bold py-3 rounded-xl hover:bg-neutral-800 transition-colors">
+                        Connect to Store
+                    </button>
+</div>
+</div>
+</div>
+<!-- Left Sidebar -->
+<aside class="w-72 bg-white border-r border-border-light flex flex-col shrink-0">
+<div class="p-6">
+<div class="flex items-center justify-between mb-8">
+<h1 class="text-2xl font-black tracking-tighter text-gradient">Retail AI</h1>
+</div>
+<!-- New Chat styled with black border/text -->
+<button class="w-full flex items-center justify-between gap-2 bg-transparent border border-black/10 text-black font-medium py-3 px-4 rounded-xl transition-all hover:bg-black/5 hover:border-black/20">
+<span class="text-sm">New Chat</span>
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto px-4 custom-scrollbar">
+<p class="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-4 px-2">History</p>
+<div class="space-y-1">
+<div class="group flex flex-col gap-1 p-3 rounded-lg bg-surface-light border border-black/10 cursor-pointer">
+<div class="flex items-center justify-between">
+<span class="text-sm font-medium text-black truncate">Golden Sunshine Silk</span>
+<span class="text-[10px] text-neutral-400">2m ago</span>
+</div>
+<p class="text-xs text-neutral-500 truncate">Discussing bridal collection...</p>
+</div>
+<div class="group flex flex-col gap-1 p-3 rounded-lg hover:bg-surface-light cursor-pointer transition-colors">
+<div class="flex items-center justify-between">
+<span class="text-sm font-medium text-black/60 truncate">Summer Minimalist</span>
+<span class="text-[10px] text-neutral-400">2h ago</span>
+</div>
+<p class="text-xs text-neutral-400 truncate">Linen shirts and trousers</p>
+</div>
+</div>
+</div>
+<div class="p-4 border-t border-border-light">
+<div class="flex items-center gap-3 p-2 rounded-lg hover:bg-surface-light transition-colors cursor-pointer">
+<div class="size-9 rounded-full bg-neutral-100 overflow-hidden">
+<img alt="User profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ8yepheOiPeBZNZ3AsVTb7Kxs5uNKOJLegccF1b5kRoKGoJ_IV1-C7iW8CLhpxs-bq566c7e-v8am_SNMBxE4bR1ywxmQIoBN5KBK4P22NKvSBRqKZHZQ-bIktuoeCTQxzg58BFwezlXMnUd3pSfcXvw6DHf-WBbyBZmhwXCKuEdQVf1MKf8bLHXUfpSezyy7J433eWKEHABFV_kEFGMzwhws7Ds_GI3Nak1AYQMNtnBB2x3qZ16OoT66hDSR0oeHfV1RvLyctfab"/>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-medium text-black truncate">Alex Rivera</p>
+<p class="text-[10px] text-neutral-400 uppercase font-bold tracking-tight">Pro Member</p>
+</div>
+<span class="material-symbols-outlined text-black">settings</span>
+</div>
+</div>
+</aside>
+<!-- Main Chat Area -->
+<main class="flex-1 flex flex-col relative bg-white">
+<!-- Top Nav -->
+<header class="h-16 flex items-center justify-between px-8 border-b border-border-light bg-white/80 backdrop-blur-md sticky top-0 z-10">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="text-sm font-medium text-neutral-500">Session:</span>
+<span class="text-sm font-bold text-black">Wedding Couture 2024</span>
+</div>
+<!-- New Store Button -->
+<button class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-black/10 hover:bg-neutral-50 transition-colors" onclick="document.getElementById('store-modal').classList.add('active')">
+<span class="material-symbols-outlined text-[18px]">store</span>
+<span class="text-sm font-bold">Store</span>
+</button>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-black hover:text-black/70 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="text-black hover:text-black/70 transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</header>
+<!-- Chat Content -->
+<div class="flex-1 overflow-y-auto px-4 md:px-8 custom-scrollbar relative">
+<div class="max-w-2xl mx-auto py-10 space-y-8">
+<!-- Sticky Mode Indicator -->
+<div class="sticky top-0 z-20 flex justify-center pb-4 pointer-events-none">
+<div class="bg-neutral-100/80 backdrop-blur-sm border border-neutral-200 px-3 py-1 rounded-full shadow-sm pointer-events-auto">
+<div class="flex items-center gap-2">
+<span class="size-1.5 rounded-full bg-green-500"></span>
+<p class="text-[9px] font-bold text-neutral-500 uppercase tracking-[0.1em]">Online Mode Active</p>
+</div>
+</div>
+</div>
+<!-- AI Message -->
+<div class="flex justify-start">
+<div class="flex flex-col gap-3 max-w-[85%]">
+<div class="bg-surface-light text-black p-4 rounded-2xl rounded-tl-none border border-border-light leading-relaxed">
+                                Hello Alex! I've been looking through our new arrivals. Based on your interest in "Heritage Craftsmanship," I've found a few Lehengas that feature exquisite Zardosi work.
+                            </div>
+<!-- Redirection Widget -->
+<div class="bg-surface-light border border-border-light rounded-xl p-4 flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="size-12 rounded-lg overflow-hidden bg-neutral-200">
+<img alt="Traditional fabrics" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeTtBh2h1pUccMrUZBaC-rYnZ3ydp2Nks6t6Ti6SBSS9ND9do_EGuouvhtPs6NHmrPZfItT_wS6JvqvRoeuHc_e3rlF6jqKtvraHLz_j9KI3dYKjfFYqeUJif4c5rkMQUOJP9aiuDeiNPNJYwYhqrfGA8toNhryFuziHMA0A-xToaYEt0HGLWXhTBrtvuzNeoyDvgBOWWcneQ5Yjd1r3bZc5qUIhTwh13ecWjbn6VsAw9yI5YKq2rapGVizL9D1hURNlTGVxzMFPf_"/>
+</div>
+<div>
+<p class="text-sm font-bold text-black">Luxury Bridal Edit</p>
+<p class="text-[11px] text-neutral-500">12 items curated for you</p>
+</div>
+</div>
+<button class="premium-gradient-horizontal text-white text-xs font-bold px-4 py-2 rounded-lg hover:opacity-90 transition-all flex items-center gap-2">
+                                    View Collection
+                                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- User Message with reveal background gradient -->
+<div class="flex justify-end">
+<div class="max-w-[85%] rounded-2xl rounded-tr-none overflow-hidden user-bubble-container">
+<div class="p-4 text-white font-medium leading-relaxed bg-black/10 backdrop-blur-sm">
+                                The "Golden Sunshine" one looks incredible. Can you show me the details and maybe some matching accessories?
+                            </div>
+</div>
+</div>
+<!-- AI Message -->
+<div class="flex justify-start">
+<div class="flex flex-col gap-3 max-w-[85%]">
+<div class="bg-surface-light text-black p-4 rounded-2xl rounded-tl-none border border-border-light leading-relaxed">
+                                Absolutely! The Golden Sunshine Lehenga is a masterpiece of hand-woven silk. I've opened the product details for you on the right. 
+                                <br/><br/>
+                                I also recommend pairing it with a Kundan choker for a classic look. Would you like to see those as well?
+                            </div>
+</div>
+</div>
+<!-- User Message 2 -->
+<div class="flex justify-end">
+<div class="max-w-[85%] rounded-2xl rounded-tr-none overflow-hidden user-bubble-container">
+<div class="p-4 text-white font-medium leading-relaxed bg-black/10 backdrop-blur-sm">
+                                Yes, please show me the accessories. I want to see if the gold tones match perfectly.
+                            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Input -->
+<div class="p-6 bg-gradient-to-t from-white via-white to-transparent">
+<div class="max-w-2xl mx-auto">
+<div class="relative flex gap-2 bg-neutral-50 border border-border-light rounded-2xl shadow-xl focus-within:border-black/30 transition-colors items-center px-3 py-1">
+<button class="p-2 text-black/40 hover:text-black">
+<span class="material-symbols-outlined">attach_file</span>
+</button>
+<textarea class="flex-1 bg-transparent border-none focus:ring-0 text-black py-2 resize-none max-h-32 custom-scrollbar" placeholder="Ask about styles, sizing, or trends..." rows="1"></textarea>
+<button class="text-white rounded-xl hover:scale-105 transition-transform bg-black size-9 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+<p class="text-[10px] text-center text-neutral-400 mt-3 font-medium uppercase tracking-widest">Powered by Aura Premium AI Engine</p>
+</div>
+</div>
+</main>
+<!-- Right Product Drawer -->
+<aside class="w-80 bg-white border-l border-border-light flex flex-col shrink-0">
+<div class="p-6 border-b border-border-light">
+<div class="flex items-center justify-between mb-2">
+<h3 class="text-sm font-bold text-black uppercase tracking-tighter">Spotlight</h3>
+<span class="text-[10px] bg-neutral-100 text-neutral-600 px-2 py-0.5 rounded-full font-bold">1/5</span>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto p-4 space-y-4 custom-scrollbar">
+<!-- Product Card -->
+<div class="bg-surface-light rounded-xl border border-border-light overflow-hidden group">
+<div class="aspect-[4/5] relative">
+<img alt="Yellow Lehenga" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXQ0-PfQxsJSRFVyshkiPInQFvbQ8fgnLYm4_HU2XLTSkC15aDIF-H37h0TTVrxmiqPj7JkDLHfSLgxHBLVqIrnmh-NMxSUe6RudzA9ERqVvQfMD7jmNLQ76enOMOQiAk8DOUF8UQUi7KoXjO2C1fZj96fseFNuctmmUw3HVuua_Q48Ph8gy5h_XAav9JYvYBKinwsfjMblFVG8kyvP6mVfIgUY4-hsw7gXRoQZObK5UFCO9GlCrOuUAP_O2KJ4lvcG7FsWadJxdCM"/>
+<button class="absolute top-3 right-3 size-8 bg-white/80 backdrop-blur-md rounded-full text-black flex items-center justify-center hover:bg-black hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<div class="p-4 space-y-3">
+<div>
+<p class="text-[9px] uppercase tracking-wider text-primary font-bold mb-1">Apparel • Bridal Lehenga</p>
+<h4 class="text-sm font-bold text-black">Golden Sunshine Lehenga</h4>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-black font-black">$1,250</span>
+<div class="flex items-center gap-1.5">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[12px] text-yellow-500 fill-1">star</span>
+<span class="material-symbols-outlined text-[12px] text-yellow-500 fill-1">star</span>
+<span class="material-symbols-outlined text-[12px] text-yellow-500 fill-1">star</span>
+<span class="material-symbols-outlined text-[12px] text-yellow-500 fill-1">star</span>
+<span class="material-symbols-outlined text-[12px] text-yellow-500 fill-1">star_half</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="text-[10px] font-bold text-black">4.8</span>
+<span class="text-[10px] text-neutral-400">(124)</span>
+</div>
+</div>
+</div>
+<div class="space-y-1">
+<p class="text-[11px] text-neutral-600 font-medium">Why you'll love it:</p>
+<p class="text-[11px] text-neutral-500 leading-tight italic">"Hand-embroidered pure silk with heavy zari borders, perfect for your heritage craftsmanship preference."</p>
+</div>
+<div class="flex flex-wrap gap-1 items-center">
+<span class="text-[10px] text-neutral-400 mr-1">Colors:</span>
+<div class="size-3 rounded-full border border-black/10 bg-yellow-400"></div>
+<div class="size-3 rounded-full border border-black/10 bg-orange-200"></div>
+<div class="size-3 rounded-full border border-black/10 bg-white"></div>
+</div>
+<div class="flex flex-wrap gap-1 items-center">
+<span class="text-[10px] text-neutral-400 mr-1">Sizes:</span>
+<span class="text-[9px] px-1.5 py-0.5 bg-white border border-border-light rounded">S</span>
+<span class="text-[9px] px-1.5 py-0.5 bg-white border border-border-light rounded">M</span>
+<span class="text-[9px] px-1.5 py-0.5 bg-white border border-border-light rounded font-bold">L</span>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="text-[9px] text-neutral-400 bg-neutral-100 px-2 py-0.5 rounded-full">#Silk</span>
+<span class="text-[9px] text-neutral-400 bg-neutral-100 px-2 py-0.5 rounded-full">#Handmade</span>
+<span class="text-[9px] text-neutral-400 bg-neutral-100 px-2 py-0.5 rounded-full">#Zardosi</span>
+</div>
+<div class="pt-2 flex gap-2">
+<button class="flex-1 premium-gradient-horizontal text-white text-[11px] font-bold py-2 rounded-lg hover:opacity-90 transition-all">
+                                View Details
+                            </button>
+<button class="px-2 border border-border-light text-black/40 rounded-lg hover:text-black transition-colors">
+<span class="material-symbols-outlined text-sm">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Suggested Items -->
+<div class="bg-surface-light rounded-xl border border-border-light p-3 flex gap-3 group cursor-pointer hover:border-black/20 transition-colors">
+<div class="size-16 rounded-lg overflow-hidden shrink-0 bg-neutral-100">
+<img alt="Kundan jewelry" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa3xbxpKr9wwhXeRu5wfqOUpRMOrKPaNYKxERe5wKZzNji-vH-kjmtFtPznah07wWQc2Oi-wDfCKOGqbhul8bttChyxl3YssfekNS5PmPVgFZ0MaJ0JyLfcmAr0aYSpcOmE0GyETAd4I3ehHImBgv_oRtOIsggbc1x4lFxE0_8Ii0UC1nAgoAG1nfwsgVUliE5oAaDwaBIZjJV3_9sJ_8rFjhr_j-dnjnLDlWv1iuHcljdj2nAVQdmr5umtSEJroTL3ynt7QonBv3Y"/>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-center">
+<p class="text-[9px] text-primary font-bold uppercase">Jewelry • Choker</p>
+<p class="text-xs font-bold text-black truncate">Kundan Choker Set</p>
+<div class="flex items-baseline gap-2">
+<p class="text-xs text-neutral-400 font-bold mt-1">$450</p>
+<div class="flex gap-0.5">
+<div class="size-2 rounded-full bg-yellow-300 border border-black/5"></div>
+<div class="size-2 rounded-full bg-white border border-black/5"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-black/20">chevron_right</span>
+</div>
+</div>
+<div class="bg-surface-light rounded-xl border border-border-light p-3 flex gap-3 group cursor-pointer hover:border-black/20 transition-colors">
+<div class="size-16 rounded-lg overflow-hidden shrink-0 bg-neutral-100">
+<img alt="Footwear" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGSV0tWlK9GRrYteycmQxdOQOxLEiJMqXpWKAHa3RB86E_Mj1ryHZjHc8agIZXe9JP-JEmG-wOOAmmA-CiKiD-31g7SNzHhcphiojjjglYPF3r0CDHm35qt49RxP_iVaIk1pA8CK-mcvPQLywbohZj1PXIhOEdi2VmDPw8eHsNRL1qjNze_OBoPSYeEFYFjDC7cnzu0MQSSklUQOLejTbs22ObU428YwRxnZlHNjgoPwh-LmkCrq350Tc-YRpftRmeLES93Roy4d0Z"/>
+</div>
+<div class="flex-1 min-w-0 flex flex-col justify-center">
+<p class="text-[9px] text-primary font-bold uppercase">Footwear • Mojaris</p>
+<p class="text-xs font-bold text-black truncate">Zari Work Mojaris</p>
+<div class="flex items-baseline gap-2">
+<p class="text-xs text-neutral-400 font-bold mt-1">$120</p>
+<span class="text-[9px] text-neutral-400">Size: 38-42</span>
+</div>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-black/20">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="p-4 border-t border-border-light bg-white">
+<!-- Checkout button turned black -->
+<button class="w-full bg-black text-white font-black py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-neutral-800 transition-colors shadow-lg">
+<span class="material-symbols-outlined">payments</span>
+<span>Checkout Now</span>
+</button>
+</div>
+</aside>
+</div>
+</body></html>

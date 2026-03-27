@@ -1,0 +1,13 @@
+/node_modules
+.env
+
+/orchestrator/node_modules
+/orchestrator/.env
+
+/profile-api/node_modules
+/profile-api/.env
+
+/frontend/node_modules
+/frontend/.env
+
+/cdk.out

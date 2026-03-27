@@ -1,0 +1,6030 @@
+[
+  {
+    "productId": "PRD-001",
+    "name": "Floral Wrap Midi Dress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "A breezy wrap-style midi dress featuring an all-over floral print. Adjustable tie waist, V-neckline, and flutter sleeves make it perfect for brunches and casual outings.",
+    "price": 2999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ivory",
+      "Dusty Rose"
+    ],
+    "tags": [
+      "floral",
+      "midi",
+      "wrap",
+      "summer",
+      "casual",
+      "brunch"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=400"
+  },
+  {
+    "productId": "PRD-002",
+    "name": "Linen Slip Dress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Minimalist linen-blend slip dress with adjustable spaghetti straps and a relaxed A-line silhouette. Lightweight and breathable for warm days.",
+    "price": 1799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Sage Green",
+      "Cream",
+      "Clay"
+    ],
+    "tags": [
+      "linen",
+      "slip",
+      "minimalist",
+      "summer",
+      "casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?w=400"
+  },
+  {
+    "productId": "PRD-003",
+    "name": "Bodycon Bandage Dress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Form-fitting ribbed bandage dress with a square neckline and ruched side detail. A go-to for evening events and parties.",
+    "price": 3499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black",
+      "Cobalt Blue",
+      "Burgundy"
+    ],
+    "tags": [
+      "bodycon",
+      "evening",
+      "party",
+      "fitted",
+      "ribbed"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=400"
+  },
+  {
+    "productId": "PRD-004",
+    "name": "Tiered Boho Maxi Dress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Flowy tiered maxi dress in a relaxed bohemian style. Features elastic smocked bodice, puff sleeves, and a hem with lace trim.",
+    "price": 3999,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Terracotta",
+      "Indigo",
+      "Off-White"
+    ],
+    "tags": [
+      "boho",
+      "maxi",
+      "tiered",
+      "flowy",
+      "casual",
+      "beach"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400"
+  },
+  {
+    "productId": "PRD-005",
+    "name": "Shirt Dress with Belt",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Classic shirt dress crafted from crisp cotton. Button-down front, chest pockets, and a matching waist belt give it a structured yet relaxed look.",
+    "price": 2499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White",
+      "Chambray Blue",
+      "Olive"
+    ],
+    "tags": [
+      "shirt dress",
+      "belted",
+      "office",
+      "casual",
+      "cotton"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400"
+  },
+  {
+    "productId": "PRD-006",
+    "name": "Cut-Out Bodycon Mini",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Stretchy knit mini dress with tasteful cut-outs at the waist. Scoop neckline and thick straps for comfortable wear at clubs and late-night events.",
+    "price": 2799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Black",
+      "Nude",
+      "Forest Green"
+    ],
+    "tags": [
+      "cut-out",
+      "mini",
+      "bodycon",
+      "night out",
+      "party"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1583496661160-fb5218c2f24b?w=400"
+  },
+  {
+    "productId": "PRD-007",
+    "name": "Smocked Sundress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Lightweight sundress with a fully smocked bodice, ruffled hem, and adjustable straps. Pairs beautifully with sandals and a straw hat.",
+    "price": 1999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Yellow",
+      "Navy",
+      "Lavender"
+    ],
+    "tags": [
+      "smocked",
+      "sundress",
+      "summer",
+      "casual",
+      "flirty"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1624206112918-f140f087f9b5?w=400"
+  },
+  {
+    "productId": "PRD-008",
+    "name": "Off-Shoulder Ruffle Dress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Romantic off-shoulder dress with a cascading ruffle along the neckline and a midi-length layered skirt. Great for festivals and beach weddings.",
+    "price": 3299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Blush",
+      "White",
+      "Coral"
+    ],
+    "tags": [
+      "off-shoulder",
+      "ruffle",
+      "romantic",
+      "beach wedding",
+      "midi"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400"
+  },
+  {
+    "productId": "PRD-009",
+    "name": "Blazer Dress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Structured blazer-style mini dress with double-breasted gold buttons and lapel collar. Ideal for business casual and smart-formal occasions.",
+    "price": 4499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Beige",
+      "Powder Blue"
+    ],
+    "tags": [
+      "blazer",
+      "structured",
+      "office",
+      "formal",
+      "smart casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1605763240000-7e93b172d754?w=400"
+  },
+  {
+    "productId": "PRD-010",
+    "name": "Denim Shirt Dress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Casual denim shirt dress with a relaxed fit, button-through front, and frayed hem. Wear it open over leggings or cinched at the waist.",
+    "price": 2199,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Light Wash",
+      "Dark Wash"
+    ],
+    "tags": [
+      "denim",
+      "casual",
+      "shirt dress",
+      "everyday",
+      "versatile"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?w=400"
+  },
+  {
+    "productId": "PRD-011",
+    "name": "Satin Slip Party Dress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Luxe satin midi slip dress with a bias cut and adjustable thin straps. Effortlessly transitions from day to evening with the right accessories.",
+    "price": 3799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Champagne",
+      "Emerald",
+      "Midnight Blue"
+    ],
+    "tags": [
+      "satin",
+      "slip",
+      "evening",
+      "party",
+      "luxe",
+      "bias cut"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400"
+  },
+  {
+    "productId": "PRD-012",
+    "name": "Puff Sleeve Mini Dress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Playful mini dress with exaggerated puff sleeves and a square neckline. Elasticated cuffs and relaxed flare skirt keep it comfortable and cute.",
+    "price": 2299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Lilac",
+      "Peach",
+      "Yellow"
+    ],
+    "tags": [
+      "puff sleeve",
+      "mini",
+      "playful",
+      "casual",
+      "summer"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400"
+  },
+  {
+    "productId": "PRD-013",
+    "name": "Asymmetric Hem Dress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Contemporary dress with a high-low asymmetric hemline and a sleeveless silhouette. Features a mock neck and a back zip closure.",
+    "price": 2999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Black",
+      "Rust",
+      "Royal Blue"
+    ],
+    "tags": [
+      "asymmetric",
+      "modern",
+      "party",
+      "sleeveless",
+      "edgy"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=400"
+  },
+  {
+    "productId": "PRD-014",
+    "name": "Polo Knit Dress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Sporty-chic polo dress in soft knit fabric with a button-front placket, collar, and rolled short sleeves. Great for athleisure and country club aesthetics.",
+    "price": 2599,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White",
+      "Navy",
+      "Hot Pink"
+    ],
+    "tags": [
+      "polo",
+      "knit",
+      "sporty",
+      "athleisure",
+      "casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1481178954248-6e756f073f38?w=400"
+  },
+  {
+    "productId": "PRD-015",
+    "name": "Zimmermann-Inspired Lace Dress",
+    "category": "Women's Western",
+    "subCategory": "Dresses",
+    "description": "Delicate lace midi dress with a fitted waist, scalloped hem, and spaghetti straps. Semi-sheer overlay adds romantic elegance.",
+    "price": 5499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Ivory",
+      "Black",
+      "Dusty Mauve"
+    ],
+    "tags": [
+      "lace",
+      "romantic",
+      "wedding guest",
+      "midi",
+      "elegant"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1502718853454-b77d1f5f7b06?w=400"
+  },
+  {
+    "productId": "PRD-016",
+    "name": "Oversized Graphic Tee",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "100% cotton boxy graphic tee with vintage-inspired print. Dropped shoulders and a relaxed fit make it an effortless everyday wardrobe staple.",
+    "price": 999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White",
+      "Black",
+      "Grey Melange"
+    ],
+    "tags": [
+      "graphic tee",
+      "oversized",
+      "casual",
+      "cotton",
+      "everyday"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=400"
+  },
+  {
+    "productId": "PRD-017",
+    "name": "Cropped Linen Shirt",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "Lightweight cropped linen shirt with a relaxed collar, roll-up sleeves, and a front button closure. Knot it at the hem or tuck it in.",
+    "price": 1499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White",
+      "Soft Yellow",
+      "Sage"
+    ],
+    "tags": [
+      "linen",
+      "cropped",
+      "shirt",
+      "casual",
+      "summer"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4a1044?w=400"
+  },
+  {
+    "productId": "PRD-018",
+    "name": "Ribbed Crop Cami",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "Snug ribbed knit cami with adjustable straps and a scoop neckline. Layer it under blazers or wear solo with high-waisted jeans.",
+    "price": 799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Black",
+      "Cream",
+      "Chocolate",
+      "Blush"
+    ],
+    "tags": [
+      "cami",
+      "ribbed",
+      "crop",
+      "layering",
+      "essential"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+  },
+  {
+    "productId": "PRD-019",
+    "name": "Bardot Off-Shoulder Top",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "Flirty Bardot-style top with elasticated off-shoulder neckline and a ruffled trim. Made from soft crepe fabric.",
+    "price": 1299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White",
+      "Coral",
+      "Cobalt Blue"
+    ],
+    "tags": [
+      "bardot",
+      "off-shoulder",
+      "flirty",
+      "summer",
+      "date night"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1554568218-0f1715e72254?w=400"
+  },
+  {
+    "productId": "PRD-020",
+    "name": "Peplum Blouse",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "Fitted peplum blouse with subtle flare at the hem. Concealed back zipper, cinched waist, and a V-neckline for a polished silhouette.",
+    "price": 1699,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Black",
+      "Dusty Pink",
+      "Navy"
+    ],
+    "tags": [
+      "peplum",
+      "polished",
+      "office",
+      "fitted",
+      "blouse"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?w=400"
+  },
+  {
+    "productId": "PRD-021",
+    "name": "Sheer Organza Blouse",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "Ethereal sheer organza top with a high neck and long sleeves. Delicate button detailing at back. Perfect over a bralette for fashion-forward looks.",
+    "price": 2199,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Ivory",
+      "Baby Blue",
+      "Blush"
+    ],
+    "tags": [
+      "sheer",
+      "organza",
+      "fashion",
+      "editorial",
+      "layering"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400"
+  },
+  {
+    "productId": "PRD-022",
+    "name": "Bralette with Underwire",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "Supportive bralette crafted from soft microfibre with underwire support and adjustable straps. Dual-purpose top and inner wear.",
+    "price": 1199,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Black",
+      "Nude",
+      "Sage",
+      "White"
+    ],
+    "tags": [
+      "bralette",
+      "crop top",
+      "supportive",
+      "versatile",
+      "essential"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400"
+  },
+  {
+    "productId": "PRD-023",
+    "name": "Knotted Tie-Front Top",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "Breezy woven top with a front knot and flutter sleeves. Relaxed neckline and an easy pull-on style ideal for vacations and weekend wear.",
+    "price": 1099,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White",
+      "Turquoise",
+      "Yellow"
+    ],
+    "tags": [
+      "knotted",
+      "tie-front",
+      "flutter sleeve",
+      "vacation",
+      "casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1570551140-8a4f82a58eb4?w=400"
+  },
+  {
+    "productId": "PRD-024",
+    "name": "Sequin Party Top",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "All-over sequin embellished camisole top with scoop neck and a cropped length. The life of the party paired with tailored trousers.",
+    "price": 2499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Silver",
+      "Gold",
+      "Black"
+    ],
+    "tags": [
+      "sequin",
+      "party",
+      "evening",
+      "glam",
+      "cami"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1579975096649-e773152b04cb?w=400"
+  },
+  {
+    "productId": "PRD-025",
+    "name": "Striped Boatneck Top",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "Classic French Riviera-inspired striped top with a wide boatneck and three-quarter length sleeves. Soft cotton-modal blend.",
+    "price": 1299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Navy/White",
+      "Red/White",
+      "Black/White"
+    ],
+    "tags": [
+      "striped",
+      "boatneck",
+      "French",
+      "classic",
+      "casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=400"
+  },
+  {
+    "productId": "PRD-026",
+    "name": "Corset Boning Top",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "Structured satin corset top with boning, sweetheart neckline, and adjustable lace-up back. Instantly elevates any look.",
+    "price": 2999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Black",
+      "Ivory",
+      "Burgundy",
+      "Forest Green"
+    ],
+    "tags": [
+      "corset",
+      "satin",
+      "structured",
+      "evening",
+      "fashion"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1551803091-e20673f15770?w=400"
+  },
+  {
+    "productId": "PRD-027",
+    "name": "Flowy Chiffon Blouse",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "Draped chiffon blouse with a loose silhouette and tie at the neckline. A versatile office-to-evening wardrobe staple.",
+    "price": 1599,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Blush",
+      "Ivory",
+      "Black",
+      "Royal Blue"
+    ],
+    "tags": [
+      "chiffon",
+      "blouse",
+      "flowy",
+      "office",
+      "versatile"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?w=400"
+  },
+  {
+    "productId": "PRD-028",
+    "name": "Muscle Tee",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "Effortlessly casual muscle tee with deep armholes and a slightly cropped length. Made from soft jersey fabric.",
+    "price": 699,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White",
+      "Black",
+      "Grey",
+      "Oatmeal"
+    ],
+    "tags": [
+      "muscle tee",
+      "casual",
+      "gym",
+      "athleisure",
+      "crop"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1503342394128-c104d54dba01?w=400"
+  },
+  {
+    "productId": "PRD-029",
+    "name": "Wrap Blouse",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "V-neck wrap blouse with adjustable waist ties and long sleeves with a subtle flare at the cuff. Polished enough for the office.",
+    "price": 1799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Navy",
+      "Wine",
+      "Camel",
+      "White"
+    ],
+    "tags": [
+      "wrap",
+      "blouse",
+      "V-neck",
+      "office",
+      "smart casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400"
+  },
+  {
+    "productId": "PRD-030",
+    "name": "Ruched Satin Cami",
+    "category": "Women's Western",
+    "subCategory": "Tops",
+    "description": "Satin camisole with central ruching and adjustable straps. Versatile enough to be worn tucked into trousers or layered under a blazer.",
+    "price": 1299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Champagne",
+      "Black",
+      "Rose Gold"
+    ],
+    "tags": [
+      "satin",
+      "ruched",
+      "cami",
+      "evening",
+      "versatile"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400"
+  },
+  {
+    "productId": "PRD-031",
+    "name": "High-Waist Straight Leg Jeans",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Classic high-rise straight-leg jeans in rigid denim. Five-pocket styling, raw hem, and a zip-fly closure. A wardrobe essential.",
+    "price": 3499,
+    "sizes": [
+      "24",
+      "26",
+      "28",
+      "30",
+      "32"
+    ],
+    "colors": [
+      "Dark Wash",
+      "Mid Wash",
+      "Raw Denim"
+    ],
+    "tags": [
+      "jeans",
+      "high-waist",
+      "straight leg",
+      "denim",
+      "classic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400"
+  },
+  {
+    "productId": "PRD-032",
+    "name": "Wide-Leg Trousers",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Flowy wide-leg trousers in a smooth crepe fabric. High-rise waist, side pockets, and a hook-and-eye closure. Effortlessly sophisticated.",
+    "price": 2799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black",
+      "Caramel",
+      "Cream",
+      "Olive"
+    ],
+    "tags": [
+      "wide-leg",
+      "trousers",
+      "high-rise",
+      "crepe",
+      "office",
+      "smart"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4a1044?w=400"
+  },
+  {
+    "productId": "PRD-033",
+    "name": "Mini Pleated Skirt",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Y2K-inspired mini pleated skirt with a wide waistband and button-tab front. Pairs well with fitted crop tops and platform sneakers.",
+    "price": 1699,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Plaid",
+      "Black",
+      "Caramel"
+    ],
+    "tags": [
+      "pleated",
+      "mini skirt",
+      "Y2K",
+      "plaid",
+      "casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1583496661160-fb5218c2f24b?w=400"
+  },
+  {
+    "productId": "PRD-034",
+    "name": "Flare Yoga Pants",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "High-waist flare yoga pants in buttery-soft 4-way stretch fabric. Flat waistband with no-roll technology and hidden waistband pocket.",
+    "price": 2199,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black",
+      "Navy",
+      "Dusty Lilac"
+    ],
+    "tags": [
+      "yoga",
+      "flare",
+      "activewear",
+      "athleisure",
+      "high-waist"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400"
+  },
+  {
+    "productId": "PRD-035",
+    "name": "Midi Wrap Skirt",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Versatile wrap skirt in lightweight crepe. Adjustable tie waist, midi length, and a slight slit at the hem. Easy to style up or down.",
+    "price": 1999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Floral Print",
+      "Black",
+      "Mustard"
+    ],
+    "tags": [
+      "wrap skirt",
+      "midi",
+      "versatile",
+      "casual",
+      "summer"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400"
+  },
+  {
+    "productId": "PRD-036",
+    "name": "Cigarette Trousers",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Slim cigarette-cut trousers with a high waist, clean front, and a cropped ankle length. A polished office staple in structured fabric.",
+    "price": 2499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black",
+      "Taupe",
+      "Navy",
+      "Forest Green"
+    ],
+    "tags": [
+      "cigarette",
+      "trousers",
+      "office",
+      "slim",
+      "ankle-length"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4a1044?w=400"
+  },
+  {
+    "productId": "PRD-037",
+    "name": "Cargo Pants",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Relaxed-fit cargo pants with multiple side pockets, elasticised ankle cuffs, and a drawstring waist. The ultimate street-style staple.",
+    "price": 2299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Khaki",
+      "Black",
+      "Olive",
+      "Grey"
+    ],
+    "tags": [
+      "cargo",
+      "streetwear",
+      "casual",
+      "pockets",
+      "utility"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1624206112918-f140f087f9b5?w=400"
+  },
+  {
+    "productId": "PRD-038",
+    "name": "Leather Mini Skirt",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Faux leather A-line mini skirt with a back-zip closure and a subtle flare. An edgy, fashion-forward piece for nights out.",
+    "price": 2799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Black",
+      "Dark Brown",
+      "Cream"
+    ],
+    "tags": [
+      "leather",
+      "faux leather",
+      "mini skirt",
+      "edgy",
+      "night out"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=400"
+  },
+  {
+    "productId": "PRD-039",
+    "name": "Jogger Pants",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Cosy French terry jogger pants with a tapered fit, elasticized waistband, and ribbed ankle cuffs. Perfect for lounging and errands.",
+    "price": 1799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Grey Melange",
+      "Black",
+      "Blush Mauve"
+    ],
+    "tags": [
+      "jogger",
+      "loungewear",
+      "comfortable",
+      "casual",
+      "athleisure"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=400"
+  },
+  {
+    "productId": "PRD-040",
+    "name": "Broderie Anglaise Skirt",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Floaty midi skirt in white broderie anglaise cotton with a scalloped hem and elasticised waist. Ideal for summer and beach holidays.",
+    "price": 2199,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "White"
+    ],
+    "tags": [
+      "broderie anglaise",
+      "midi skirt",
+      "summer",
+      "beach",
+      "feminine"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400"
+  },
+  {
+    "productId": "PRD-041",
+    "name": "Slit Maxi Skirt",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Elegant maxi skirt with a floor-length silhouette, high front slit, and elasticated waistband. Satin-finish fabric gives a luxe look.",
+    "price": 2599,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black",
+      "Champagne",
+      "Cobalt Blue"
+    ],
+    "tags": [
+      "maxi skirt",
+      "slit",
+      "satin",
+      "evening",
+      "elegant"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400"
+  },
+  {
+    "productId": "PRD-042",
+    "name": "Mom Jeans",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Relaxed high-rise mom jeans with a tapered leg and light wash finish. Features a five-pocket design and a zip-button closure.",
+    "price": 3199,
+    "sizes": [
+      "24",
+      "26",
+      "28",
+      "30",
+      "32"
+    ],
+    "colors": [
+      "Light Wash",
+      "Acid Wash",
+      "Stone Wash"
+    ],
+    "tags": [
+      "mom jeans",
+      "high-rise",
+      "relaxed",
+      "denim",
+      "casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400"
+  },
+  {
+    "productId": "PRD-043",
+    "name": "Linen Shorts",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Relaxed linen shorts with a wide waistband, front pleat, and side pockets. Breathable and stylish for hot days.",
+    "price": 1499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Natural",
+      "White",
+      "Sage",
+      "Terracotta"
+    ],
+    "tags": [
+      "linen",
+      "shorts",
+      "summer",
+      "casual",
+      "breathable"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1624206112918-f140f087f9b5?w=400"
+  },
+  {
+    "productId": "PRD-044",
+    "name": "Bike Shorts",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "High-waist compression bike shorts with flatlock seams for chafe-free wear. Suitable for gym, cycling, and casual street styling.",
+    "price": 1299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black",
+      "Chocolate",
+      "Teal"
+    ],
+    "tags": [
+      "bike shorts",
+      "compression",
+      "activewear",
+      "athleisure",
+      "gym"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400"
+  },
+  {
+    "productId": "PRD-045",
+    "name": "Palazzo Pants",
+    "category": "Women's Western",
+    "subCategory": "Bottoms",
+    "description": "Fluid palazzo pants with an extra-wide leg, elasticated waist, and lightweight georgette fabric. Comfortable, airy, and deeply elegant.",
+    "price": 2399,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Navy",
+      "White",
+      "Blush",
+      "Print"
+    ],
+    "tags": [
+      "palazzo",
+      "wide-leg",
+      "flowy",
+      "comfortable",
+      "elegant"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4a1044?w=400"
+  },
+  {
+    "productId": "PRD-046",
+    "name": "Floral Co-ord Set — Top",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-046/PRD-047 floral co-ord set. Top features a halter neck, smocked back, and a cropped length. Bright botanical print on lightweight cotton.",
+    "price": 1699,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Botanical Print"
+    ],
+    "tags": [
+      "co-ord",
+      "floral",
+      "halter",
+      "summer",
+      "set top"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400"
+  },
+  {
+    "productId": "PRD-047",
+    "name": "Floral Co-ord Set — Skirt",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-046/PRD-047 floral co-ord set. Midi wrap skirt in matching botanical print with an elasticised waist and a subtle side slit.",
+    "price": 1699,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Botanical Print"
+    ],
+    "tags": [
+      "co-ord",
+      "floral",
+      "wrap skirt",
+      "summer",
+      "set skirt"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400"
+  },
+  {
+    "productId": "PRD-048",
+    "name": "Linen Co-ord Set — Blazer",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-048/PRD-049 linen co-ord. Oversized linen blazer with notched lapels, two front pockets, and a single button closure. Great for smart-casual office days.",
+    "price": 3499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Oatmeal",
+      "Sage",
+      "Black"
+    ],
+    "tags": [
+      "co-ord",
+      "linen",
+      "blazer",
+      "office",
+      "smart casual",
+      "set blazer"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1580657018950-c7f7d6a6d990?w=400"
+  },
+  {
+    "productId": "PRD-049",
+    "name": "Linen Co-ord Set — Shorts",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-048/PRD-049 linen co-ord. Tailored linen shorts with a high-rise waistband and side pockets, matching the blazer perfectly.",
+    "price": 2299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Oatmeal",
+      "Sage",
+      "Black"
+    ],
+    "tags": [
+      "co-ord",
+      "linen",
+      "shorts",
+      "tailored",
+      "smart casual",
+      "set shorts"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1624206112918-f140f087f9b5?w=400"
+  },
+  {
+    "productId": "PRD-050",
+    "name": "Printed Satin Co-ord — Top",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-050/PRD-051 satin co-ord. Bias-cut satin cami top in a luxe abstract print. Scooped back and adjustable straps.",
+    "price": 2199,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Abstract Print"
+    ],
+    "tags": [
+      "co-ord",
+      "satin",
+      "cami",
+      "evening",
+      "print",
+      "set top"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1579975096649-e773152b04cb?w=400"
+  },
+  {
+    "productId": "PRD-051",
+    "name": "Printed Satin Co-ord — Trousers",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-050/PRD-051 satin co-ord. Wide-leg satin trousers in matching abstract print with elasticated waist and clean drape.",
+    "price": 2699,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Abstract Print"
+    ],
+    "tags": [
+      "co-ord",
+      "satin",
+      "wide-leg",
+      "evening",
+      "print",
+      "set trousers"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4a1044?w=400"
+  },
+  {
+    "productId": "PRD-052",
+    "name": "Sporty Co-ord — Sports Bra",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-052/PRD-053 sporty co-ord. Medium-support sports bra in moisture-wicking fabric with a racerback silhouette.",
+    "price": 1699,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Teal",
+      "Black",
+      "Coral"
+    ],
+    "tags": [
+      "co-ord",
+      "sports bra",
+      "activewear",
+      "gym",
+      "set top"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+  },
+  {
+    "productId": "PRD-053",
+    "name": "Sporty Co-ord — Leggings",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-052/PRD-053 sporty co-ord. High-waist full-length leggings in matching moisture-wicking fabric with phone pocket.",
+    "price": 2199,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Teal",
+      "Black",
+      "Coral"
+    ],
+    "tags": [
+      "co-ord",
+      "leggings",
+      "activewear",
+      "gym",
+      "high-waist",
+      "set bottoms"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400"
+  },
+  {
+    "productId": "PRD-054",
+    "name": "Striped Knit Co-ord — Crop Top",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-054/PRD-055 knit co-ord. Ribbed knit striped crop top with a square neckline and short sleeves.",
+    "price": 1599,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Cream/Brown Stripe",
+      "Blue/White Stripe"
+    ],
+    "tags": [
+      "co-ord",
+      "knit",
+      "striped",
+      "crop top",
+      "casual",
+      "set top"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+  },
+  {
+    "productId": "PRD-055",
+    "name": "Striped Knit Co-ord — Midi Skirt",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-054/PRD-055 knit co-ord. Ribbed midi skirt in matching stripe pattern, with an elasticated waistband and relaxed fit.",
+    "price": 1999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Cream/Brown Stripe",
+      "Blue/White Stripe"
+    ],
+    "tags": [
+      "co-ord",
+      "knit",
+      "striped",
+      "midi skirt",
+      "casual",
+      "set bottoms"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400"
+  },
+  {
+    "productId": "PRD-056",
+    "name": "Utility Co-ord — Jacket",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-056/PRD-057 utility co-ord. Oversized utility jacket with multiple cargo pockets, hood, and zip-button closure in durable cotton twill.",
+    "price": 3799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Khaki",
+      "Olive",
+      "Black"
+    ],
+    "tags": [
+      "co-ord",
+      "utility",
+      "jacket",
+      "streetwear",
+      "set jacket"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1580657018950-c7f7d6a6d990?w=400"
+  },
+  {
+    "productId": "PRD-057",
+    "name": "Utility Co-ord — Cargo Shorts",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-056/PRD-057 utility co-ord. Matching cargo shorts with side pockets, drawstring waist, and a relaxed fit.",
+    "price": 2199,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Khaki",
+      "Olive",
+      "Black"
+    ],
+    "tags": [
+      "co-ord",
+      "utility",
+      "cargo shorts",
+      "streetwear",
+      "set bottoms"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1624206112918-f140f087f9b5?w=400"
+  },
+  {
+    "productId": "PRD-058",
+    "name": "Velvet Co-ord — Off-Shoulder Top",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-058/PRD-059 velvet co-ord. Stretch velvet off-shoulder top with a ruched bust and short cropped length.",
+    "price": 2599,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Jewel Green",
+      "Deep Plum",
+      "Navy"
+    ],
+    "tags": [
+      "co-ord",
+      "velvet",
+      "off-shoulder",
+      "evening",
+      "set top"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400"
+  },
+  {
+    "productId": "PRD-059",
+    "name": "Velvet Co-ord — Wide Leg Pants",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-058/PRD-059 velvet co-ord. Matching stretch velvet wide-leg trousers with a high-rise elasticated waist.",
+    "price": 2999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Jewel Green",
+      "Deep Plum",
+      "Navy"
+    ],
+    "tags": [
+      "co-ord",
+      "velvet",
+      "wide-leg",
+      "evening",
+      "set bottoms"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4a1044?w=400"
+  },
+  {
+    "productId": "PRD-060",
+    "name": "Denim Co-ord — Trucker Jacket",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-060/PRD-061 denim co-ord. Classic trucker jacket in rigid denim with chest pockets, button front, and a slightly cropped length.",
+    "price": 3299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Light Wash",
+      "Dark Wash"
+    ],
+    "tags": [
+      "co-ord",
+      "denim",
+      "trucker jacket",
+      "casual",
+      "set jacket"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1580657018950-c7f7d6a6d990?w=400"
+  },
+  {
+    "productId": "PRD-061",
+    "name": "Denim Co-ord — Mini Skirt",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-060/PRD-061 denim co-ord. Matching denim mini skirt with five-pocket design and raw frayed hem.",
+    "price": 1999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Light Wash",
+      "Dark Wash"
+    ],
+    "tags": [
+      "co-ord",
+      "denim",
+      "mini skirt",
+      "casual",
+      "set bottoms"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1583496661160-fb5218c2f24b?w=400"
+  },
+  {
+    "productId": "PRD-062",
+    "name": "Monochrome Suit Set — Blazer",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-062/PRD-063 power suit. Oversized single-button blazer in structured crepe with peak lapels and padded shoulders.",
+    "price": 4999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "All White",
+      "All Black",
+      "Powder Pink"
+    ],
+    "tags": [
+      "co-ord",
+      "suit",
+      "blazer",
+      "power dressing",
+      "office",
+      "set blazer"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1580657018950-c7f7d6a6d990?w=400"
+  },
+  {
+    "productId": "PRD-063",
+    "name": "Monochrome Suit Set — Trousers",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-062/PRD-063 power suit. Wide-leg tailored trousers in matching structured crepe with a zip-fly and front pleat.",
+    "price": 3499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "All White",
+      "All Black",
+      "Powder Pink"
+    ],
+    "tags": [
+      "co-ord",
+      "suit",
+      "trouser",
+      "power dressing",
+      "office",
+      "set trousers"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4a1044?w=400"
+  },
+  {
+    "productId": "PRD-064",
+    "name": "Boho Print Co-ord — Smocked Top",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-064/PRD-065 boho co-ord. Smocked off-shoulder top in vivid paisley print viscose.",
+    "price": 1799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Paisley Print"
+    ],
+    "tags": [
+      "co-ord",
+      "boho",
+      "smocked",
+      "off-shoulder",
+      "print",
+      "set top"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1554568218-0f1715e72254?w=400"
+  },
+  {
+    "productId": "PRD-065",
+    "name": "Boho Print Co-ord — Flared Pants",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-064/PRD-065 boho co-ord. Flared wide-leg pants in matching paisley print viscose with elasticated waist.",
+    "price": 2299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Paisley Print"
+    ],
+    "tags": [
+      "co-ord",
+      "boho",
+      "flared",
+      "print",
+      "casual",
+      "set bottoms"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1594938298603-c8148c4a1044?w=400"
+  },
+  {
+    "productId": "PRD-066",
+    "name": "Checks Co-ord — Blazer",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-066/PRD-067 checks co-ord. Classic windowpane-check oversized blazer with a relaxed fit.",
+    "price": 3999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Black/White Check",
+      "Brown/Beige Check"
+    ],
+    "tags": [
+      "co-ord",
+      "checks",
+      "blazer",
+      "classic",
+      "office",
+      "set blazer"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1580657018950-c7f7d6a6d990?w=400"
+  },
+  {
+    "productId": "PRD-067",
+    "name": "Checks Co-ord — Mini Skirt",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-066/PRD-067 checks co-ord. A-line mini skirt in matching windowpane-check fabric with pleated design.",
+    "price": 2299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Black/White Check",
+      "Brown/Beige Check"
+    ],
+    "tags": [
+      "co-ord",
+      "checks",
+      "mini skirt",
+      "classic",
+      "set bottoms"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1583496661160-fb5218c2f24b?w=400"
+  },
+  {
+    "productId": "PRD-068",
+    "name": "Tropical Co-ord — Button-Down Shirt",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-068/PRD-069 tropical co-ord. Relaxed button-down shirt in vibrant tropical floral print. Can be worn open As a coverup.",
+    "price": 1999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Tropical Print"
+    ],
+    "tags": [
+      "co-ord",
+      "tropical",
+      "shirt",
+      "vacation",
+      "print",
+      "set top"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1503342394128-c104d54dba01?w=400"
+  },
+  {
+    "productId": "PRD-069",
+    "name": "Tropical Co-ord — Shorts",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-068/PRD-069 tropical co-ord. Matching tropical print high-waist shorts with elasticated waistband and side pockets.",
+    "price": 1699,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Tropical Print"
+    ],
+    "tags": [
+      "co-ord",
+      "tropical",
+      "shorts",
+      "vacation",
+      "print",
+      "set bottoms"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1624206112918-f140f087f9b5?w=400"
+  },
+  {
+    "productId": "PRD-070",
+    "name": "Loungewear Co-ord — Oversized Hoodie",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-070/PRD-071 loungewear co-ord. Oversized fleece hoodie with dropped shoulders, front kangaroo pocket, and a drawstring hood.",
+    "price": 2799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Dusty Lilac",
+      "Oatmeal",
+      "Grey"
+    ],
+    "tags": [
+      "co-ord",
+      "loungewear",
+      "hoodie",
+      "cosy",
+      "casual",
+      "set top"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1620799140268-3a5e6f1b4f3e?w=400"
+  },
+  {
+    "productId": "PRD-071",
+    "name": "Loungewear Co-ord — Joggers",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-070/PRD-071 loungewear co-ord. Matching fleece joggers with elasticised waist, ribbed cuffs, and side pockets.",
+    "price": 2299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Dusty Lilac",
+      "Oatmeal",
+      "Grey"
+    ],
+    "tags": [
+      "co-ord",
+      "loungewear",
+      "joggers",
+      "cosy",
+      "casual",
+      "set bottoms"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=400"
+  },
+  {
+    "productId": "PRD-072",
+    "name": "Knit Tank Co-ord — Tank",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-072/PRD-073 knit tank co-ord. Fitted ribbed knit tank top with a square neckline.",
+    "price": 1299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Mocha",
+      "Butter Yellow",
+      "Slate Blue"
+    ],
+    "tags": [
+      "co-ord",
+      "knit",
+      "tank",
+      "casual",
+      "set top"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+  },
+  {
+    "productId": "PRD-073",
+    "name": "Knit Tank Co-ord — Mini Skirt",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-072/PRD-073 knit tank co-ord. Matching fitted ribbed mini skirt with side slit and elasticated waist.",
+    "price": 1599,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Mocha",
+      "Butter Yellow",
+      "Slate Blue"
+    ],
+    "tags": [
+      "co-ord",
+      "knit",
+      "mini skirt",
+      "casual",
+      "set bottoms"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1583496661160-fb5218c2f24b?w=400"
+  },
+  {
+    "productId": "PRD-074",
+    "name": "Cotton Candy Co-ord — Crop Jacket",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-074/PRD-075. Pastel cropped jacket in soft scuba fabric with a zip front and clean seam detailing.",
+    "price": 2899,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Baby Pink",
+      "Mint",
+      "Sky Blue"
+    ],
+    "tags": [
+      "co-ord",
+      "pastel",
+      "crop jacket",
+      "cute",
+      "set jacket"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1580657018950-c7f7d6a6d990?w=400"
+  },
+  {
+    "productId": "PRD-075",
+    "name": "Cotton Candy Co-ord — Bike Shorts",
+    "category": "Women's Western",
+    "subCategory": "Co-ords",
+    "description": "Part of PRD-074/PRD-075. Matching pastel high-waist bike shorts in scuba fabric with flatlock seams.",
+    "price": 1799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Baby Pink",
+      "Mint",
+      "Sky Blue"
+    ],
+    "tags": [
+      "co-ord",
+      "pastel",
+      "bike shorts",
+      "athleisure",
+      "set bottoms"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400"
+  },
+  {
+    "productId": "PRD-076",
+    "name": "Straight-Cut Kurta",
+    "category": "Women's Ethnic",
+    "subCategory": "Kurtas",
+    "description": "Lightweight straight-cut kurta in soft cotton with subtle block print at the hem and cuffs. Suitable for casual, office, and everyday wear.",
+    "price": 1499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Off-White",
+      "Powder Blue",
+      "Sage Green"
+    ],
+    "tags": [
+      "kurta",
+      "cotton",
+      "straight cut",
+      "casual",
+      "ethnic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1541209027-37b5b2a89cf4?w=400"
+  },
+  {
+    "productId": "PRD-077",
+    "name": "A-Line Embroidered Kurta",
+    "category": "Women's Ethnic",
+    "subCategory": "Kurtas",
+    "description": "Flared A-line kurta with intricate thread embroidery at the neckline and border. Made from fine chanderi fabric.",
+    "price": 2999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ivory",
+      "Peach",
+      "Sky Blue"
+    ],
+    "tags": [
+      "kurta",
+      "embroidery",
+      "chanderi",
+      "festive",
+      "elegant"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1541209027-37b5b2a89cf4?w=400"
+  },
+  {
+    "productId": "PRD-078",
+    "name": "Angrakha Style Kurta",
+    "category": "Women's Ethnic",
+    "subCategory": "Kurtas",
+    "description": "Traditional Angrakha wrap-style kurta with asymmetric overlap, side ties, and 3/4 sleeves in rich jewel-tone georgette.",
+    "price": 3499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Teal",
+      "Mustard",
+      "Wine"
+    ],
+    "tags": [
+      "kurta",
+      "angrakha",
+      "wrap",
+      "festive",
+      "ethnic",
+      "traditional"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1541209027-37b5b2a89cf4?w=400"
+  },
+  {
+    "productId": "PRD-079",
+    "name": "Printed Kurti Top",
+    "category": "Women's Ethnic",
+    "subCategory": "Kurtas",
+    "description": "Short kurti top in vibrant digital print on rayon. V-neckline, 3/4 sleeves, and a straight hem — easy to pair with jeans or palazzos.",
+    "price": 999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Floral Print",
+      "Geometric Print",
+      "Paisley"
+    ],
+    "tags": [
+      "kurti",
+      "printed",
+      "rayon",
+      "casual",
+      "ethnic",
+      "fusion"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1541209027-37b5b2a89cf4?w=400"
+  },
+  {
+    "productId": "PRD-080",
+    "name": "Silk Kurta with Zari Border",
+    "category": "Women's Ethnic",
+    "subCategory": "Kurtas",
+    "description": "Luxe pure silk kurta with a golden zari woven border. Straight-cut with a round neckline and three-quarter sleeves. Ideal for festivals.",
+    "price": 5999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ruby Red",
+      "Emerald",
+      "Cobalt"
+    ],
+    "tags": [
+      "kurta",
+      "silk",
+      "zari",
+      "festive",
+      "traditional",
+      "premium"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1541209027-37b5b2a89cf4?w=400"
+  },
+  {
+    "productId": "PRD-081",
+    "name": "Salwar Kameez Set",
+    "category": "Women's Ethnic",
+    "subCategory": "Salwar Sets",
+    "description": "Classic salwar kameez in cotton with a printed kameez, straight salwar, and matching dupatta. Comfortable and elegant for daily wear.",
+    "price": 2499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Coral/Gold",
+      "Blue/Silver",
+      "Green/Gold"
+    ],
+    "tags": [
+      "salwar kameez",
+      "ethnic",
+      "cotton",
+      "dupatta set",
+      "traditional"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400"
+  },
+  {
+    "productId": "PRD-082",
+    "name": "Palazzo Salwar Set",
+    "category": "Women's Ethnic",
+    "subCategory": "Salwar Sets",
+    "description": "Elegant palazzo salwar set with a long flared kurta and wide-leg palazzo pants in georgette with minimal embroidery.",
+    "price": 3199,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Lavender",
+      "Peach",
+      "Mint"
+    ],
+    "tags": [
+      "palazzo",
+      "salwar set",
+      "georgette",
+      "festive",
+      "ethnic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400"
+  },
+  {
+    "productId": "PRD-083",
+    "name": "Pant Salwar Set",
+    "category": "Women's Ethnic",
+    "subCategory": "Salwar Sets",
+    "description": "Contemporary pant-style salwar set with a long A-line kurta and slim tapered trousers. Chanderi top with printed hem.",
+    "price": 2799,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Ivory",
+      "Sky Blue",
+      "Rose Gold"
+    ],
+    "tags": [
+      "pant salwar",
+      "ethnic",
+      "contemporary",
+      "chanderi",
+      "office"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400"
+  },
+  {
+    "productId": "PRD-084",
+    "name": "Designer Sharara Set",
+    "category": "Women's Ethnic",
+    "subCategory": "Salwar Sets",
+    "description": "Stunning sharara set with a cropped kurta top and heavily flared sharara pants with zari embroidery. Perfect for weddings and functions.",
+    "price": 7999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Gold/Ivory",
+      "Silver/Pink",
+      "Green/Gold"
+    ],
+    "tags": [
+      "sharara",
+      "wedding",
+      "festive",
+      "embroidery",
+      "ethnic",
+      "premium"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400"
+  },
+  {
+    "productId": "PRD-085",
+    "name": "Cotton Block Print Dupatta",
+    "category": "Women's Ethnic",
+    "subCategory": "Dupattas",
+    "description": "Hand block-printed cotton dupatta with tassel fringe ends. A versatile accessory to complement any ethnic ensemble.",
+    "price": 699,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Indigo/White",
+      "Red/White",
+      "Green/White"
+    ],
+    "tags": [
+      "dupatta",
+      "block print",
+      "cotton",
+      "ethnic",
+      "accessory"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=400"
+  },
+  {
+    "productId": "PRD-086",
+    "name": "Embroidered Silk Dupatta",
+    "category": "Women's Ethnic",
+    "subCategory": "Dupattas",
+    "description": "Luxurious silk dupatta with intricate phulkari embroidery and a scalloped border. Makes a statement on any ethnic outfit.",
+    "price": 2499,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Fuchsia",
+      "Royal Blue",
+      "Coral"
+    ],
+    "tags": [
+      "dupatta",
+      "silk",
+      "embroidery",
+      "phulkari",
+      "festive",
+      "ethnic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=400"
+  },
+  {
+    "productId": "PRD-087",
+    "name": "Bandhani Dupatta",
+    "category": "Women's Ethnic",
+    "subCategory": "Dupattas",
+    "description": "Beautiful hand-tied bandhani dupatta in vibrant colours with gold border. Lightweight chiffon fabric.",
+    "price": 1199,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Yellow/Pink",
+      "Red/Orange",
+      "Blue/Green"
+    ],
+    "tags": [
+      "dupatta",
+      "bandhani",
+      "chiffon",
+      "vibrant",
+      "traditional"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=400"
+  },
+  {
+    "productId": "PRD-088",
+    "name": "Bridal Lehenga Set",
+    "category": "Women's Ethnic",
+    "subCategory": "Lehengas",
+    "description": "Opulent bridal lehenga with heavy zardozi embroidered choli, flared skirt with 6m sweep, and matching dupatta.",
+    "price": 49999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Red/Gold",
+      "Peach/Gold",
+      "Ivory/Silver"
+    ],
+    "tags": [
+      "lehenga",
+      "bridal",
+      "zardozi",
+      "wedding",
+      "premium",
+      "ethnic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=400"
+  },
+  {
+    "productId": "PRD-089",
+    "name": "Party Lehenga Set",
+    "category": "Women's Ethnic",
+    "subCategory": "Lehengas",
+    "description": "Festive lehenga with a sequin-embellished blouse, semi-stitched flared skirt, and organza dupatta for sangeet and parties.",
+    "price": 14999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Fuchsia",
+      "Royal Blue",
+      "Emerald Green"
+    ],
+    "tags": [
+      "lehenga",
+      "party",
+      "sequin",
+      "festive",
+      "ethnic",
+      "sangeet"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=400"
+  },
+  {
+    "productId": "PRD-090",
+    "name": "Indo-Western Lehenga",
+    "category": "Women's Ethnic",
+    "subCategory": "Lehengas",
+    "description": "Contemporary Indo-Western lehenga with a crop jacket blouse, A-line skirt with minimal embroidery, and no dupatta.",
+    "price": 9999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Dusty Rose",
+      "Mint",
+      "Powder Blue"
+    ],
+    "tags": [
+      "lehenga",
+      "indo-western",
+      "contemporary",
+      "festive",
+      "modern ethnic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=400"
+  },
+  {
+    "productId": "PRD-091",
+    "name": "Classic Oxford Shirt",
+    "category": "Men's Wear",
+    "subCategory": "Shirts",
+    "description": "Timeless Oxford button-down shirt in 100% cotton with a chest pocket and single-button cuffs. Ideal for smart casual and business casual.",
+    "price": 1799,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "White",
+      "Light Blue",
+      "Pink",
+      "Grey"
+    ],
+    "tags": [
+      "shirt",
+      "oxford",
+      "cotton",
+      "office",
+      "smart casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400"
+  },
+  {
+    "productId": "PRD-092",
+    "name": "Linen Resort Shirt",
+    "category": "Men's Wear",
+    "subCategory": "Shirts",
+    "description": "Relaxed linen shirt with a camp collar and short sleeves. Breathable and lightweight, perfect for vacations and summer weekends.",
+    "price": 1999,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Sage",
+      "Navy",
+      "Terracotta"
+    ],
+    "tags": [
+      "shirt",
+      "linen",
+      "camp collar",
+      "summer",
+      "vacation",
+      "casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400"
+  },
+  {
+    "productId": "PRD-093",
+    "name": "Printed Casual Shirt",
+    "category": "Men's Wear",
+    "subCategory": "Shirts",
+    "description": "Fun printed casual shirt with all-over tropical or abstract print. Relaxed fit, camp collar, and a straight hem.",
+    "price": 1599,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Tropical Print",
+      "Abstract Blue",
+      "Floral Print"
+    ],
+    "tags": [
+      "shirt",
+      "printed",
+      "casual",
+      "funky",
+      "vacation"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400"
+  },
+  {
+    "productId": "PRD-094",
+    "name": "Formal Dress Shirt",
+    "category": "Men's Wear",
+    "subCategory": "Shirts",
+    "description": "Slim-fit formal dress shirt with a spread collar, French cuffs, and a hidden button placket. Perfect with suits and ties.",
+    "price": 2499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "White",
+      "Pale Blue",
+      "Pale Pink"
+    ],
+    "tags": [
+      "shirt",
+      "formal",
+      "slim-fit",
+      "French cuffs",
+      "office"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400"
+  },
+  {
+    "productId": "PRD-095",
+    "name": "Flannel Check Shirt",
+    "category": "Men's Wear",
+    "subCategory": "Shirts",
+    "description": "Warm brushed flannel shirt in classic windowpane check. Relaxed fit with a button-down collar and chest pockets.",
+    "price": 2199,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Red/Black Check",
+      "Blue/Navy Check",
+      "Grey/Black Check"
+    ],
+    "tags": [
+      "shirt",
+      "flannel",
+      "check",
+      "winter",
+      "casual",
+      "layering"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400"
+  },
+  {
+    "productId": "PRD-096",
+    "name": "Slim Fit Chinos",
+    "category": "Men's Wear",
+    "subCategory": "Trousers",
+    "description": "Clean-lined slim-fit chinos in stretch cotton twill. Mid-rise waist, on-seam pockets, and a tapered leg.",
+    "price": 2799,
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "colors": [
+      "Khaki",
+      "Navy",
+      "Olive",
+      "Camel"
+    ],
+    "tags": [
+      "chinos",
+      "slim fit",
+      "office",
+      "smart casual",
+      "trousers"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400"
+  },
+  {
+    "productId": "PRD-097",
+    "name": "Regular Fit Formal Trousers",
+    "category": "Men's Wear",
+    "subCategory": "Trousers",
+    "description": "Classic regular-fit formal trousers in structured fabric with a flat front and pressed crease. Essential for business wear.",
+    "price": 2499,
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Charcoal",
+      "Black",
+      "Navy",
+      "Grey"
+    ],
+    "tags": [
+      "trousers",
+      "formal",
+      "regular fit",
+      "office",
+      "business"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400"
+  },
+  {
+    "productId": "PRD-098",
+    "name": "Relaxed Linen Trousers",
+    "category": "Men's Wear",
+    "subCategory": "Trousers",
+    "description": "Easy-fitting linen trousers with a drawstring waist and side pockets. Lightweight and breathable for warm weather.",
+    "price": 2299,
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "colors": [
+      "Natural",
+      "White",
+      "Sage",
+      "Navy"
+    ],
+    "tags": [
+      "linen",
+      "trousers",
+      "summer",
+      "casual",
+      "breathable"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400"
+  },
+  {
+    "productId": "PRD-099",
+    "name": "Men's Cargo Trousers",
+    "category": "Men's Wear",
+    "subCategory": "Trousers",
+    "description": "Rugged cargo trousers with multiple utility pockets, a relaxed fit, and a drawstring waist.",
+    "price": 2599,
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "colors": [
+      "Khaki",
+      "Black",
+      "Olive",
+      "Grey"
+    ],
+    "tags": [
+      "cargo",
+      "utility",
+      "streetwear",
+      "casual",
+      "trousers"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400"
+  },
+  {
+    "productId": "PRD-100",
+    "name": "Men's Slim Fit Jeans",
+    "category": "Men's Wear",
+    "subCategory": "Trousers",
+    "description": "Classic slim-fit jeans in rigid denim with a mid-rise waist, five-pocket design, and a slight taper to the ankle.",
+    "price": 3199,
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "colors": [
+      "Dark Wash",
+      "Mid Wash",
+      "Black"
+    ],
+    "tags": [
+      "jeans",
+      "slim fit",
+      "denim",
+      "casual",
+      "everyday"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400"
+  },
+  {
+    "productId": "PRD-101",
+    "name": "Formal Suit Blazer",
+    "category": "Men's Wear",
+    "subCategory": "Suits",
+    "description": "Part of PRD-101/PRD-102. Slim-fit single-breasted blazer in Italian wool blend with notched lapels and two-button closure.",
+    "price": 9999,
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "colors": [
+      "Charcoal",
+      "Navy",
+      "Black"
+    ],
+    "tags": [
+      "suit",
+      "blazer",
+      "formal",
+      "wool",
+      "slim fit"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400"
+  },
+  {
+    "productId": "PRD-102",
+    "name": "Formal Suit Trousers",
+    "category": "Men's Wear",
+    "subCategory": "Suits",
+    "description": "Part of PRD-101/PRD-102. Matching slim-fit flat-front suit trousers with pressed crease and side tabs.",
+    "price": 6999,
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "colors": [
+      "Charcoal",
+      "Navy",
+      "Black"
+    ],
+    "tags": [
+      "suit",
+      "trousers",
+      "formal",
+      "wool",
+      "slim fit"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400"
+  },
+  {
+    "productId": "PRD-103",
+    "name": "Linen Suit Blazer",
+    "category": "Men's Wear",
+    "subCategory": "Suits",
+    "description": "Part of PRD-103/PRD-104. Relaxed unstructured linen blazer with patch pockets and natural drape. Great for summer events.",
+    "price": 7999,
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "colors": [
+      "Ecru",
+      "Sage",
+      "Light Blue"
+    ],
+    "tags": [
+      "suit",
+      "blazer",
+      "linen",
+      "summer",
+      "unstructured"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400"
+  },
+  {
+    "productId": "PRD-104",
+    "name": "Linen Suit Trousers",
+    "category": "Men's Wear",
+    "subCategory": "Suits",
+    "description": "Part of PRD-103/PRD-104. Relaxed straight-cut linen trousers with elasticated waist and patch pockets.",
+    "price": 4999,
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "colors": [
+      "Ecru",
+      "Sage",
+      "Light Blue"
+    ],
+    "tags": [
+      "suit",
+      "trousers",
+      "linen",
+      "summer",
+      "relaxed"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400"
+  },
+  {
+    "productId": "PRD-105",
+    "name": "Check Blazer",
+    "category": "Men's Wear",
+    "subCategory": "Suits",
+    "description": "Statement-making slim-fit check blazer. Pair with solid trousers for a sharp contrast.",
+    "price": 7499,
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "colors": [
+      "Grey Check",
+      "Brown Check",
+      "Blue Check"
+    ],
+    "tags": [
+      "blazer",
+      "check",
+      "statement",
+      "smart casual",
+      "fashion"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400"
+  },
+  {
+    "productId": "PRD-106",
+    "name": "Men's Polo T-Shirt",
+    "category": "Men's Wear",
+    "subCategory": "T-Shirts",
+    "description": "Piqué cotton polo with a ribbed collar, two-button placket, and a side-vent hem.",
+    "price": 1299,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "White",
+      "Navy",
+      "Black",
+      "Burgundy",
+      "Forest Green"
+    ],
+    "tags": [
+      "polo",
+      "t-shirt",
+      "smart casual",
+      "cotton",
+      "essential"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"
+  },
+  {
+    "productId": "PRD-107",
+    "name": "Graphic Oversized Tee — Men",
+    "category": "Men's Wear",
+    "subCategory": "T-Shirts",
+    "description": "Boxy oversized T-shirt with a large graphic print at the chest or back. 100% cotton jersey with dropped shoulders.",
+    "price": 1099,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "White",
+      "Black",
+      "Grey Wash"
+    ],
+    "tags": [
+      "graphic tee",
+      "oversized",
+      "streetwear",
+      "casual",
+      "cotton"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"
+  },
+  {
+    "productId": "PRD-108",
+    "name": "Striped Cotton T-Shirt — Men",
+    "category": "Men's Wear",
+    "subCategory": "T-Shirts",
+    "description": "Classic crew-neck striped tee in a soft cotton-modal blend. Slim fit with a comfortable stretch.",
+    "price": 999,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Navy/White",
+      "Black/White",
+      "Red/White"
+    ],
+    "tags": [
+      "t-shirt",
+      "striped",
+      "casual",
+      "slim fit",
+      "essential"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"
+  },
+  {
+    "productId": "PRD-109",
+    "name": "Henley T-Shirt",
+    "category": "Men's Wear",
+    "subCategory": "T-Shirts",
+    "description": "Long-sleeve Henley tee with a three-button placket and a relaxed fit in soft heavyweight jersey.",
+    "price": 1399,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Off-White",
+      "Dark Grey",
+      "Olive"
+    ],
+    "tags": [
+      "henley",
+      "long sleeve",
+      "casual",
+      "relaxed",
+      "essential"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"
+  },
+  {
+    "productId": "PRD-110",
+    "name": "Men's Slim Kurta",
+    "category": "Men's Wear",
+    "subCategory": "Ethnic Men",
+    "description": "Sleek slim-fit kurta in soft cotton with a mandarin collar and minimal pintuck detailing.",
+    "price": 1799,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "White",
+      "Powder Blue",
+      "Maroon"
+    ],
+    "tags": [
+      "kurta",
+      "ethnic",
+      "slim fit",
+      "mandarin collar",
+      "casual ethnic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=400"
+  },
+  {
+    "productId": "PRD-111",
+    "name": "Nehru Jacket",
+    "category": "Men's Wear",
+    "subCategory": "Ethnic Men",
+    "description": "Classic Nehru jacket in brocade fabric with a mandarin collar and a single-button closure. Wear over a kurta or a plain shirt.",
+    "price": 3499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ivory Gold",
+      "Black Silver",
+      "Maroon Gold"
+    ],
+    "tags": [
+      "nehru jacket",
+      "ethnic",
+      "brocade",
+      "festive",
+      "traditional"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=400"
+  },
+  {
+    "productId": "PRD-112",
+    "name": "Sherwani Set",
+    "category": "Men's Wear",
+    "subCategory": "Ethnic Men",
+    "description": "Premium sherwani set with embroidery on the kurta, matching churidar, and stole. For grooms and wedding functions.",
+    "price": 24999,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ivory",
+      "Royal Blue",
+      "Maroon"
+    ],
+    "tags": [
+      "sherwani",
+      "ethnic",
+      "wedding",
+      "groom",
+      "embroidery",
+      "premium"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=400"
+  },
+  {
+    "productId": "PRD-113",
+    "name": "Men's Performance Jogger",
+    "category": "Men's Wear",
+    "subCategory": "Activewear",
+    "description": "Performance joggers in moisture-wicking stretch fabric with a tapered fit, side pockets, and reflective detailing.",
+    "price": 2199,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Navy",
+      "Grey"
+    ],
+    "tags": [
+      "jogger",
+      "activewear",
+      "gym",
+      "running",
+      "athleisure"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400"
+  },
+  {
+    "productId": "PRD-114",
+    "name": "Men's Training Shorts",
+    "category": "Men's Wear",
+    "subCategory": "Activewear",
+    "description": "Lightweight training shorts with a 7-inch inseam, built-in brief, and side zip pockets for gym and running.",
+    "price": 1499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Navy",
+      "Forest Green",
+      "Cobalt"
+    ],
+    "tags": [
+      "shorts",
+      "training",
+      "gym",
+      "running",
+      "activewear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400"
+  },
+  {
+    "productId": "PRD-115",
+    "name": "Men's Zip Hoodie",
+    "category": "Men's Wear",
+    "subCategory": "Sweatshirts",
+    "description": "Heavyweight French terry full-zip hoodie with a kangaroo pocket and ribbed waistband.",
+    "price": 2799,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Grey Melange",
+      "Black",
+      "Navy",
+      "Olive"
+    ],
+    "tags": [
+      "hoodie",
+      "zip hoodie",
+      "casual",
+      "layering",
+      "sweatshirt"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=400"
+  },
+  {
+    "productId": "PRD-116",
+    "name": "Men's Crewneck Sweatshirt",
+    "category": "Men's Wear",
+    "subCategory": "Sweatshirts",
+    "description": "Classic crewneck sweatshirt in brushed fleece with ribbed cuffs and hem.",
+    "price": 2199,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Charcoal",
+      "Rust",
+      "Navy",
+      "Sage"
+    ],
+    "tags": [
+      "sweatshirt",
+      "crewneck",
+      "casual",
+      "fleece",
+      "essential"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=400"
+  },
+  {
+    "productId": "PRD-117",
+    "name": "Men's Cable Knit Sweater",
+    "category": "Men's Wear",
+    "subCategory": "Knitwear",
+    "description": "Cable-knit wool-blend crew neck sweater with rollneck. Warm and textured, essential for winter dressing.",
+    "price": 3499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ecru",
+      "Chocolate Brown",
+      "Forest Green"
+    ],
+    "tags": [
+      "sweater",
+      "knit",
+      "cable knit",
+      "winter",
+      "wool",
+      "premium"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1608501850127-d277c36d7a0b?w=400"
+  },
+  {
+    "productId": "PRD-118",
+    "name": "Men's Bomber Jacket",
+    "category": "Men's Wear",
+    "subCategory": "Outerwear",
+    "description": "Classic bomber jacket in a smooth satin shell with rib-knit collar, cuffs, and hem. Lightweight and versatile.",
+    "price": 3999,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Olive",
+      "Black",
+      "Navy",
+      "Khaki"
+    ],
+    "tags": [
+      "bomber",
+      "jacket",
+      "outerwear",
+      "casual",
+      "streetwear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1548126032-079a0fb0099d?w=400"
+  },
+  {
+    "productId": "PRD-119",
+    "name": "Men's Denim Jacket",
+    "category": "Men's Wear",
+    "subCategory": "Outerwear",
+    "description": "Classic rigid denim trucker jacket with chest pockets and a button-front closure.",
+    "price": 3199,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Light Wash",
+      "Dark Wash",
+      "Black"
+    ],
+    "tags": [
+      "denim jacket",
+      "outerwear",
+      "casual",
+      "classic",
+      "layering"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1548126032-079a0fb0099d?w=400"
+  },
+  {
+    "productId": "PRD-120",
+    "name": "Men's Kurta Pyjama Set",
+    "category": "Men's Wear",
+    "subCategory": "Ethnic Men",
+    "description": "Easy kurta-pyjama set in breathable cotton. Straight-cut long kurta with matching straight-leg pyjama.",
+    "price": 1999,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "White",
+      "Ivory",
+      "Light Grey"
+    ],
+    "tags": [
+      "kurta pyjama",
+      "ethnic",
+      "cotton",
+      "casual",
+      "loungewear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=400"
+  },
+  {
+    "productId": "PRD-121",
+    "name": "Men's Swim Shorts",
+    "category": "Men's Wear",
+    "subCategory": "Swimwear",
+    "description": "Quick-dry swim shorts with an elastic waistband, drawstring, side pockets, and a mesh lining.",
+    "price": 1299,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Tropical Print",
+      "Solid Navy",
+      "Solid Black"
+    ],
+    "tags": [
+      "swim shorts",
+      "beach",
+      "pool",
+      "summer",
+      "vacation"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1565462905408-3d5f7c9b1a3e?w=400"
+  },
+  {
+    "productId": "PRD-122",
+    "name": "Men's Puffer Jacket",
+    "category": "Men's Wear",
+    "subCategory": "Outerwear",
+    "description": "Lightweight packable puffer jacket with down-fill insulation, stand collar, and two-way zip. Packs into its own pocket.",
+    "price": 5499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Navy",
+      "Olive",
+      "Burgundy"
+    ],
+    "tags": [
+      "puffer jacket",
+      "winter",
+      "packable",
+      "outerwear",
+      "down"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1548126032-079a0fb0099d?w=400"
+  },
+  {
+    "productId": "PRD-123",
+    "name": "Men's Vintage Wash Tee",
+    "category": "Men's Wear",
+    "subCategory": "T-Shirts",
+    "description": "Soft garment-dyed relaxed-fit tee with a washed-out vintage feel. Crew neck with slightly longer back hem.",
+    "price": 1199,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Washed Black",
+      "Washed Indigo",
+      "Washed Sage"
+    ],
+    "tags": [
+      "t-shirt",
+      "relaxed",
+      "vintage wash",
+      "casual",
+      "garment dyed"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400"
+  },
+  {
+    "productId": "PRD-124",
+    "name": "Men's Straight Fit Chinos",
+    "category": "Men's Wear",
+    "subCategory": "Trousers",
+    "description": "Relaxed straight-fit chinos in durable cotton blend. Versatile for weekdays and weekends with on-seam pockets.",
+    "price": 2599,
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "colors": [
+      "Khaki",
+      "Beige",
+      "Stone",
+      "Dark Navy"
+    ],
+    "tags": [
+      "chinos",
+      "straight fit",
+      "casual",
+      "office",
+      "versatile"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400"
+  },
+  {
+    "productId": "PRD-125",
+    "name": "Men's Formal Waistcoat",
+    "category": "Men's Wear",
+    "subCategory": "Suits",
+    "description": "Classic five-button formal waistcoat with welt pockets and an adjustable back strap.",
+    "price": 3499,
+    "sizes": [
+      "36",
+      "38",
+      "40",
+      "42",
+      "44"
+    ],
+    "colors": [
+      "Charcoal",
+      "Navy",
+      "Black"
+    ],
+    "tags": [
+      "waistcoat",
+      "formal",
+      "suit",
+      "classic",
+      "smart"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400"
+  },
+  {
+    "productId": "PRD-126",
+    "name": "Men's Mandarin Collar Shirt",
+    "category": "Men's Wear",
+    "subCategory": "Shirts",
+    "description": "Minimalist mandarin collar shirt in premium cotton poplin. A modern alternative to traditional dress shirts.",
+    "price": 1899,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "White",
+      "Black",
+      "Sand"
+    ],
+    "tags": [
+      "shirt",
+      "mandarin collar",
+      "minimalist",
+      "smart",
+      "office"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400"
+  },
+  {
+    "productId": "PRD-127",
+    "name": "Men's Tracksuit Top",
+    "category": "Men's Wear",
+    "subCategory": "Activewear",
+    "description": "Part of PRD-127/PRD-128. Quarter-zip track top in moisture-wicking fabric with thumb holes and zippered chest pocket.",
+    "price": 2899,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Navy",
+      "Grey"
+    ],
+    "tags": [
+      "tracksuit",
+      "athleisure",
+      "gym",
+      "zip top",
+      "activewear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400"
+  },
+  {
+    "productId": "PRD-128",
+    "name": "Men's Tracksuit Bottoms",
+    "category": "Men's Wear",
+    "subCategory": "Activewear",
+    "description": "Part of PRD-127/PRD-128. Tapered track pants in matching moisture-wicking fabric with zip pockets and drawstring waist.",
+    "price": 2699,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black",
+      "Navy",
+      "Grey"
+    ],
+    "tags": [
+      "tracksuit",
+      "athleisure",
+      "gym",
+      "track pants",
+      "activewear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400"
+  },
+  {
+    "productId": "PRD-129",
+    "name": "Men's Silk Blend Kurta",
+    "category": "Men's Wear",
+    "subCategory": "Ethnic Men",
+    "description": "Elegant silk-blend kurta with subtle texture and a V-neck with piping. Wear with churidar for festive occasions.",
+    "price": 4999,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Champagne",
+      "Teal",
+      "Deep Purple"
+    ],
+    "tags": [
+      "kurta",
+      "silk",
+      "festive",
+      "ethnic",
+      "premium"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=400"
+  },
+  {
+    "productId": "PRD-130",
+    "name": "Men's Casual Linen Shorts",
+    "category": "Men's Wear",
+    "subCategory": "Trousers",
+    "description": "Relaxed linen shorts with a pull-on elasticated waist and two side pockets. Ideal for beach days and weekend outings.",
+    "price": 1699,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Natural",
+      "White",
+      "Navy",
+      "Khaki"
+    ],
+    "tags": [
+      "shorts",
+      "linen",
+      "beach",
+      "summer",
+      "casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400"
+  },
+  {
+    "productId": "PRD-131",
+    "name": "Men's Reversible Jacket",
+    "category": "Men's Wear",
+    "subCategory": "Outerwear",
+    "description": "Versatile reversible jacket — solid on one side, printed on the other. Lightweight nylon shell with a relaxed fit.",
+    "price": 4499,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Black/Camo",
+      "Navy/Khaki"
+    ],
+    "tags": [
+      "jacket",
+      "reversible",
+      "versatile",
+      "casual",
+      "outerwear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1548126032-079a0fb0099d?w=400"
+  },
+  {
+    "productId": "PRD-132",
+    "name": "Day Wedding Sherwani",
+    "category": "Men's Wear",
+    "subCategory": "Ethnic Men",
+    "description": "Light cotton-silk blend sherwani perfect for day wedding functions. Minimal resham embroidery, bandhgala collar.",
+    "price": 12999,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Ivory",
+      "Lime Sherbet",
+      "Powder Blue"
+    ],
+    "tags": [
+      "sherwani",
+      "ethnic",
+      "wedding",
+      "cotton silk",
+      "light",
+      "daytime"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=400"
+  },
+  {
+    "productId": "PRD-133",
+    "name": "Men's Long Sleeve Linen Shirt",
+    "category": "Men's Wear",
+    "subCategory": "Shirts",
+    "description": "Easy long-sleeve linen shirt with spread collar and button-through front. Great for layering or wearing open over a tee.",
+    "price": 2299,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "White",
+      "Sky Blue",
+      "Terracotta",
+      "Olive"
+    ],
+    "tags": [
+      "linen",
+      "shirt",
+      "long sleeve",
+      "casual",
+      "summer"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400"
+  },
+  {
+    "productId": "PRD-134",
+    "name": "Men's Flannel Overshirt",
+    "category": "Men's Wear",
+    "subCategory": "Outerwear",
+    "description": "Heavyweight flannel overshirt worn as a jacket. Relaxed fit, chest and hip pockets, and button front.",
+    "price": 3299,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Navy Check",
+      "Green Plaid",
+      "Camel"
+    ],
+    "tags": [
+      "overshirt",
+      "jacket",
+      "flannel",
+      "layering",
+      "casual",
+      "winter"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1548126032-079a0fb0099d?w=400"
+  },
+  {
+    "productId": "PRD-135",
+    "name": "Cotton Vest Undershirt 2-Pack",
+    "category": "Men's Wear",
+    "subCategory": "Innerwear",
+    "description": "Pack of 2 pure cotton round-neck vests in fine ribbed fabric for stretch and breathability.",
+    "price": 699,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "White"
+    ],
+    "tags": [
+      "vest",
+      "innerwear",
+      "cotton",
+      "essential",
+      "pack"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1591195853828-11db59a44f43?w=400"
+  },
+  {
+    "productId": "PRD-136",
+    "name": "Men's Barrel Fit Jeans",
+    "category": "Men's Wear",
+    "subCategory": "Trousers",
+    "description": "Barrel-fit relaxed jeans with high-rise, wide thigh, and slightly tapered ankle — a contemporary 90s silhouette.",
+    "price": 3499,
+    "sizes": [
+      "28",
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "colors": [
+      "Light Wash",
+      "Mid Wash",
+      "Ecru"
+    ],
+    "tags": [
+      "jeans",
+      "relaxed",
+      "barrel fit",
+      "denim",
+      "casual",
+      "streetwear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400"
+  },
+  {
+    "productId": "PRD-137",
+    "name": "Men's Merino Turtleneck",
+    "category": "Men's Wear",
+    "subCategory": "Knitwear",
+    "description": "Soft merino wool turtleneck with a slim fit and extra-fine gauge. Lightweight enough to layer under a blazer.",
+    "price": 4999,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [
+      "Camel",
+      "Ecru",
+      "Charcoal",
+      "Forest Green"
+    ],
+    "tags": [
+      "turtleneck",
+      "merino",
+      "knit",
+      "winter",
+      "smart",
+      "layering"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1608501850127-d277c36d7a0b?w=400"
+  },
+  {
+    "productId": "PRD-138",
+    "name": "Men's Patterned Socks 3-Pack",
+    "category": "Men's Wear",
+    "subCategory": "Accessories",
+    "description": "Set of 3 pairs of combed cotton socks in assorted playful patterns — stripes, polka dots, and geometric.",
+    "price": 599,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Mixed Pack"
+    ],
+    "tags": [
+      "socks",
+      "patterns",
+      "accessories",
+      "cotton",
+      "essential"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=400"
+  },
+  {
+    "productId": "PRD-139",
+    "name": "Men's Leather Belt",
+    "category": "Men's Wear",
+    "subCategory": "Accessories",
+    "description": "Full-grain leather dress belt with a polished silver or gold pin buckle. Width: 35mm. Fits waist 28–42 inches.",
+    "price": 1499,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black",
+      "Tan",
+      "Dark Brown"
+    ],
+    "tags": [
+      "belt",
+      "leather",
+      "formal",
+      "accessories",
+      "essential"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=400"
+  },
+  {
+    "productId": "PRD-140",
+    "name": "Men's Silk Pocket Square",
+    "category": "Men's Wear",
+    "subCategory": "Accessories",
+    "description": "Silk pocket square in a handmade print, 30×30cm. Adds colour and texture to any suit or blazer.",
+    "price": 799,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Navy Floral",
+      "Paisley Red",
+      "Solid White"
+    ],
+    "tags": [
+      "pocket square",
+      "silk",
+      "accessories",
+      "formal",
+      "suit"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=400"
+  },
+  {
+    "productId": "PRD-141",
+    "name": "Men's Formal Silk Tie",
+    "category": "Men's Wear",
+    "subCategory": "Accessories",
+    "description": "Pure silk formal tie in a classic width and woven pattern. Interlined for structure and a perfect dimple.",
+    "price": 1299,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Navy/Silver",
+      "Burgundy/Gold",
+      "Charcoal/Black"
+    ],
+    "tags": [
+      "tie",
+      "silk",
+      "formal",
+      "accessories",
+      "classic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=400"
+  },
+  {
+    "productId": "PRD-142",
+    "name": "Men's Sneaker Loafer",
+    "category": "Men's Wear",
+    "subCategory": "Footwear",
+    "description": "Slip-on loafer with a sneaker-style sole for comfort. Leather upper with a penny loafer detail.",
+    "price": 3499,
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "White",
+      "Tan",
+      "Navy"
+    ],
+    "tags": [
+      "loafer",
+      "casual",
+      "slip-on",
+      "footwear",
+      "smart casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+  },
+  {
+    "productId": "PRD-143",
+    "name": "Men's Running Sneaker",
+    "category": "Men's Wear",
+    "subCategory": "Footwear",
+    "description": "High-performance running sneaker with mesh upper, cushioned midsole, and durable rubber outsole. Lightweight at 280g.",
+    "price": 4999,
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "colors": [
+      "Black/White",
+      "Navy/Orange",
+      "Grey/Lime"
+    ],
+    "tags": [
+      "sneaker",
+      "running",
+      "gym",
+      "activewear",
+      "footwear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+  },
+  {
+    "productId": "PRD-144",
+    "name": "Men's Classic White Sneaker",
+    "category": "Men's Wear",
+    "subCategory": "Footwear",
+    "description": "Timeless all-white leather sneaker with a low profile, clean toe box, and a vulcanised rubber sole.",
+    "price": 3999,
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "White"
+    ],
+    "tags": [
+      "sneaker",
+      "white",
+      "classic",
+      "leather",
+      "casual",
+      "footwear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+  },
+  {
+    "productId": "PRD-145",
+    "name": "Men's Oxford Shoes",
+    "category": "Men's Wear",
+    "subCategory": "Footwear",
+    "description": "Full-brogue Oxford in polished leather with leather sole and heel. A classic of formal footwear.",
+    "price": 5999,
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Black Polish",
+      "Oxblood",
+      "Cognac"
+    ],
+    "tags": [
+      "oxford",
+      "shoes",
+      "formal",
+      "leather",
+      "classic",
+      "footwear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+  },
+  {
+    "productId": "PRD-146",
+    "name": "Men's Chelsea Boots",
+    "category": "Men's Wear",
+    "subCategory": "Footwear",
+    "description": "Sleek suede Chelsea boot with elastic gusset panels and a stacked heel. Pairs well with chinos and slim trousers.",
+    "price": 6499,
+    "sizes": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "colors": [
+      "Black Suede",
+      "Tan Suede",
+      "Midnight Navy"
+    ],
+    "tags": [
+      "chelsea boots",
+      "suede",
+      "smart casual",
+      "footwear",
+      "classic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+  },
+  {
+    "productId": "PRD-147",
+    "name": "Women's Silk Festive Kurta",
+    "category": "Women's Ethnic",
+    "subCategory": "Kurtas",
+    "description": "Pure silk festive kurta with boat neckline and hand-embroidered neckline detailing. A premium ethnic piece.",
+    "price": 6999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Peacock Blue",
+      "Deep Rose",
+      "Golden Yellow"
+    ],
+    "tags": [
+      "kurta",
+      "silk",
+      "festive",
+      "embroidery",
+      "ethnic",
+      "premium"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1541209027-37b5b2a89cf4?w=400"
+  },
+  {
+    "productId": "PRD-148",
+    "name": "Embroidered Anarkali",
+    "category": "Women's Ethnic",
+    "subCategory": "Kurtas",
+    "description": "Long flared Anarkali kurta with thread and mirror embroidery on the yoke. Pairs with churidar and dupatta.",
+    "price": 8999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Fuchsia",
+      "Royal Blue",
+      "Emerald"
+    ],
+    "tags": [
+      "anarkali",
+      "flared",
+      "embroidery",
+      "festive",
+      "ethnic",
+      "premium"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1541209027-37b5b2a89cf4?w=400"
+  },
+  {
+    "productId": "PRD-149",
+    "name": "Handloom Cotton Kurta",
+    "category": "Women's Ethnic",
+    "subCategory": "Kurtas",
+    "description": "Sustainably woven handloom cotton kurta with natural texture and earthy tones. Straight cut with side slits and a boat neck.",
+    "price": 1999,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ecru",
+      "Indigo",
+      "Rust"
+    ],
+    "tags": [
+      "kurta",
+      "handloom",
+      "cotton",
+      "sustainable",
+      "casual",
+      "ethnic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1541209027-37b5b2a89cf4?w=400"
+  },
+  {
+    "productId": "PRD-150",
+    "name": "Ikat Print Palazzo Set",
+    "category": "Women's Ethnic",
+    "subCategory": "Salwar Sets",
+    "description": "Vibrant ikat-print palazzo set with a tunic-length kurta and matching wide-leg palazzo pants. A festive-casual staple.",
+    "price": 3499,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "Ikat Blue",
+      "Ikat Red"
+    ],
+    "tags": [
+      "ikat",
+      "palazzo set",
+      "print",
+      "festive",
+      "ethnic",
+      "casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400"
+  },
+  {
+    "productId": "PRD-151",
+    "name": "Structured Tote Bag",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Large structured top-handle tote in pebbled vegan leather. Zip closure, internal pockets, and detachable shoulder strap. Office and weekend ready.",
+    "price": 3499,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black",
+      "Camel",
+      "Ivory",
+      "Forest Green"
+    ],
+    "tags": [
+      "tote",
+      "bag",
+      "vegan leather",
+      "office",
+      "structured",
+      "everyday"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-152",
+    "name": "Mini Crossbody Bag",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Compact crossbody bag with a flap closure, chain strap, and a small interior pocket. Perfect for evenings and travel.",
+    "price": 1999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black",
+      "Nude",
+      "Cobalt Blue",
+      "Cherry Red"
+    ],
+    "tags": [
+      "crossbody",
+      "mini bag",
+      "evening",
+      "chain strap",
+      "compact"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-153",
+    "name": "Canvas Weekender Bag",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Spacious waxed canvas weekender with leather handles and a detachable shoulder strap. Fits 1–2 days of essentials.",
+    "price": 4999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Olive/Tan",
+      "Navy/Brown",
+      "Black/Black"
+    ],
+    "tags": [
+      "weekender",
+      "travel bag",
+      "canvas",
+      "rugged",
+      "versatile"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-154",
+    "name": "Bucket Bag",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Slouchy drawstring bucket bag in soft suede with a leather trim and a removable interior pouch.",
+    "price": 2799,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Tan",
+      "Dusty Rose",
+      "Black"
+    ],
+    "tags": [
+      "bucket bag",
+      "suede",
+      "slouchy",
+      "casual",
+      "boho"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-155",
+    "name": "Quilted Chain Flap Bag",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Classic quilted flap bag with gold-tone hardware, a chain shoulder strap, and a turn-lock closure. Timeless and sophisticated.",
+    "price": 5999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black",
+      "Beige",
+      "Navy"
+    ],
+    "tags": [
+      "quilted",
+      "chain bag",
+      "evening",
+      "classic",
+      "luxe",
+      "flap bag"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-156",
+    "name": "Straw Raffia Tote",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Handwoven straw raffia tote with leather handles and a contrast lining. Perfect for beach days and summer outings.",
+    "price": 1799,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Natural/Tan",
+      "Natural/White"
+    ],
+    "tags": [
+      "straw",
+      "tote",
+      "beach",
+      "summer",
+      "raffia",
+      "boho"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-157",
+    "name": "Leather Zip Clutch",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Sleek zip-top clutch in smooth leather with a card slot and wrist strap. Doubles as a wallet.",
+    "price": 1499,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black",
+      "Cognac",
+      "Blush"
+    ],
+    "tags": [
+      "clutch",
+      "leather",
+      "evening",
+      "zip",
+      "wallet"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-158",
+    "name": "Embellished Evening Clutch",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Sparkling crystal-embellished minaudière clutch with a magnetic snap closure. The perfect party accessory.",
+    "price": 2299,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Silver",
+      "Gold",
+      "Black Jet"
+    ],
+    "tags": [
+      "clutch",
+      "evening",
+      "embellished",
+      "glam",
+      "party",
+      "crystals"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-159",
+    "name": "Backpack — Mini",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Compact mini backpack in soft faux leather with padding straps, a front zip pocket, and a main compartment.",
+    "price": 2499,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black",
+      "Blush",
+      "Olive"
+    ],
+    "tags": [
+      "backpack",
+      "mini",
+      "faux leather",
+      "casual",
+      "everyday"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-160",
+    "name": "Bum Bag / Belt Bag",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Nylon belt bag with an adjustable waist strap, front zip pocket, and a secondary zip compartment. Hands-free and functional.",
+    "price": 1299,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black",
+      "Olive",
+      "Cobalt"
+    ],
+    "tags": [
+      "belt bag",
+      "bum bag",
+      "nylon",
+      "hands-free",
+      "streetwear",
+      "utility"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-161",
+    "name": "Link Chain Statement Necklace",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Bold chunky link chain necklace in gold-tone. Adjustable length, lobster clasp. Elevates any look instantly.",
+    "price": 999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Gold",
+      "Silver"
+    ],
+    "tags": [
+      "necklace",
+      "chain",
+      "statement",
+      "bold",
+      "gold",
+      "jewellery"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-162",
+    "name": "Layered Pendant Necklace",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Delicate three-layer necklace with a star, moon, and heart pendant. Dainty and perfect for everyday layering.",
+    "price": 799,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Gold",
+      "Silver"
+    ],
+    "tags": [
+      "necklace",
+      "pendant",
+      "layered",
+      "dainty",
+      "everyday",
+      "jewellery"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-163",
+    "name": "Hoop Earrings — Gold",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Classic large gold hoop earrings in lightweight brass with gold plating. Hypoallergenic posts.",
+    "price": 699,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Gold"
+    ],
+    "tags": [
+      "earrings",
+      "hoops",
+      "gold",
+      "classic",
+      "everyday",
+      "jewellery"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-164",
+    "name": "Statement Drop Earrings",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Dramatic drop earrings with resin or stone embellishment. A single statement piece that transforms a simple look.",
+    "price": 1199,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Emerald Green",
+      "Tortoise",
+      "Ivory Pearl"
+    ],
+    "tags": [
+      "earrings",
+      "drop",
+      "statement",
+      "evening",
+      "jewellery"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-165",
+    "name": "Stackable Ring Set",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Set of 5 mixed gold and silver stackable rings in various textures — plain band, twisted, beaded, and signet.",
+    "price": 1499,
+    "sizes": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "colors": [
+      "Gold/Silver Mix"
+    ],
+    "tags": [
+      "rings",
+      "stackable",
+      "mixed metal",
+      "everyday",
+      "jewellery"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-166",
+    "name": "Pearl Stud Earrings",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Classic freshwater pearl stud earrings. Timeless, elegant, and versatile for everyday and formal wear.",
+    "price": 899,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "White Pearl",
+      "Pastel Pink Pearl"
+    ],
+    "tags": [
+      "earrings",
+      "pearl",
+      "studs",
+      "classic",
+      "elegant",
+      "jewellery"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-167",
+    "name": "Beaded Stretch Bracelet",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Natural stone beaded stretch bracelet with semi-precious stones. Each stone has unique markings.",
+    "price": 799,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Amethyst",
+      "Turquoise",
+      "Tiger Eye"
+    ],
+    "tags": [
+      "bracelet",
+      "beaded",
+      "natural stone",
+      "boho",
+      "jewellery"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-168",
+    "name": "Women's Leather Belt",
+    "category": "Accessories",
+    "subCategory": "Belts",
+    "description": "Slim 20mm leather belt with a minimalist square gold or silver buckle. Suits both jeans and tailored trousers.",
+    "price": 1299,
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "colors": [
+      "Black",
+      "Cognac",
+      "White"
+    ],
+    "tags": [
+      "belt",
+      "leather",
+      "slim",
+      "minimalist",
+      "accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400"
+  },
+  {
+    "productId": "PRD-169",
+    "name": "Woven Raffia Belt",
+    "category": "Accessories",
+    "subCategory": "Belts",
+    "description": "Braided raffia belt with a gold hook-and-eye closure. Adds texture and a summer bohemian vibe.",
+    "price": 699,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Natural",
+      "Natural/Black"
+    ],
+    "tags": [
+      "belt",
+      "raffia",
+      "braided",
+      "boho",
+      "summer",
+      "accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400"
+  },
+  {
+    "productId": "PRD-170",
+    "name": "Oversized Square Sunglasses",
+    "category": "Accessories",
+    "subCategory": "Sunglasses",
+    "description": "Chic oversized square-frame sunglasses with UV400 protection and thick acetate frames. An instant style upgrade.",
+    "price": 1999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Tortoise",
+      "Black",
+      "Clear"
+    ],
+    "tags": [
+      "sunglasses",
+      "oversized",
+      "square",
+      "UV400",
+      "chic",
+      "accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400"
+  },
+  {
+    "productId": "PRD-171",
+    "name": "Cat-Eye Sunglasses",
+    "category": "Accessories",
+    "subCategory": "Sunglasses",
+    "description": "Retro cat-eye sunglasses with gradient lenses and metal temples. Polarised for eye protection.",
+    "price": 1699,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black/Gold",
+      "Tortoise/Brown",
+      "White/Silver"
+    ],
+    "tags": [
+      "sunglasses",
+      "cat-eye",
+      "retro",
+      "polarised",
+      "gradient",
+      "accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400"
+  },
+  {
+    "productId": "PRD-172",
+    "name": "Aviator Sunglasses",
+    "category": "Accessories",
+    "subCategory": "Sunglasses",
+    "description": "Classic tear-drop aviator with thin metal wire frames and polarised mirrored lenses. Unisex and timeless.",
+    "price": 1499,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Gold/Green Mirror",
+      "Silver/Blue Mirror",
+      "Black/Smoke"
+    ],
+    "tags": [
+      "sunglasses",
+      "aviator",
+      "polarised",
+      "mirrored",
+      "classic",
+      "unisex"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400"
+  },
+  {
+    "productId": "PRD-173",
+    "name": "Baseball Cap",
+    "category": "Accessories",
+    "subCategory": "Hats",
+    "description": "Classic six-panel baseball cap in brushed cotton with an embroidered logo and an adjustable snap-back closure.",
+    "price": 899,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black",
+      "Navy",
+      "White",
+      "Olive"
+    ],
+    "tags": [
+      "cap",
+      "baseball cap",
+      "casual",
+      "streetwear",
+      "accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400"
+  },
+  {
+    "productId": "PRD-174",
+    "name": "Straw Sun Hat",
+    "category": "Accessories",
+    "subCategory": "Hats",
+    "description": "Woven straw wide-brim hat with a grosgrain ribbon trim. UPF 50+ sun protection, packable for travel.",
+    "price": 1499,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Natural",
+      "Natural/Black",
+      "Natural/Navy"
+    ],
+    "tags": [
+      "hat",
+      "straw",
+      "wide brim",
+      "sun hat",
+      "summer",
+      "beach"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400"
+  },
+  {
+    "productId": "PRD-175",
+    "name": "Beanie Hat",
+    "category": "Accessories",
+    "subCategory": "Hats",
+    "description": "Soft ribbed knit beanie in a relaxed slouch fit. Merino wool blend keeps you warm and itch-free.",
+    "price": 999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Grey Melange",
+      "Black",
+      "Mustard",
+      "Burgundy"
+    ],
+    "tags": [
+      "beanie",
+      "knit",
+      "winter",
+      "accessories",
+      "cosy"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400"
+  },
+  {
+    "productId": "PRD-176",
+    "name": "Silk Hair Scrunchie Set",
+    "category": "Accessories",
+    "subCategory": "Hair Accessories",
+    "description": "Set of 3 pure silk scrunchies in assorted colours. Snag-free and gentle on hair. Doubles as a chic wrist accessory.",
+    "price": 699,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Mixed Pastels",
+      "Mixed Nudes",
+      "Mixed Bolds"
+    ],
+    "tags": [
+      "scrunchie",
+      "silk",
+      "hair accessories",
+      "gentle",
+      "accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400"
+  },
+  {
+    "productId": "PRD-177",
+    "name": "Pearl Hair Clips Set",
+    "category": "Accessories",
+    "subCategory": "Hair Accessories",
+    "description": "Set of 4 faux pearl-embellished claw clips and snap clips in assorted sizes. Elegant and trendy.",
+    "price": 799,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "White Pearl",
+      "Black Pearl"
+    ],
+    "tags": [
+      "hair clips",
+      "pearl",
+      "accessories",
+      "hair accessories",
+      "trendy"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400"
+  },
+  {
+    "productId": "PRD-178",
+    "name": "Scarf — Silk Square",
+    "category": "Accessories",
+    "subCategory": "Scarves",
+    "description": "Vintage-inspired silk square scarf with a bold print. Wear it in your hair, around your neck, or on your bag.",
+    "price": 1999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Floral/Red",
+      "Abstract/Blue",
+      "Geometric/Green"
+    ],
+    "tags": [
+      "scarf",
+      "silk",
+      "square",
+      "printed",
+      "versatile",
+      "accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=400"
+  },
+  {
+    "productId": "PRD-179",
+    "name": "Cashmere Blend Scarf",
+    "category": "Accessories",
+    "subCategory": "Scarves",
+    "description": "Luxe cashmere-blend winter scarf in a generous 60×200cm size. Plaid check pattern with fringe ends.",
+    "price": 3999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Camel/Red",
+      "Grey/Navy",
+      "Black/White"
+    ],
+    "tags": [
+      "scarf",
+      "cashmere",
+      "winter",
+      "plaid",
+      "luxe",
+      "accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=400"
+  },
+  {
+    "productId": "PRD-180",
+    "name": "Wristwatch — Minimalist",
+    "category": "Accessories",
+    "subCategory": "Watches",
+    "description": "Sleek minimalist watch with a clean white dial, rose gold case, and a genuine leather strap. Japanese quartz movement.",
+    "price": 3999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Rose Gold/White",
+      "Silver/White",
+      "Gold/Navy"
+    ],
+    "tags": [
+      "watch",
+      "minimalist",
+      "quartz",
+      "leather strap",
+      "accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
+  },
+  {
+    "productId": "PRD-181",
+    "name": "Wristwatch — Sports",
+    "category": "Accessories",
+    "subCategory": "Watches",
+    "description": "Sleek sports watch with a 40mm stainless steel case, silicone strap, and 100m water resistance. Chronograph functionality.",
+    "price": 5999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black/Black",
+      "Silver/Blue",
+      "Gunmetal/Orange"
+    ],
+    "tags": [
+      "watch",
+      "sports",
+      "chronograph",
+      "waterproof",
+      "accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400"
+  },
+  {
+    "productId": "PRD-182",
+    "name": "Women's Block Heel Sandals",
+    "category": "Footwear",
+    "subCategory": "Heels",
+    "description": "Strappy block-heel sandals with an ankle strap and adjustable buckle. 6cm heel height for comfortable elevation.",
+    "price": 2999,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Nude",
+      "Black",
+      "Silver",
+      "Tan"
+    ],
+    "tags": [
+      "sandals",
+      "block heel",
+      "strappy",
+      "office",
+      "evening",
+      "heels"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400"
+  },
+  {
+    "productId": "PRD-183",
+    "name": "Women's Stiletto Pumps",
+    "category": "Footwear",
+    "subCategory": "Heels",
+    "description": "Classic pointed-toe stiletto pumps in patent or nappa leather. 10cm heel. An evening wardrobe essential.",
+    "price": 4499,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Black Patent",
+      "Nude",
+      "Red",
+      "Metallic Gold"
+    ],
+    "tags": [
+      "pumps",
+      "stiletto",
+      "heels",
+      "evening",
+      "patent",
+      "classic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400"
+  },
+  {
+    "productId": "PRD-184",
+    "name": "Women's Platform Heels",
+    "category": "Footwear",
+    "subCategory": "Heels",
+    "description": "Chunky platform heels with a square toe, ankle strap, and a thick sole that makes 8cm feel like nothing.",
+    "price": 3499,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Black",
+      "White",
+      "Beige"
+    ],
+    "tags": [
+      "heels",
+      "platform",
+      "chunky",
+      "square toe",
+      "Y2K",
+      "fashion"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400"
+  },
+  {
+    "productId": "PRD-185",
+    "name": "Women's Kitten Heel Mules",
+    "category": "Footwear",
+    "subCategory": "Heels",
+    "description": "Understated kitten heel mule in soft suede with an open back and a pointed toe. Elegant and wearable.",
+    "price": 2499,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Ivory",
+      "Black",
+      "Dusty Rose"
+    ],
+    "tags": [
+      "mules",
+      "kitten heel",
+      "suede",
+      "elegant",
+      "classic",
+      "office"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400"
+  },
+  {
+    "productId": "PRD-186",
+    "name": "Women's Ballet Flats",
+    "category": "Footwear",
+    "subCategory": "Flats",
+    "description": "Genuine leather ballet flats with a rounded toe, elastic vamp, and a cushioned footbed. A wardrobe classic.",
+    "price": 2199,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "colors": [
+      "Black",
+      "Nude",
+      "Red",
+      "Ballet Pink"
+    ],
+    "tags": [
+      "ballet flats",
+      "leather",
+      "classic",
+      "comfortable",
+      "everyday",
+      "flat"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=400"
+  },
+  {
+    "productId": "PRD-187",
+    "name": "Women's Loafers",
+    "category": "Footwear",
+    "subCategory": "Flats",
+    "description": "Chunky-sole penny loafer in smooth leather with a low stacked heel. Smart casual and effortlessly classic.",
+    "price": 3299,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Black",
+      "Tan",
+      "White",
+      "Oxford Brown"
+    ],
+    "tags": [
+      "loafers",
+      "flat",
+      "classic",
+      "leather",
+      "smart casual",
+      "everyday"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=400"
+  },
+  {
+    "productId": "PRD-188",
+    "name": "Strappy Flat Sandals",
+    "category": "Footwear",
+    "subCategory": "Flats",
+    "description": "Minimalist strappy flat sandals with thin leather straps and a flexible rubber outsole. Easy summer wear.",
+    "price": 1799,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "colors": [
+      "Tan",
+      "Black",
+      "Gold",
+      "White"
+    ],
+    "tags": [
+      "sandals",
+      "flat",
+      "strappy",
+      "summer",
+      "casual",
+      "minimalist"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=400"
+  },
+  {
+    "productId": "PRD-189",
+    "name": "Women's Canvas Sneakers",
+    "category": "Footwear",
+    "subCategory": "Sneakers",
+    "description": "Low-top canvas sneakers with a vulcanised rubber sole and metal eyelet lacing. Casual and fun.",
+    "price": 1499,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "colors": [
+      "White",
+      "Black",
+      "Navy",
+      "Red"
+    ],
+    "tags": [
+      "sneakers",
+      "canvas",
+      "casual",
+      "low-top",
+      "classic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+  },
+  {
+    "productId": "PRD-190",
+    "name": "Women's Platform Sneakers",
+    "category": "Footwear",
+    "subCategory": "Sneakers",
+    "description": "Chunky platform sneakers with a thick moulded sole and leather upper. Add height without the heel pain.",
+    "price": 3499,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "White",
+      "Black/White",
+      "Cream"
+    ],
+    "tags": [
+      "sneakers",
+      "platform",
+      "chunky",
+      "fashion",
+      "streetwear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+  },
+  {
+    "productId": "PRD-191",
+    "name": "Women's Running Trainers",
+    "category": "Footwear",
+    "subCategory": "Sneakers",
+    "description": "Engineered mesh running shoe with foam cushioning, a breathable upper, and durable rubber outsole. Lightweight at 220g.",
+    "price": 3999,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "colors": [
+      "Black/Pink",
+      "White/Blue",
+      "Grey/Yellow"
+    ],
+    "tags": [
+      "trainers",
+      "running",
+      "gym",
+      "activewear",
+      "sneakers"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+  },
+  {
+    "productId": "PRD-192",
+    "name": "Chelsea Ankle Boots — Women",
+    "category": "Footwear",
+    "subCategory": "Boots",
+    "description": "Sleek leather Chelsea ankle boots with elastic side gussets and a stacked heel. Versatile for any season.",
+    "price": 5499,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Black",
+      "Dark Tan",
+      "Cognac"
+    ],
+    "tags": [
+      "chelsea boots",
+      "ankle boots",
+      "leather",
+      "classic",
+      "versatile"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=400"
+  },
+  {
+    "productId": "PRD-193",
+    "name": "Knee-High Boots",
+    "category": "Footwear",
+    "subCategory": "Boots",
+    "description": "Smooth leather knee-high boots with a 5cm block heel and a side zip. Elevated and elegant for autumn-winter.",
+    "price": 7999,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Black",
+      "Chocolate Brown",
+      "Forest Green"
+    ],
+    "tags": [
+      "knee-high boots",
+      "leather",
+      "block heel",
+      "winter",
+      "elegant"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=400"
+  },
+  {
+    "productId": "PRD-194",
+    "name": "Cowboy Western Boots",
+    "category": "Footwear",
+    "subCategory": "Boots",
+    "description": "Fashion cowboy boots with an embossed leather upper, pointed toe, and stacked wooden heel. A statement footwear piece.",
+    "price": 6999,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Tan",
+      "Black",
+      "White"
+    ],
+    "tags": [
+      "cowboy boots",
+      "western",
+      "fashion",
+      "statement",
+      "embossed"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=400"
+  },
+  {
+    "productId": "PRD-195",
+    "name": "Slip-On Mule Sneakers",
+    "category": "Footwear",
+    "subCategory": "Sneakers",
+    "description": "Backless slip-on trainers with a knit upper, cushioned footbed, and a flexible rubber sole. Effortless everyday footwear.",
+    "price": 1999,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "colors": [
+      "White",
+      "Black",
+      "Grey"
+    ],
+    "tags": [
+      "mule sneakers",
+      "slip-on",
+      "casual",
+      "backless",
+      "comfortable"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+  },
+  {
+    "productId": "PRD-196",
+    "name": "Espadrille Wedges",
+    "category": "Footwear",
+    "subCategory": "Heels",
+    "description": "Canvas espadrille wedges with an ankle-wrap tie and a jute-wrapped wedge heel. A summer classic.",
+    "price": 2199,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Natural/White",
+      "Navy/White",
+      "Red/White"
+    ],
+    "tags": [
+      "espadrilles",
+      "wedge",
+      "summer",
+      "casual",
+      "jute",
+      "classic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400"
+  },
+  {
+    "productId": "PRD-197",
+    "name": "Thong Flip Flops",
+    "category": "Footwear",
+    "subCategory": "Flats",
+    "description": "Simple rubber thong flip flops with a contoured footbed. Waterproof and comfortable for beach and pool.",
+    "price": 699,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+    ],
+    "colors": [
+      "Black",
+      "White",
+      "Tan",
+      "Coral"
+    ],
+    "tags": [
+      "flip flops",
+      "beach",
+      "pool",
+      "summer",
+      "rubber",
+      "casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=400"
+  },
+  {
+    "productId": "PRD-198",
+    "name": "Embellished Kolhapuri Sandals",
+    "category": "Footwear",
+    "subCategory": "Ethnic Footwear",
+    "description": "Traditional handcrafted Kolhapuri sandals in genuine leather with bead and mirror embellishments. Artisan-made.",
+    "price": 1999,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Natural/Gold",
+      "Black/Multicolor",
+      "Tan/Red"
+    ],
+    "tags": [
+      "kolhapuri",
+      "ethnic",
+      "sandals",
+      "handcrafted",
+      "artisan"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=400"
+  },
+  {
+    "productId": "PRD-199",
+    "name": "Juttis — Embroidered",
+    "category": "Footwear",
+    "subCategory": "Ethnic Footwear",
+    "description": "Traditional Punjabi juttis with intricate thread and sequin embroidery on a cushioned leather sole. Ideal for ethnic outfits.",
+    "price": 2499,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Fuchsia/Gold",
+      "Ivory/Silver",
+      "Royal Blue/Gold"
+    ],
+    "tags": [
+      "juttis",
+      "ethnic",
+      "embroidered",
+      "traditional",
+      "festive",
+      "footwear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=400"
+  },
+  {
+    "productId": "PRD-200",
+    "name": "Mesh Tote Bag — Beach",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Oversized open-weave mesh tote with a zip pouch insert. Perfect for the beach — sandy items fall through easily.",
+    "price": 1299,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Natural",
+      "Black",
+      "Blue"
+    ],
+    "tags": [
+      "tote",
+      "mesh",
+      "beach",
+      "summer",
+      "functional",
+      "bag"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-201",
+    "name": "Zodiac Pendant Necklace",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Dainty gold-filled zodiac constellation pendant on a delicate chain. Personalised and meaningful gifting option.",
+    "price": 1199,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Gold"
+    ],
+    "tags": [
+      "necklace",
+      "zodiac",
+      "pendant",
+      "personalised",
+      "dainty",
+      "jewellery"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-202",
+    "name": "Ear Cuff Set",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Set of 3 gold or silver ear cuffs in mixed shapes — spiral, leaf, and bar. No piercing required.",
+    "price": 899,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Gold",
+      "Silver"
+    ],
+    "tags": [
+      "ear cuff",
+      "no-pierce",
+      "jewellery",
+      "trendy",
+      "statement",
+      "accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-203",
+    "name": "Gold Bangle Set",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Set of 4 slim gold-plated bangles in mixed textures — smooth, hammered, twisted, and beaded.",
+    "price": 1499,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Gold"
+    ],
+    "tags": [
+      "bangles",
+      "gold",
+      "set",
+      "jewellery",
+      "stacking",
+      "ethnic"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-204",
+    "name": "Oxidised Silver Jhumkas",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Traditional oxidised silver jhumka earrings with intricate filigree work and a hook closure.",
+    "price": 999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Oxidised Silver"
+    ],
+    "tags": [
+      "jhumkas",
+      "ethnic",
+      "silver",
+      "oxidised",
+      "traditional",
+      "jewellery"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-205",
+    "name": "Chunky Resin Bracelet",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Bold resin cuff bracelet with swirled marble-effect pattern. A statement piece that pairs with minimal outfits.",
+    "price": 799,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "White Marble",
+      "Black/Gold",
+      "Tortoise"
+    ],
+    "tags": [
+      "bracelet",
+      "resin",
+      "chunky",
+      "statement",
+      "cuff",
+      "jewellery"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-206",
+    "name": "Ankle Bracelet — Gold Chain",
+    "category": "Accessories",
+    "subCategory": "Jewellery",
+    "description": "Delicate gold chain anklet with a charm detail and a lobster clasp. Adjustable length 9–11 inches.",
+    "price": 599,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Gold"
+    ],
+    "tags": [
+      "anklet",
+      "ankle bracelet",
+      "gold",
+      "dainty",
+      "beach",
+      "jewellery"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400"
+  },
+  {
+    "productId": "PRD-207",
+    "name": "Waist Belt Bag — Leather",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Sleek leather hip bag with a single zip compartment and a velcro-secured adjustable belt. Minimalist and functional.",
+    "price": 2299,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black",
+      "Cognac",
+      "Tan"
+    ],
+    "tags": [
+      "belt bag",
+      "leather",
+      "minimalist",
+      "hip bag",
+      "functional",
+      "bag"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-208",
+    "name": "Woven Shoulder Bag",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Hand-woven rattan and leather shoulder bag with a bamboo handle and a fabric inner lining.",
+    "price": 3199,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Natural/Tan",
+      "Natural/Black"
+    ],
+    "tags": [
+      "shoulder bag",
+      "woven",
+      "rattan",
+      "artisan",
+      "summer",
+      "bag"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-209",
+    "name": "Leather Card Holder",
+    "category": "Accessories",
+    "subCategory": "Wallets",
+    "description": "Compact slim card holder in full-grain leather with 6 card slots and a central cash compartment.",
+    "price": 999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black",
+      "Cognac",
+      "Forest Green",
+      "Red"
+    ],
+    "tags": [
+      "card holder",
+      "leather",
+      "wallet",
+      "slim",
+      "accessories",
+      "gift"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1627123424574-724758594e93?w=400"
+  },
+  {
+    "productId": "PRD-210",
+    "name": "Zip-Around Wallet",
+    "category": "Accessories",
+    "subCategory": "Wallets",
+    "description": "Zip-around leather wallet with 12 card slots, a coin compartment, and a note section. Organise everything in one place.",
+    "price": 1999,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black",
+      "Tan",
+      "Dusty Rose"
+    ],
+    "tags": [
+      "wallet",
+      "zip-around",
+      "leather",
+      "organised",
+      "accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1627123424574-724758594e93?w=400"
+  },
+  {
+    "productId": "PRD-211",
+    "name": "Embroidered Potli Bag",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Traditional Indian potli drawstring bag with zardozi embroidery and a golden cord. Pairs beautifully with ethnic outfits.",
+    "price": 1499,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Velvet Red/Gold",
+      "Velvet Green/Gold",
+      "Velvet Blue/Silver"
+    ],
+    "tags": [
+      "potli",
+      "ethnic",
+      "bag",
+      "embroidered",
+      "festive",
+      "traditional"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  },
+  {
+    "productId": "PRD-212",
+    "name": "Women's Ankle Strap Flats",
+    "category": "Footwear",
+    "subCategory": "Flats",
+    "description": "Pointed-toe flats with a delicate ankle strap and a metallic buckle. A polished everyday flat.",
+    "price": 1999,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Nude",
+      "Black",
+      "Gold"
+    ],
+    "tags": [
+      "flats",
+      "ankle strap",
+      "pointed toe",
+      "polished",
+      "everyday",
+      "footwear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=400"
+  },
+  {
+    "productId": "PRD-213",
+    "name": "Women's Wedge Boots",
+    "category": "Footwear",
+    "subCategory": "Boots",
+    "description": "Suede ankle boots with a concealed wedge heel and a side zip. Comfortable height with a sleek silhouette.",
+    "price": 4499,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Tan Suede",
+      "Black Suede",
+      "Bordeaux"
+    ],
+    "tags": [
+      "wedge boots",
+      "ankle boots",
+      "suede",
+      "concealed wedge",
+      "footwear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=400"
+  },
+  {
+    "productId": "PRD-214",
+    "name": "T-Bar Mary Jane Shoes",
+    "category": "Footwear",
+    "subCategory": "Heels",
+    "description": "Retro T-bar Mary Jane with a medium block heel and a round toe. A fashion-forward classic.",
+    "price": 3299,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Black",
+      "White",
+      "Cherry Red"
+    ],
+    "tags": [
+      "mary jane",
+      "T-bar",
+      "block heel",
+      "retro",
+      "fashion",
+      "footwear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400"
+  },
+  {
+    "productId": "PRD-215",
+    "name": "Sneaker Wedge",
+    "category": "Footwear",
+    "subCategory": "Sneakers",
+    "description": "Hidden wedge sneaker with a knit upper, lace-up front, and a 6cm concealed wedge sole. Sporty and stylish.",
+    "price": 3799,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "White",
+      "Black/White"
+    ],
+    "tags": [
+      "sneaker wedge",
+      "hidden wedge",
+      "sporty",
+      "fashion",
+      "footwear"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+  },
+  {
+    "productId": "PRD-216",
+    "name": "Mules with Bow Detail",
+    "category": "Footwear",
+    "subCategory": "Flats",
+    "description": "Grosgrain ribbon bow mule with a flat sole and a square toe. A cute and feminine everyday flat.",
+    "price": 1799,
+    "sizes": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "colors": [
+      "Black",
+      "Beige",
+      "Red",
+      "Baby Pink"
+    ],
+    "tags": [
+      "mules",
+      "bow",
+      "flat",
+      "feminine",
+      "square toe",
+      "casual"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=400"
+  },
+  {
+    "productId": "PRD-217",
+    "name": "Tie-Dye Silk Scrunchies",
+    "category": "Accessories",
+    "subCategory": "Hair Accessories",
+    "description": "Pack of 3 hand-dyed silk scrunchies in tie-dye patterns. Effortlessly cool and gentle on hair.",
+    "price": 799,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Pastel Tie-Dye",
+      "Berry Tie-Dye",
+      "Earth Tie-Dye"
+    ],
+    "tags": [
+      "scrunchie",
+      "tie-dye",
+      "silk",
+      "hair accessories",
+      "trendy"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400"
+  },
+  {
+    "productId": "PRD-218",
+    "name": "Crystal Hair Pins Set",
+    "category": "Accessories",
+    "subCategory": "Hair Accessories",
+    "description": "Set of 6 crystal rhinestone bobby pins in gold or silver settings. Embellish updos and braids with a sprinkle of sparkle.",
+    "price": 649,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Gold/Clear",
+      "Silver/Clear",
+      "Gold/Rainbow"
+    ],
+    "tags": [
+      "hair pins",
+      "crystal",
+      "bobby pins",
+      "sparkle",
+      "hair accessories"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400"
+  },
+  {
+    "productId": "PRD-219",
+    "name": "Printed Silk Bandana",
+    "category": "Accessories",
+    "subCategory": "Scarves",
+    "description": "Compact 55×55cm printed silk bandana. Style it as a headband, neck tie, wrist wrap, or bag accessory.",
+    "price": 899,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Abstract Print",
+      "Floral Print",
+      "Geometric Print"
+    ],
+    "tags": [
+      "bandana",
+      "silk",
+      "printed",
+      "versatile",
+      "accessories",
+      "scarf"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=400"
+  },
+  {
+    "productId": "PRD-220",
+    "name": "Fanny Pack — Nylon",
+    "category": "Accessories",
+    "subCategory": "Bags",
+    "description": "Lightweight nylon fanny pack with a main compartment, front zip pocket, and adjustable waist strap. Functional and sporty.",
+    "price": 1499,
+    "sizes": [
+      "Free Size"
+    ],
+    "colors": [
+      "Black",
+      "Sage Green",
+      "Navy",
+      "Hot Pink"
+    ],
+    "tags": [
+      "fanny pack",
+      "nylon",
+      "utility",
+      "hands-free",
+      "casual",
+      "bag"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+  }
+]

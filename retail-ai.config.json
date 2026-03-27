@@ -1,0 +1,5 @@
+{
+  "s3Bucket": "retail-ai-product-catalog-premansh-084644920232-us-east-1-an",
+  "awsRegion": "us-east-1",
+  "pineconeIndex": "retail-products"
+}

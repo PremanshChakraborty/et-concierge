@@ -1,0 +1,35 @@
+{
+  "name": "retail-ai-orchestrator",
+  "version": "1.0.0",
+  "description": "LangGraph RAG orchestrator Lambda for Retail AI",
+  "main": "dist/handler.js",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "dev": "ts-node src/handler.ts",
+    "typecheck": "tsc --noEmit",
+    "test:local": "ts-node src/local-test.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.600.0",
+    "@aws-sdk/client-dynamodb": "^3.600.0",
+    "@aws-sdk/lib-dynamodb": "^3.600.0",
+    "@langchain/aws": "^0.1.4",
+    "@langchain/core": "^0.3.0",
+    "@langchain/langgraph": "^0.2.0",
+    "@pinecone-database/pinecone": "^3.0.0",
+    "aws-jwt-verify": "^5.1.1",
+    "uuid": "^9.0.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^20.14.0",
+    "@types/uuid": "^9.0.8",
+    "aws-cdk": "^2.1112.0",
+    "aws-cdk-lib": "^2.244.0",
+    "constructs": "^10.5.1",
+    "esbuild": "^0.21.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  }
+}
