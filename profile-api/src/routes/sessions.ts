@@ -15,7 +15,7 @@ import type { LambdaResponse } from "../response";
 export async function listSessions(userId: string): Promise<LambdaResponse> {
   const result = await db.send(new QueryCommand({
     TableName:              SESSION_TABLE,
-    IndexName:              "userId-lastUpdated-index",
+    IndexName:              "userId-lastUpdated-index-v2",
     KeyConditionExpression: "userId = :uid",
     ExpressionAttributeValues: { ":uid": userId },
     ScanIndexForward:       false,   // newest first
@@ -23,11 +23,10 @@ export async function listSessions(userId: string): Promise<LambdaResponse> {
   }));
 
   const sessions = (result.Items ?? []).map((item) => ({
-    sessionId:        item.sessionId,
-    lastUpdated:      item.lastUpdated   ?? new Date(0).toISOString(),
-    currentMode:      item.currentMode   ?? "app",
-    currentStoreId:   item.currentStoreId   ?? null,
-    currentStoreName: item.currentStoreName ?? null,
+    sessionId:   item.sessionId,
+    sessionName: item.sessionName || null,
+    lastUpdated: item.lastUpdated ?? new Date(0).toISOString(),
+    currentMode: item.currentMode ?? "advisory",
   }));
 
   return ok({ sessions });
@@ -42,8 +41,7 @@ export async function getSessionHistory(
   const result = await db.send(new GetCommand({
     TableName: SESSION_TABLE,
     Key:       { sessionId },
-    // Project only the fields we need for the history view
-    ProjectionExpression: "sessionId, userId, #h, currentMode, currentStoreId, currentStoreName",
+    ProjectionExpression: "sessionId, sessionName, userId, #h, currentMode",
     ExpressionAttributeNames: { "#h": "history" },
   }));
 
@@ -56,12 +54,10 @@ export async function getSessionHistory(
     return notFound(`Session ${sessionId} not found`);
   }
 
-  // Return raw history array; frontend converts to ChatTurn format
   return ok({
-    sessionId:        result.Item.sessionId,
-    currentMode:      result.Item.currentMode      ?? "app",
-    currentStoreId:   result.Item.currentStoreId   ?? null,
-    currentStoreName: result.Item.currentStoreName ?? null,
-    history:          result.Item.history          ?? [],
+    sessionId:   result.Item.sessionId,
+    sessionName: result.Item.sessionName || null,
+    currentMode: result.Item.currentMode ?? "advisory",
+    history:     result.Item.history     ?? [],
   });
 }

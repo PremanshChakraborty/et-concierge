@@ -1,0 +1,753 @@
+[
+  {
+    "articleId": "ART-001",
+    "title": "India's Tech Salary Boom: Software Engineers Now Command ₹40L+ at Mid-Career",
+    "summary": "A new report by Xpheno shows that mid-career software engineers (8-12 years) in India are now commanding packages of ₹35-50 lakh, up 22% from 2024. The surge is driven by AI/ML specialisation, cloud architecture roles, and a shrinking senior talent pool as experienced developers move to startups or go freelance. Bengaluru leads with the highest median at ₹42L, followed by Hyderabad and Pune. Companies like Flipkart, Razorpay, and PhonePe are offering aggressive ESOPs to retain talent. The report recommends that engineers invest in upskilling — particularly in GenAI, Kubernetes, and system design — to stay competitive. Financial planners note that this cohort earns well but often lacks structured investment plans, making them prime candidates for SIP-based wealth creation and tax-efficient investing through NPS and ELSS.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/technology/india-tech-salary-boom-software-engineers",
+    "category": "Technology",
+    "published_at": 1742860800,
+    "author": "ET Bureau",
+    "tags": [
+      "salary",
+      "software-engineer",
+      "tech",
+      "career",
+      "esop",
+      "ai",
+      "upskilling"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400"
+  },
+  {
+    "articleId": "ART-002",
+    "title": "GenAI Is Reshaping India's IT Services Industry — Winners and Losers",
+    "summary": "Generative AI is fundamentally altering the $250 billion Indian IT services industry. TCS, Infosys, and Wipro are pivoting from body-shopping to AI-first delivery models, with GenAI-related revenue growing 40% YoY. However, traditional testing and maintenance roles are seeing 15-20% headcount reductions. Analysts predict that engineers who don't upskill in prompt engineering, LLM fine-tuning, and AI orchestration will face career stagnation. Nasscom estimates that 1.5 million IT workers need reskilling by 2027. The companies investing heavily in AI R&D — HCLTech and Tech Mahindra — are seeing premium valuations. For investors, this creates a clear thesis: overweight AI-capable IT firms, underweight legacy service providers. The article also highlights ET Masterclass courses on AI as a resource for professionals looking to future-proof their careers.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/technology/genai-reshaping-india-it-services",
+    "category": "Technology",
+    "published_at": 1742947200,
+    "author": "Surabhi Agarwal",
+    "tags": [
+      "genai",
+      "it-services",
+      "tcs",
+      "infosys",
+      "ai",
+      "reskilling",
+      "careers"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400"
+  },
+  {
+    "articleId": "ART-003",
+    "title": "Why Every Developer Should Think About Tax Planning Before March 31",
+    "summary": "With the financial year ending, software engineers face the annual dilemma: old tax regime or new? For those earning ₹20-50L, the old regime with full 80C, 80D, 80CCD(1B), and HRA deductions can save ₹1.5-2.5 lakh more than the new regime — but only if they've invested correctly. Key instruments: ELSS mutual funds (₹1.5L under 80C with only 3-year lock-in), NPS Tier 1 (additional ₹50K under 80CCD), and health insurance for parents (₹50K under 80D). Many tech professionals overlook NPS despite its dual benefit of retirement savings and tax efficiency. A ₹50,000 NPS contribution at age 28 can grow to ₹85 lakh by retirement assuming 10% CAGR. Financial advisors recommend engineers allocate at least 30% of their income to tax-efficient instruments before considering discretionary investments.",
+    "sourceUrl": "https://economictimes.indiatimes.com/wealth/tax/developer-tax-planning-march",
+    "category": "Personal Finance",
+    "published_at": 1743033600,
+    "author": "Preeti Kulkarni",
+    "tags": [
+      "tax-planning",
+      "software-engineer",
+      "80c",
+      "elss",
+      "nps",
+      "old-vs-new-regime"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400"
+  },
+  {
+    "articleId": "ART-004",
+    "title": "ESOPs Decoded: How to Value, Exercise, and Tax Your Stock Options",
+    "summary": "Stock options are a major component of tech compensation in India, yet most engineers don't understand their true value. This deep-dive explains the lifecycle of ESOPs — from grant to vesting to exercise to sale. Key takeaways: ESOPs are taxed twice — at exercise (perquisite tax at slab rate) and at sale (capital gains). The tax incidence at exercise can be brutal if the FMV is high. Strategies to minimise tax: exercise in a low-income year, stagger exercises across financial years, or wait for IPO/listing events. The article compares ESOP taxation in India vs the US (where Section 83(b) elections exist). For startup employees, the 2024 amendment allowing tax deferral for listed company ESOPs is a game-changer. Experts recommend maintaining a separate ESOP investment plan and not treating options as guaranteed wealth.",
+    "sourceUrl": "https://economictimes.indiatimes.com/wealth/tax/esop-decoded-value-exercise-tax",
+    "category": "Personal Finance",
+    "published_at": 1743120000,
+    "author": "Babar Zaidi",
+    "tags": [
+      "esop",
+      "stock-options",
+      "tax",
+      "startup",
+      "tech-compensation",
+      "capital-gains"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=400"
+  },
+  {
+    "articleId": "ART-005",
+    "title": "Cloud Wars: AWS vs Azure vs GCP — Which Certification Pays Most in India?",
+    "summary": "Cloud certifications remain the highest-ROI upskilling investment for Indian developers. AWS Solutions Architect Professional commands a 35% salary premium, followed by Google Cloud Professional Data Engineer (30%) and Azure DevOps Engineer Expert (28%). The cloud market in India is growing at 25% CAGR, with enterprises spending ₹68,000 crore in 2025. Multi-cloud skills are increasingly valued — engineers certified across two platforms earn 45% more than single-cloud specialists. Bengaluru-based cloud architects report median salaries of ₹55L at senior levels. The article recommends starting with AWS Cloud Practitioner as a foundation, then specialising based on domain — data engineering for analytics roles, security for fintech, and DevOps for SaaS companies. Several ET Masterclass offerings cover cloud architecture and platform engineering.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/technology/cloud-certifications-salary-india",
+    "category": "Technology",
+    "published_at": 1743206400,
+    "author": "Raghu Krishnananda",
+    "tags": [
+      "cloud",
+      "aws",
+      "azure",
+      "gcp",
+      "certification",
+      "salary",
+      "upskilling"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400"
+  },
+  {
+    "articleId": "ART-006",
+    "title": "Startup Layoffs Continue: 12,000 Tech Workers Let Go in Q1 2026",
+    "summary": "The startup winter persists. Over 12,000 tech workers were laid off in Q1 2026 across 45 Indian startups, with edtech, quick-commerce, and B2B SaaS sectors hit hardest. Byju's, Unacademy, and Ola Electric accounted for 40% of the cuts. However, the picture isn't uniformly bleak — fintech and AI startups added 8,000 jobs in the same period. Severance packages varied wildly from 1 month to 6 months of pay. Career coaches recommend laid-off engineers build an emergency fund covering 6-9 months of expenses, upskill during the transition (GenAI and system design are high-demand areas), and consider term insurance as many lose employer group coverage. The article profiles three engineers who used their severance period to launch freelance practices earning ₹15-25L annually.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/startups/startup-layoffs-q1-2026",
+    "category": "Technology",
+    "published_at": 1743292800,
+    "author": "Samidha Sharma",
+    "tags": [
+      "layoffs",
+      "startup",
+      "tech",
+      "career",
+      "emergency-fund",
+      "insurance",
+      "freelance"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400"
+  },
+  {
+    "articleId": "ART-007",
+    "title": "The ₹1 Crore SIP Plan: How a 28-Year-Old Engineer Can Retire at 50",
+    "summary": "A 28-year-old software engineer earning ₹18L can build a ₹1 crore retirement corpus by 50 with disciplined SIP investing. The math: ₹15,000/month in an equity mutual fund growing at 12% CAGR yields ₹1.05 crore in 22 years. Add a 10% annual step-up, and the corpus jumps to ₹2.1 crore. Key fund categories: large-cap for stability (SBI Bluechip), mid-cap for growth (Axis Midcap), and flexi-cap for diversification (Parag Parikh Flexi Cap). The article warns against common mistakes — stopping SIPs during market crashes, chasing sectoral funds, and ignoring direct plans. For tax efficiency, combining ELSS (80C benefit) with NPS (80CCD benefit) creates a powerful dual-benefit engine. Financial planners recommend reviewing fund performance every 3 years and switching underperformers rather than reacting to quarterly NAV dips.",
+    "sourceUrl": "https://economictimes.indiatimes.com/wealth/invest/1-crore-sip-plan-young-engineer",
+    "category": "Personal Finance",
+    "published_at": 1743379200,
+    "author": "Narendra Nathan",
+    "tags": [
+      "sip",
+      "retirement",
+      "engineer",
+      "mutual-fund",
+      "corpus",
+      "financial-planning",
+      "step-up"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400"
+  },
+  {
+    "articleId": "ART-008",
+    "title": "Health Insurance for Tech Workers: Why Your Employer Cover Isn't Enough",
+    "summary": "Most tech companies provide ₹5-10L group health insurance, but that's dangerously inadequate for a family in a metro city. A single hospitalisation for cardiac surgery or cancer treatment can cost ₹15-25L in Mumbai or Bengaluru. The article recommends every engineer buy a ₹25-50L individual/family floater policy as a top-up. Key comparison: Star Health Family Optima (14,000+ hospitals, maternity) vs Niva Bupa Health Companion (₹1Cr option, AYUSH cover) vs HDFC Ergo Optima Restore (automatic sum insured restoration). For a 30-year-old non-smoker, a ₹25L family floater costs just ₹12,000-18,000/year — less than one restaurant dinner per month. Section 80D allows ₹25K deduction for self and ₹50K for parents over 60. The article profiles a Flipkart engineer whose employer insurance was exhausted after his father's bypass surgery, leaving ₹8L out of pocket.",
+    "sourceUrl": "https://economictimes.indiatimes.com/wealth/insure/health-insurance-tech-workers",
+    "category": "Personal Finance",
+    "published_at": 1743465600,
+    "author": "Sanket Dhanorkar",
+    "tags": [
+      "health-insurance",
+      "tech",
+      "employer-cover",
+      "family-floater",
+      "80d",
+      "hospitalisation"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400"
+  },
+  {
+    "articleId": "ART-009",
+    "title": "India's SaaS Boom Creates New Class of Millionaire Developers",
+    "summary": "India's SaaS sector crossed $18 billion in ARR in 2025, creating a new class of wealthy developers — not founders, but early employees. At companies like Freshworks, Zoho, Postman, and Razorpay, engineers who joined early hold ESOPs now worth ₹1-10 crore. But sudden wealth brings challenges: lifestyle inflation, poor tax planning, concentrated stock risk, and no diversification. Wealth managers recommend a simple framework for ESOP-rich engineers — sell 30% at each vesting event, invest in diversified mutual funds, buy adequate term and health insurance, and maintain a 12-month emergency fund. The article interviews a Freshworks engineer who exercised ₹3 crore in ESOPs but paid ₹85 lakh in taxes because he didn't plan the exercise timing. A Smallcase portfolio focused on wealth preservation could have saved him significant tax.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/startups/saas-millionaire-developers-india",
+    "category": "Technology",
+    "published_at": 1743552000,
+    "author": "Jochelle Mendonca",
+    "tags": [
+      "saas",
+      "esop",
+      "wealth",
+      "developer",
+      "freshworks",
+      "zoho",
+      "tax-planning"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400"
+  },
+  {
+    "articleId": "ART-010",
+    "title": "Remote Work in 2026: Salary Adjustments, Tax Implications, and the Gig Economy",
+    "summary": "Remote work is now permanent for 60% of Indian tech workers, but compensation models are shifting. Companies are introducing location-based pay, reducing Bengaluru salaries by 10-15% for employees who moved to Tier 2 cities. Tax complications arise for engineers working from different states — Karnataka vs Goa vs Rajasthan tax rules differ. The gig economy is also absorbing tech talent: platforms like Toptal and A.Team report a 3x increase in Indian freelance developers in 2025. Freelancers earning ₹50L+ need to navigate GST registration, advance tax payments, and professional tax. The article recommends setting up a personal finance system early: separate business and personal accounts, quarterly tax provisioning, and health insurance since no employer covers freelancers. ET's personal finance tools and courses cover tax planning specifically for independent professionals.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/technology/remote-work-2026-salary-tax-gig",
+    "category": "Technology",
+    "published_at": 1743638400,
+    "author": "Priyanka Sangani",
+    "tags": [
+      "remote-work",
+      "salary",
+      "tax",
+      "freelance",
+      "gig-economy",
+      "gst",
+      "health-insurance"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400"
+  },
+  {
+    "articleId": "ART-011",
+    "title": "5 Fintech Apps Every Software Engineer Should Use in 2026",
+    "summary": "Software engineers are uniquely positioned to leverage fintech tools — they understand APIs, data, and automation. This curated list covers: 1) Zerodha Kite — still the gold standard for trading with its clean API for algo experiments. 2) Groww — best for beginners starting their first SIP with zero-commission direct plans. 3) ET Money Genius — AI-powered tax optimisation and smart SIP step-ups. 4) Smallcase — thematic investing for engineers who want to bet on sectors they understand (EV, cloud, digitalisation). 5) INDMoney — consolidated portfolio view across stocks, MFs, EPF, NPS, and US stocks. The article compares fee structures, UX quality, and API availability. For engineers interested in building trading bots, Zerodha's Kite Connect API and Angel One's Smart API are recommended as starting points.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/technology/fintech-apps-software-engineer-2026",
+    "category": "Technology",
+    "published_at": 1743724800,
+    "author": "Ashwin Manikandan",
+    "tags": [
+      "fintech",
+      "apps",
+      "zerodha",
+      "groww",
+      "et-money",
+      "smallcase",
+      "engineer"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400"
+  },
+  {
+    "articleId": "ART-012",
+    "title": "Cybersecurity Careers Explode: India Needs 1.5 Million Specialists by 2027",
+    "summary": "India faces a cybersecurity talent deficit of 1.5 million professionals by 2027, according to a DSCI-NASSCOM report. SOC analysts, cloud security architects, and AI security engineers are the most in-demand roles with salaries 40-60% above standard developer pay. The RBI's new digital lending framework and SEBI's cybersecurity circular are creating mandatory compliance roles across fintech and BFSI sectors. For software engineers considering a career pivot, CISSP and CEH certifications offer the best ROI, while hands-on experience with SIEM tools (Splunk, Sentinel) and penetration testing frameworks (Burp Suite, Metasploit) are table stakes. The article highlights ET Tech Leaders Conclave as a venue where cybersecurity trends are discussed, and recommends cloud security specialisation courses for engineers looking to transition.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/technology/cybersecurity-careers-india-2027",
+    "category": "Technology",
+    "published_at": 1743811200,
+    "author": "Himanshi Lohchab",
+    "tags": [
+      "cybersecurity",
+      "career",
+      "salary",
+      "certification",
+      "rbi",
+      "sebi",
+      "cloud-security"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910adef?w=400"
+  },
+  {
+    "articleId": "ART-013",
+    "title": "Budget 2027 Wishlist: What IT Industry Wants from the Finance Minister",
+    "summary": "Nasscom, startup lobby groups, and IT industry bodies have submitted their Budget 2027 wishlists. Top demands: 1) Increase Section 80C limit from ₹1.5L to ₹3L to account for inflation. 2) Exempt ESOPs from perquisite tax for startups valued under ₹1000 crore. 3) Reduce angel tax provisions further. 4) Increase the NPS employer contribution deduction to 14% for private sector (matching government employees). 5) Introduce a dedicated R&D tax credit for AI investments. The IT industry also wants simplified GST for SaaS companies selling internationally. For individual engineers, the most impactful changes would be the 80C increase and ESOP tax reform. The article analyzes each demand's probability of acceptance and potential portfolio impact if implemented.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/technology/budget-2027-it-industry-wishlist",
+    "category": "Economy & Policy",
+    "published_at": 1743897600,
+    "author": "Surabhi Agarwal",
+    "tags": [
+      "budget",
+      "tax",
+      "80c",
+      "esop",
+      "nasscom",
+      "nps",
+      "r&d-credit"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400"
+  },
+  {
+    "articleId": "ART-014",
+    "title": "System Design Interview Prep: The Hidden ROI of ₹50 Lakh Packages",
+    "summary": "Cracking a system design interview at a top-tier tech company can mean a ₹20-50L salary jump. The article profiles five engineers who invested 3-6 months in structured preparation and landed ₹40-80L offers at Google, Microsoft, Uber, and Swiggy. Recommended resources: Designing Data-Intensive Applications by Martin Kleppmann, System Design Interview by Alex Xu, and Gaurav Sen's YouTube channel. The real ROI extends beyond salary — higher packages mean higher savings rate, faster corpus building, and earlier financial independence. An engineer who moves from ₹25L to ₹50L and invests the entire ₹25L increment can build ₹3.5 crore in 15 years at 12% CAGR. The article connects career growth directly to financial planning, recommending that engineers reinvest salary jumps into mutual fund SIPs and term insurance to protect their increased earning potential.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/technology/system-design-interview-roi",
+    "category": "Technology",
+    "published_at": 1743984000,
+    "author": "ET Bureau",
+    "tags": [
+      "system-design",
+      "interview",
+      "salary",
+      "career",
+      "sip",
+      "financial-planning",
+      "upskilling"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=400"
+  },
+  {
+    "articleId": "ART-015",
+    "title": "How Indian Tech Companies Are Building AI Labs — And What It Means for Engineers",
+    "summary": "Every major Indian tech company is now building an in-house AI lab. TCS has AI.Cloud, Infosys has Topaz, Wipro has ai360, and HCLTech launched AI Force. These labs are hiring 500-1000 engineers each, offering 2-3x internal transfer premiums. Skill requirements: transformer architectures, RAG pipelines, vector databases (Pinecone, Weaviate), LangChain/LlamaIndex, and MLOps. For engineers already in these companies, internal AI lab transfers are the fastest path to career acceleration without changing employers. The article notes that AI lab engineers are also seeing higher ESOP allocations and faster promotion cycles. ET's AI for Business Leaders masterclass is recommended for managers looking to understand how to build and lead AI teams, while the financial implications of AI-driven career growth make SIP step-ups and portfolio diversification essential.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/technology/indian-tech-ai-labs-engineers",
+    "category": "Technology",
+    "published_at": 1744070400,
+    "author": "Surabhi Agarwal",
+    "tags": [
+      "ai",
+      "labs",
+      "tcs",
+      "infosys",
+      "career",
+      "rag",
+      "langchain",
+      "hiring"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400"
+  },
+  {
+    "articleId": "ART-016",
+    "title": "Developer Side Projects That Actually Make Money in India",
+    "summary": "Beyond the day job, Indian developers are building profitable side projects. This article profiles 8 developers earning ₹5-50L annually from side projects — SaaS tools, Chrome extensions, Telegram bots, and niche API services. The most profitable niches: GST compliance tools, WhatsApp business automation, competitive exam platforms, and AI-powered content tools for regional languages. Tax implications are real — side income above ₹20L triggers GST registration, and all income must be declared under 'income from other sources' or 'business income'. The article recommends consulting a CA before scaling, and investing side project income into liquid funds (for tax provisioning) and diversified equity MFs (for wealth building). ET Money's SIP calculator and Groww's direct MF platform are highlighted as tools for automating investment of side income.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/technology/developer-side-projects-money-india",
+    "category": "Technology",
+    "published_at": 1744156800,
+    "author": "Ashwin Manikandan",
+    "tags": [
+      "side-project",
+      "developer",
+      "income",
+      "saas",
+      "gst",
+      "tax",
+      "investing"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400"
+  },
+  {
+    "articleId": "ART-017",
+    "title": "Term Insurance at 25 vs 35: The ₹40 Lakh Difference Nobody Talks About",
+    "summary": "Buying term insurance at 25 vs 35 can save over ₹40 lakh in total premiums for the same ₹1 crore cover over a 40-year term. A 25-year-old non-smoker pays approximately ₹6,500/year for ₹1 crore cover (ICICI iProtect Smart), while a 35-year-old pays ₹12,500 — nearly double. Over 40 years, that's ₹2.6L vs ₹5L, but the real difference is in the investment opportunity cost. The ₹6,000 saved annually, invested in an equity SIP at 12% CAGR, compounds to ₹40+ lakh over the term. The article debunks common excuses — 'I'm young and healthy,' 'my employer covers me,' 'I'll buy later when I have family.' Every year of delay costs money. HDFC Life Click 2 Protect and ICICI iProtect Smart are compared on claim settlement ratios, rider options, and payout flexibility.",
+    "sourceUrl": "https://economictimes.indiatimes.com/wealth/insure/term-insurance-25-vs-35",
+    "category": "Personal Finance",
+    "published_at": 1744243200,
+    "author": "Sanket Dhanorkar",
+    "tags": [
+      "term-insurance",
+      "young-professional",
+      "premium",
+      "comparison",
+      "icici",
+      "hdfc-life"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400"
+  },
+  {
+    "articleId": "ART-018",
+    "title": "India's GCC Boom: Why Global Firms Are Hiring 500,000 Engineers in India",
+    "summary": "Global Capability Centres (GCCs) in India now employ 1.9 million professionals and are projected to reach 2.5 million by 2028. Companies like Goldman Sachs, JP Morgan, Google, and Mercedes-Benz are building massive engineering hubs in Bengaluru, Hyderabad, and Pune. GCC salaries now rival product companies — senior engineers earn ₹40-70L, and the benefits include global exposure, better work-life balance, and structured career paths. The GCC wave is also pushing up real estate prices in tech corridors — Bellandur, Whitefield, and Gachibowli have seen 20-30% appreciation in 2 years. For engineers eyeing GCC opportunities, upskilling in domain-specific areas (fintech for banking GCCs, automotive software for German automakers) is key. The article also notes that GCC employees are prime candidates for wealth building through systematic MF investing, NPS, and real estate.",
+    "sourceUrl": "https://economictimes.indiatimes.com/tech/technology/india-gcc-boom-hiring-engineers",
+    "category": "Technology",
+    "published_at": 1744329600,
+    "author": "Raghu Krishnananda",
+    "tags": [
+      "gcc",
+      "hiring",
+      "salary",
+      "bengaluru",
+      "hyderabad",
+      "real-estate",
+      "career"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400"
+  },
+  {
+    "articleId": "ART-019",
+    "title": "Why Engineers Make Better Investors — And Where They Go Wrong",
+    "summary": "Engineers bring analytical thinking, data literacy, and systems mindset to investing — natural advantages. Studies show that STEM professionals outperform average retail investors by 3-5% annually. Their strengths: understanding compound interest intuitively, building spreadsheet models for portfolio tracking, and treating investing as a system rather than gambling. But engineers also have blind spots: over-optimising (churning portfolios chasing basis points), analysis paralysis (spending months researching instead of starting a SIP), and anchoring bias (holding losing positions because 'the fundamentals should work'). The article recommends a simple framework: automate 30% of take-home into mutual fund SIPs, buy term insurance equal to 20x annual income, keep 6 months expenses in liquid funds, and review annually — not monthly. ET's Stock Screener and Portfolio Analyser tools are specifically recommended for data-driven engineers who want quantitative approaches to investing.",
+    "sourceUrl": "https://economictimes.indiatimes.com/wealth/invest/engineers-better-investors-mistakes",
+    "category": "Personal Finance",
+    "published_at": 1744416000,
+    "author": "Narendra Nathan",
+    "tags": [
+      "investing",
+      "engineer",
+      "mistakes",
+      "sip",
+      "portfolio",
+      "behavioural-finance",
+      "automation"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400"
+  },
+  {
+    "articleId": "ART-020",
+    "title": "Home Loan vs Renting: The Math for ₹30L+ Earning Tech Professionals in Bengaluru",
+    "summary": "Should a senior software engineer earning ₹35L buy a ₹1.2 crore apartment in Whitefield or continue renting at ₹35,000/month? The article runs the numbers both ways. Buying: ₹24L down payment, ₹96L loan at 8.75% over 20 years = ₹85,000 EMI. Total outflow: ₹2.28 crore including registration, interiors, and maintenance. Renting + investing: ₹35,000 rent + ₹50,000 SIP in equity MFs at 12% CAGR = ₹5.2 crore corpus in 20 years. The rent-and-invest strategy wins by ₹2.9 crore on paper — but the article acknowledges that forced discipline (EMI as mandatory saving), rent escalation (5-8% annually), and emotional value of ownership change the calculus. For those who do buy, HDFC Home Loan's balance transfer facility (switching from a higher-rate lender) can save ₹5-15L over the loan tenure. The article recommends REITs as a middle ground for real estate exposure without ownership hassles.",
+    "sourceUrl": "https://economictimes.indiatimes.com/wealth/real-estate/home-loan-vs-renting-bengaluru-tech",
+    "category": "Personal Finance",
+    "published_at": 1744502400,
+    "author": "Kailash Babar",
+    "tags": [
+      "home-loan",
+      "renting",
+      "bengaluru",
+      "real-estate",
+      "emi",
+      "sip",
+      "reit"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400"
+  },
+  {
+    "articleId": "ART-021",
+    "title": "Mid-Cap Funds Outperform Large-Caps for Third Straight Quarter — Should You Shift?",
+    "summary": "Mid-cap mutual funds delivered 18.2% average returns in Q4 FY26, outpacing large-cap funds (12.1%) for the third consecutive quarter. The Nifty Midcap 150 index is up 32% YoY, driven by domestic consumption recovery and capex beneficiaries. However, SEBI's recent warning about frothy valuations (mid-cap PE at 28x vs long-term average of 22x) has triggered caution. Fund managers are split — Kotak AMC's Nilesh Shah recommends profit-booking in mid-caps, while Motilal Oswal's Prateek Agrawal sees another 18 months of outperformance. For investors, the advice is nuanced: don't exit mid-caps entirely but reduce allocation from 40% to 25% of equity portfolio. Use the ET Mutual Fund Research Tool to compare rolling returns and portfolio overlap before rebalancing. SIP step-up in large-cap funds is recommended as a hedge.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/mid-cap-outperform-large-cap-q4",
+    "category": "Markets",
+    "published_at": 1744588800,
+    "author": "Narendra Nathan",
+    "tags": [
+      "mid-cap",
+      "large-cap",
+      "mutual-fund",
+      "returns",
+      "rebalancing",
+      "sebi",
+      "valuation"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400"
+  },
+  {
+    "articleId": "ART-022",
+    "title": "ELSS vs PPF vs NPS: The Ultimate Tax-Saving Showdown for FY27",
+    "summary": "With ₹1.5 lakh available under Section 80C, which instrument delivers the best risk-adjusted return? ELSS wins on pure returns (14-16% CAGR over 10 years) with the shortest lock-in (3 years), but comes with equity volatility. PPF offers guaranteed 7.1% tax-free returns with sovereign safety but locks money for 15 years. NPS sits in between — market-linked returns (10-12% historical), flexible equity allocation, and an extra ₹50K deduction under 80CCD(1B). The optimal strategy: allocate ₹1.5L to ELSS (80C), ₹50K to NPS (80CCD), and use PPF only if you need guaranteed returns. For MF enthusiasts already running SIPs, switching one SIP to an ELSS fund kills two birds — wealth creation and tax saving. Axis Long Term Equity Fund and Mirae Asset Tax Saver are top ELSS picks based on rolling returns and downside protection.",
+    "sourceUrl": "https://economictimes.indiatimes.com/wealth/tax/elss-ppf-nps-tax-saving-showdown",
+    "category": "Personal Finance",
+    "published_at": 1744675200,
+    "author": "Preeti Kulkarni",
+    "tags": [
+      "elss",
+      "ppf",
+      "nps",
+      "tax-saving",
+      "80c",
+      "80ccd",
+      "mutual-fund"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400"
+  },
+  {
+    "articleId": "ART-023",
+    "title": "SIP Step-Up: The ₹500/Month Trick That Doubles Your Corpus",
+    "summary": "Most SIP investors set a fixed monthly amount and forget it. But a simple 10% annual step-up can nearly double the final corpus. Example: ₹10,000/month SIP at 12% CAGR yields ₹1.05 crore in 20 years. The same SIP with 10% annual step-up yields ₹1.94 crore — 85% more. The key insight: step-ups are painless because they coincide with salary increments. A software engineer getting 10-15% annual hikes can easily absorb a ₹1,000-2,000/month SIP increase each April. ET Money Genius automates this with its Smart Step-Up feature, and Groww allows manual step-up configuration on any SIP. For maximum impact, apply step-ups to flexi-cap and mid-cap funds rather than debt funds. The article includes a step-up SIP calculator showing projections for ₹5K, ₹10K, ₹15K, and ₹25K starting SIPs.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/sip-step-up-double-corpus",
+    "category": "Personal Finance",
+    "published_at": 1744761600,
+    "author": "Narendra Nathan",
+    "tags": [
+      "sip",
+      "step-up",
+      "corpus",
+      "mutual-fund",
+      "compounding",
+      "wealth-creation"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=400"
+  },
+  {
+    "articleId": "ART-024",
+    "title": "RBI Holds Rates Steady — What It Means for Your FD and Loan EMIs",
+    "summary": "The Reserve Bank of India kept the repo rate unchanged at 6.5% for the ninth consecutive time, citing persistent food inflation at 8.2%. For mutual fund investors, the status quo has mixed implications. Debt fund returns remain attractive — short-duration and corporate bond funds are yielding 7.5-8.5%. But the rate-cut cycle expected in H2 FY27 could trigger a bond rally, making long-duration gilt funds an attractive tactical play. For FD investors, current rates (7.5-8.85% for senior citizens at Bajaj Finance and SBI) are near peak — locking in 3-5 year FDs now makes sense before rates fall. EMI borrowers can breathe easy — no increase, and potential cuts ahead could reduce home loan EMIs by ₹2,000-4,000/month for a ₹50L loan. The article recommends a barbell strategy: short-duration debt funds for stability and gilt funds for rate-cut upside.",
+    "sourceUrl": "https://economictimes.indiatimes.com/markets/rbi-rate-hold-fd-emi-impact",
+    "category": "Economy & Policy",
+    "published_at": 1744848000,
+    "author": "Babar Zaidi",
+    "tags": [
+      "rbi",
+      "repo-rate",
+      "fd",
+      "emi",
+      "debt-fund",
+      "gilt",
+      "interest-rate"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400"
+  },
+  {
+    "articleId": "ART-025",
+    "title": "The Hidden Cost of Regular Plans: How Your Distributor Eats 30% of Returns",
+    "summary": "A bombshell analysis by Value Research shows that the average regular plan mutual fund generates 1.2-1.8% lower annual returns than its direct plan counterpart due to distributor commissions. Over 20 years, this compounds devastatingly — a ₹10,000/month SIP in a regular plan yields ₹89 lakh vs ₹1.05 crore in the direct plan at 12% vs 13.5% CAGR. That's a ₹16 lakh difference, or roughly 30% of the additional returns eaten by commissions. The article explains how to switch from regular to direct plans on Groww, ET Money, and Coin (Zerodha) — the process is simple but triggers a taxable event on the switched units. For investors with large regular plan holdings, a phased switch over 2-3 years is recommended to manage capital gains tax. The ET Mutual Fund Research Tool lets investors compare direct vs regular plan returns for any scheme.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/regular-vs-direct-plan-cost",
+    "category": "Personal Finance",
+    "published_at": 1744934400,
+    "author": "Dhirendra Kumar",
+    "tags": [
+      "direct-plan",
+      "regular-plan",
+      "commission",
+      "expense-ratio",
+      "mutual-fund",
+      "returns"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400"
+  },
+  {
+    "articleId": "ART-026",
+    "title": "Flexi-Cap Funds: The Only Category You Need? Top 5 Picks for 2026",
+    "summary": "Flexi-cap funds — which can invest across large, mid, and small-cap stocks without allocation constraints — have emerged as the default choice for core equity allocation. Top performers in 2025: Parag Parikh Flexi Cap (22% return, global diversification via Alphabet and Microsoft holdings), HDFC Flexi Cap (19%, value-oriented), Quant Flexi Cap (25%, momentum-driven but volatile). The category's advantage is fund manager discretion — they can shift to large-caps in downturns and mid-caps in rallies. For a ₹25,000/month SIP budget, the recommended split: ₹15,000 in flexi-cap (core), ₹7,000 in mid-cap (growth), ₹3,000 in ELSS (tax saving). Use the ET Stock Screener to understand what stocks your flexi-cap fund holds, and Stock Reports Plus to evaluate those holdings independently.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/flexi-cap-funds-top-5-picks-2026",
+    "category": "Markets",
+    "published_at": 1745020800,
+    "author": "Narendra Nathan",
+    "tags": [
+      "flexi-cap",
+      "mutual-fund",
+      "parag-parikh",
+      "hdfc",
+      "quant",
+      "portfolio",
+      "sip"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400"
+  },
+  {
+    "articleId": "ART-027",
+    "title": "SEBI's New MF Rules: Expense Ratio Caps and What They Mean for Your Returns",
+    "summary": "SEBI's latest circular reduces expense ratio caps for equity mutual funds by 10-25 basis points across AUM slabs. For a fund with ₹50,000 crore AUM, the new cap is 1.05% vs 1.25% previously. This translates to approximately ₹200-500 more in annual returns per ₹1 lakh invested — seemingly small but compounding to ₹2-5 lakh over 20 years on a ₹50L portfolio. The circular also mandates that fund houses disclose total cost of ownership including GST and brokerage. Index funds and ETFs remain the cheapest option at 0.05-0.15% expense ratio. The article debates whether the trend toward lower costs will eventually make passive investing dominant in India (as it has in the US), or whether Indian market inefficiencies still justify active management premiums. ET Markets Pro subscribers can track real-time expense ratio changes across funds.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/sebi-expense-ratio-cap-impact",
+    "category": "Markets",
+    "published_at": 1745107200,
+    "author": "Prashant Mahesh",
+    "tags": [
+      "sebi",
+      "expense-ratio",
+      "regulation",
+      "mutual-fund",
+      "index-fund",
+      "etf",
+      "passive"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=400"
+  },
+  {
+    "articleId": "ART-028",
+    "title": "Thematic Investing: Why 'India's Digital Revolution' Smallcases Are Up 35% This Year",
+    "summary": "Thematic smallcases focused on India's digital transformation have returned 35% in 2025, outperforming the Nifty 50 by 18 percentage points. The 'Digital India' smallcase by Windmill Capital holds stocks like Persistent Systems, Coforge, Tata Elxsi, and CDSL. The appeal: investors can bet on a macro theme they understand without picking individual stocks. However, thematic concentration carries risks — the 'EV Revolution' smallcase crashed 22% when subsidy cuts were announced. Best practices for thematic investing: limit to 15-20% of portfolio, combine with core diversified funds, and set a 2-3 year minimum horizon. Smallcase's rebalancing alerts (quarterly) help maintain the thesis. The article compares Smallcase fees (₹100-500 per smallcase) vs building the same basket manually on Zerodha or Groww.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/thematic-smallcase-digital-india",
+    "category": "Markets",
+    "published_at": 1745193600,
+    "author": "Ashwin Manikandan",
+    "tags": [
+      "smallcase",
+      "thematic",
+      "digital-india",
+      "stocks",
+      "portfolio",
+      "zerodha",
+      "groww"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=400"
+  },
+  {
+    "articleId": "ART-029",
+    "title": "The Big Bull Tracker: What Ace Investors Bought and Sold in Q4 FY26",
+    "summary": "Quarterly portfolio disclosures reveal fascinating moves by India's marquee investors. Dolly Khanna added 3 new mid-cap stocks — a packaging company, a specialty chemical firm, and a textile exporter. Vijay Kedia increased his stake in a Tier-2 city real estate developer by 2% while fully exiting an IT services company. Ashish Kacholia's portfolio now holds 42 stocks, with a tilt toward defense and capital goods. The Jhunjhunwala Trust maintained its Titan and Star Health positions unchanged. For retail investors, these portfolios serve as idea generators — not buy lists. Always do independent due diligence using Stock Reports Plus before following ace investor moves. The ET Big Bull Portfolio Tracker provides the most comprehensive quarterly tracking with new entry/exit alerts delivered to ET Prime subscribers.",
+    "sourceUrl": "https://economictimes.indiatimes.com/markets/stocks/big-bull-portfolio-q4-fy26",
+    "category": "Markets",
+    "published_at": 1745280000,
+    "author": "Amit Mudgill",
+    "tags": [
+      "big-bull",
+      "ace-investors",
+      "portfolio",
+      "dolly-khanna",
+      "kedia",
+      "kacholia",
+      "quarterly"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400"
+  },
+  {
+    "articleId": "ART-030",
+    "title": "Index Funds vs Active Funds: The Debate India Can No Longer Ignore",
+    "summary": "For the first time, more than 50% of large-cap active funds underperformed the Nifty 50 index over a 5-year period. The SPIVA India Scorecard 2025 shows that passive investing is gaining ground as Indian markets mature. Nifty 50 index funds from UTI and HDFC charge just 0.10% expense ratio vs 1.5-2.0% for active large-cap funds. However, in mid-cap and small-cap categories, active funds still outperform indices by 3-5% — Indian market inefficiencies below the top 100 stocks remain exploitable. The recommended hybrid approach: use index funds/ETFs for large-cap allocation (core) and active funds for mid/small-cap (satellite). For beginners, a single Nifty 50 index fund SIP is the simplest starting point. ET's Mutual Fund Research Tool allows side-by-side comparison of index vs active fund returns across all timeframes.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/index-vs-active-funds-india",
+    "category": "Markets",
+    "published_at": 1745366400,
+    "author": "Dhirendra Kumar",
+    "tags": [
+      "index-fund",
+      "active-fund",
+      "passive-investing",
+      "spiva",
+      "nifty-50",
+      "etf",
+      "expense-ratio"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1559526324-593bc073d938?w=400"
+  },
+  {
+    "articleId": "ART-031",
+    "title": "Debt Mutual Funds After the Tax Change: Are They Still Worth It?",
+    "summary": "The 2023 tax change that removed long-term capital gains benefit from debt funds continues to reshape investor behavior. Debt MF inflows dropped 40% YoY as investors shifted to bank FDs and new-age FD products offering 8.5-9% returns. But fund managers argue that debt funds still have advantages: daily liquidity, professional credit risk management, and potential for capital gains in a rate-cut cycle. Short-duration funds (6-12 month horizon) are yielding 7.5-8% pre-tax, comparable to FDs after factoring in the liquidity premium. For investors in the 30% tax bracket, the effective post-tax yield is similar. The article makes a case for liquid funds as emergency fund vehicles, corporate bond funds for 2-3 year goals, and gilt funds as a tactical rate-cut play. Bajaj Finance FD remains the best fixed-rate alternative at 8.85% for senior citizens.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/debt-fund-tax-change-worth-it",
+    "category": "Personal Finance",
+    "published_at": 1745452800,
+    "author": "Babar Zaidi",
+    "tags": [
+      "debt-fund",
+      "tax",
+      "fd",
+      "fixed-deposit",
+      "liquid-fund",
+      "gilt",
+      "rate-cut"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400"
+  },
+  {
+    "articleId": "ART-032",
+    "title": "NFO Alert: 15 New Fund Offers in April — Which Ones Are Worth Subscribing?",
+    "summary": "April 2026 sees 15 new fund offers across equity, debt, and hybrid categories. Notable launches: Mirae Asset Business Cycle Fund (sectoral rotation strategy), ICICI Prudential India Innovation Fund (deep-tech and biotech focus), and Kotak Multi-Asset Allocation Fund (equity + debt + gold + REITs). The article's verdict: avoid NFOs in categories where proven funds already exist (another large-cap fund is unnecessary). Consider NFOs only if they offer genuine differentiation — the Kotak Multi-Asset fund's REIT allocation is novel for retail investors. Historical data shows that 70% of NFOs underperform category average in their first 3 years. The safest strategy: wait 2-3 years for an NFO to build a track record, then evaluate using rolling returns and downside capture ratio on the ET Mutual Fund Research Tool.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/nfo-april-2026-worth-subscribing",
+    "category": "Markets",
+    "published_at": 1745539200,
+    "author": "Prashant Mahesh",
+    "tags": [
+      "nfo",
+      "new-fund-offer",
+      "mirae",
+      "icici",
+      "kotak",
+      "multi-asset",
+      "subscription"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=400"
+  },
+  {
+    "articleId": "ART-033",
+    "title": "Portfolio Overlap: Why Your 5 Mutual Funds Might Actually Be Just 2",
+    "summary": "A Value Research analysis reveals that the average Indian MF investor holds 5-7 funds with 40-60% portfolio overlap — paying multiple expense ratios for essentially the same stock exposure. Example: SBI Bluechip, HDFC Top 100, and Axis Bluechip all hold HDFC Bank, ICICI Bank, Reliance, Infosys, and TCS in their top 10 — combined overlap exceeds 55%. The fix: use the ET Mutual Fund Research Tool's portfolio overlap checker to identify redundancy. An optimal portfolio needs just 3-4 funds: one flexi-cap (core, 40%), one mid-cap (growth, 25%), one ELSS (tax + equity, 20%), and one international fund (diversification, 15%). The article profiles an investor who consolidated from 9 funds to 4, reduced expense costs by ₹18,000/year, and improved tracking simplicity without sacrificing returns.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/portfolio-overlap-mutual-funds",
+    "category": "Personal Finance",
+    "published_at": 1745625600,
+    "author": "Dhirendra Kumar",
+    "tags": [
+      "portfolio-overlap",
+      "mutual-fund",
+      "consolidation",
+      "expense-ratio",
+      "diversification"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=400"
+  },
+  {
+    "articleId": "ART-034",
+    "title": "Gold ETFs vs Sovereign Gold Bonds: Where Should You Park Your Gold Allocation?",
+    "summary": "Gold has returned 15% in 2025, outperforming equity and debt. With geopolitical tensions and a weakening dollar, fund managers recommend 10-15% gold allocation. But how? Gold ETFs offer instant liquidity and demat convenience but attract LTCG tax. Sovereign Gold Bonds (SGBs) offer 2.5% annual interest plus gold price appreciation, with complete tax exemption on maturity — but they have 8-year lock-in and limited secondary market liquidity. For MF investors, gold through multi-asset funds (like Kotak's new offering) provides automatic rebalancing. The article recommends: SGBs for long-term allocation (8+ year horizon, superior after-tax returns), Gold ETFs for tactical trades, and multi-asset funds for set-and-forget investors. ET Markets Pro tracks gold prices alongside equity to help with allocation timing.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/gold-etf-vs-sgb-allocation",
+    "category": "Markets",
+    "published_at": 1745712000,
+    "author": "Narendra Nathan",
+    "tags": [
+      "gold",
+      "etf",
+      "sgb",
+      "sovereign-gold-bond",
+      "allocation",
+      "multi-asset",
+      "tax"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=400"
+  },
+  {
+    "articleId": "ART-035",
+    "title": "The Rise of Factor Investing in India: Smart Beta Funds You Should Know",
+    "summary": "Factor-based investing — targeting stocks with specific characteristics like momentum, low volatility, quality, or value — is gaining traction in India. The Nifty 200 Momentum 30 index has returned 28% CAGR over 5 years, trouncing the plain Nifty 200 (14%). Motilal Oswal's Momentum ETF and ICICI Prudential's Alpha Low Vol 30 ETF are seeing record inflows. The concept: instead of paying 1.5% for active management, get systematic factor exposure at 0.2-0.4% expense ratio. But factor funds carry concentration risk and cyclical underperformance — momentum crashes hard in sudden reversals. For sophisticated MF investors, a core-satellite approach works: core in broad market index, satellites in 1-2 factor ETFs. The ET Portfolio Analyser can help model factor exposure across your existing holdings.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/factor-investing-smart-beta-india",
+    "category": "Markets",
+    "published_at": 1745798400,
+    "author": "Prashant Mahesh",
+    "tags": [
+      "factor-investing",
+      "smart-beta",
+      "momentum",
+      "etf",
+      "low-volatility",
+      "nifty-200"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1610375461246-83df859d849d?w=400"
+  },
+  {
+    "articleId": "ART-036",
+    "title": "International Mutual Funds Reopen: How to Add Global Diversification",
+    "summary": "After a 2-year SEBI-imposed freeze on international MF investments (due to the $7 billion overseas limit), several fund houses have reopened international schemes with revised limits. Motilal Oswal Nasdaq 100 FOF, Parag Parikh's international holdings, and Franklin India Feeder - US Opportunities are accepting fresh SIPs again. Why diversify globally? India constitutes only 3.5% of world market cap — a 100% India portfolio misses 96.5% of global opportunities. The S&P 500 has generated 12% USD returns (16% in INR terms) over 30 years. A 10-15% international allocation reduces portfolio volatility by 15-20% through low correlation. Tax treatment: international funds are taxed as debt (at slab rate, no LTCG benefit) — so invest only with a 5+ year horizon where the diversification benefit outweighs the tax drag.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/international-mf-reopen-global-diversification",
+    "category": "Markets",
+    "published_at": 1745884800,
+    "author": "Narendra Nathan",
+    "tags": [
+      "international",
+      "global",
+      "nasdaq",
+      "s&p-500",
+      "diversification",
+      "sebi",
+      "mutual-fund"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400"
+  },
+  {
+    "articleId": "ART-037",
+    "title": "Market Mood Index in 'Extreme Greed' Zone — Time to Be Cautious?",
+    "summary": "The ET Market Mood Index has entered the 'Extreme Greed' zone for the first time since January 2024, with a score of 82/100. The index combines five indicators: FII/DII flows, VIX levels, put-call ratio, advance-decline breadth, and retail participation. Historically, readings above 80 have preceded 5-10% market corrections within 60 days in 7 out of 10 instances. For mutual fund investors, this doesn't mean sell everything — SIP investors should continue investing (cost averaging works in corrections). However, lump sum investors should wait for the index to drop below 60 before deploying fresh capital. Tactical moves: shift 10-15% of equity allocation to liquid funds as dry powder, and avoid chasing recent outperformers (especially mid/small-cap funds at all-time highs). The Market Mood Index is free on ET Markets Pro.",
+    "sourceUrl": "https://economictimes.indiatimes.com/markets/market-mood-index-extreme-greed",
+    "category": "Markets",
+    "published_at": 1745971200,
+    "author": "Amit Mudgill",
+    "tags": [
+      "market-mood",
+      "greed",
+      "correction",
+      "vix",
+      "sentiment",
+      "sip",
+      "caution"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400"
+  },
+  {
+    "articleId": "ART-038",
+    "title": "How to Build a ₹3 Crore Retirement Corpus by 55 — A Mutual Fund Only Plan",
+    "summary": "A 30-year-old earning ₹15L can build ₹3 crore by 55 using only mutual funds — no real estate, no FDs, no gold needed. The plan: Start with ₹20,000/month SIP split across 3 funds — Parag Parikh Flexi Cap (₹10K), HDFC Mid-Cap Opportunities (₹7K), Mirae Asset ELSS (₹3K). Apply 10% annual step-up aligned with salary increments. At 12% blended CAGR, the corpus hits ₹2.8 crore at year 25. Critical rules: never stop SIPs during corrections (that's when the most units are accumulated), review and rebalance annually, and shift 5% from equity to debt funds for every year past age 45. For the withdrawal phase, a systematic withdrawal plan (SWP) from a balanced advantage fund can generate ₹1.5L/month for 20+ years. The ET Masterclass on Retirement Planning covers the mathematics in detail.",
+    "sourceUrl": "https://economictimes.indiatimes.com/wealth/invest/3-crore-retirement-corpus-mf-plan",
+    "category": "Personal Finance",
+    "published_at": 1746057600,
+    "author": "Preeti Kulkarni",
+    "tags": [
+      "retirement",
+      "corpus",
+      "sip",
+      "mutual-fund",
+      "step-up",
+      "flexi-cap",
+      "financial-planning"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400"
+  },
+  {
+    "articleId": "ART-039",
+    "title": "IPO Pipeline 2026: 40 Companies Preparing to List — The Mutual Fund Angle",
+    "summary": "Over 40 companies plan to go public in 2026, including LG Electronics India (₹15,000 crore), Ather Energy (₹4,500 crore), PhysicsWallah (₹3,500 crore), and Boat (₹2,000 crore). For mutual fund investors, IPOs matter because large MF houses receive bulk allocations — when a marquee IPO lists at a premium, funds holding anchor investor positions see immediate NAV bumps. HDFC MF, SBI MF, and ICICI Prudential MF are the most active anchor investors. The article also covers direct IPO participation: ET's IPO Tracker provides real-time GMP, subscription data, and analyst verdicts. For retail investors, applying through ASBA (UPI) is simplest. The IPO Watch newsletter sends opening-day alerts. Caveat: 65% of 2025 IPOs are trading below listing price at 1-year mark — not every IPO is a winner.",
+    "sourceUrl": "https://economictimes.indiatimes.com/markets/ipo/ipo-pipeline-2026-mf-angle",
+    "category": "Markets",
+    "published_at": 1746144000,
+    "author": "Prashant Mahesh",
+    "tags": [
+      "ipo",
+      "listing",
+      "2026",
+      "lg-electronics",
+      "ather",
+      "anchor-investor",
+      "mutual-fund"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=400"
+  },
+  {
+    "articleId": "ART-040",
+    "title": "Behavioural Traps: 5 Mistakes That Cost MF Investors ₹50,000 Every Year",
+    "summary": "Behavioural finance research from Marcellus Investment Managers shows that the average Indian MF investor underperforms their own fund's returns by 3-5% annually — entirely due to behavioural mistakes. The top 5 traps: 1) Stopping SIPs during crashes (missing the recovery rally), 2) Performance chasing (buying last year's #1 fund right before it mean-reverts), 3) Portfolio obesity (holding 8+ funds with massive overlap), 4) Dividend preference illusion (choosing growth option generates higher post-tax returns), 5) Timing the market (waiting for 'the right time' and missing 12-15% annual returns). The article calculates the cumulative cost: these mistakes cost a ₹50,000/month SIP investor approximately ₹50,000-80,000 per year in foregone returns. The fix is simple: automate SIPs, review annually not monthly, and attend ET's Behavioural Finance Masterclass to build a personal decision-making checklist.",
+    "sourceUrl": "https://economictimes.indiatimes.com/mf/analysis/behavioural-traps-mf-investors",
+    "category": "Personal Finance",
+    "published_at": 1746230400,
+    "author": "Saurabh Mukherjea",
+    "tags": [
+      "behavioural-finance",
+      "mistakes",
+      "sip",
+      "mutual-fund",
+      "performance-chasing",
+      "bias"
+    ],
+    "imageUrl": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400"
+  }
+]

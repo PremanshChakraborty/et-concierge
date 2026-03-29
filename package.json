@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "Data generation and seeding scripts for Retail AI",
   "scripts": {
-    "merge": "npx ts-node scripts/merge-products.ts",
-    "seed:dry": "npx ts-node scripts/generate-inventory.ts --dry-run",
-    "seed": "npx ts-node scripts/generate-inventory.ts",
-    "upload": "npx ts-node scripts/upload-catalog.ts",
     "embed:dry": "npx ts-node scripts/embed-and-upsert.ts --dry-run",
-    "embed": "npx ts-node scripts/embed-and-upsert.ts"
+    "embed": "npx ts-node scripts/embed-and-upsert.ts",
+    "embed:services": "npx ts-node scripts/embed-and-upsert.ts --target=services",
+    "embed:articles": "npx ts-node scripts/embed-and-upsert.ts --target=articles"
   },
   "dependencies": {
     "@aws-sdk/client-bedrock-runtime": "^3.600.0",

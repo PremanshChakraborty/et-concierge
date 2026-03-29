@@ -5,29 +5,55 @@
 
 // ── Orchestrator API ──────────────────────────────────────────────────────────
 
-export interface ProductCard {
-  productId:   string;
-  name:        string;
-  category:    string;
-  subCategory: string;
-  price:       number;
-  imageUrl:    string;
-  colors:      string[];
-  sizes:       string[];
-  tags:        string[];
-  reason:      string;
-  /** Populated only in store mode; from StoreInventory */
-  aisleName?:  string;
-  rack?:       string;
+export type ConciergeMode = "advisory" | "prime-news";
+export type RiskAppetite = "high" | "medium" | "low";
+
+export interface ETServiceCard {
+  productId:    string;
+  name:         string;
+  category:     string;
+  subCategory:  string;
+  price:        number;
+  priceModel:   string;
+  imageUrl:     string;
+  pageUrl:      string;
+  tags:         string[];
+  reason:       string;
+}
+
+export interface ETArticleCard {
+  articleId:    string;
+  title:        string;
+  summary:      string;
+  reason?:      string;
+  category:     string;
+  sourceUrl:    string;
+  imageUrl:     string;
+  tags:         string[];
+  published_at?: number;
 }
 
 export interface ChatApiResponse {
   sessionId:         string;
+  sessionName?:      string | null;
   text:              string;
-  products:          ProductCard[];
+  services:          ETServiceCard[];
+  articles:          ETArticleCard[];
   followUpQuestions: string[];
-  currentMode:       "app" | "store";
+  currentMode:       ConciergeMode;
   error:             string | null;
+}
+
+export interface UserProfile {
+  userId: string;
+  occupation: string | null;
+  ageBracket: string | null;
+  location: string | null;
+  riskAppetite: RiskAppetite | null;
+  financialGoals: string[];
+  topicsOfInterest: string[];
+  lastUpdated: string;
+  profileCompleteness: number;
 }
 
 // ── Frontend State ────────────────────────────────────────────────────────────
@@ -35,65 +61,30 @@ export interface ChatApiResponse {
 export interface ChatTurn {
   id:                 string;
   role:               "user" | "assistant" | "mode_switch";
-  message?:           string;       // user turns
-  text?:              string;       // assistant turns
-  products?:          ProductCard[];
+  message?:           string;           // user turns
+  text?:              string;           // assistant turns
+  services?:          ETServiceCard[];
+  articles?:          ETArticleCard[];
   followUpQuestions?: string[];
   ts:                 string;
   // mode_switch turns only
-  toMode?:            "app" | "store";
-  storeName?:         string;
+  toMode?:            ConciergeMode;
 }
 
 export interface ChatState {
   sessionId:    string | null;
+  sessionName?: string | null;
   turns:        ChatTurn[];
   loading:      boolean;
   error:        string | null;
-  currentMode:  "app" | "store";
-  storeDetails: StoreDetails | null;
+  currentMode:  ConciergeMode;
 }
 
 // ── Support APIs ──────────────────────────────────────────────────────────────
 
 export interface Session {
-  sessionId:         string;
-  lastUpdated:       string;
-  currentMode:       "app" | "store";
-  currentStoreId?:   string | null;
-  currentStoreName?: string | null;
-}
-
-export interface AisleEntry {
-  label:       string;  // "Aisle 1"
-  description: string;  // "Women's Dresses and Tops"
-  directions:  string;  // "Enter main doors, turn left"
-}
-
-export interface StoreDetails {
-  storeId:   string;
-  storeName: string;
-  address:   string;
-  hours:     string;   // e.g. "Open today 10:00 – 22:00"
-  phone?:    string;
-  aisleMap:  AisleEntry[];
-}
-
-// ── User Profile ──────────────────────────────────────────────────────────────
-
-export interface CartItem {
-  productId: string;
-  name:      string;
-  imageUrl:  string;
-  price:     number;
-  size:      string;
-  color:     string;
-  quantity:  number;
-}
-
-export interface WishlistItem {
-  productId: string;
-  name:      string;
-  imageUrl:  string;
-  price:     number;
+  sessionId:    string;
+  sessionName?: string | null;
+  lastUpdated:  string;
+  currentMode:  ConciergeMode;
 }

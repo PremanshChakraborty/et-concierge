@@ -1,11 +1,10 @@
-import { useState } from "react";
-import type { Session, StoreDetails } from "../../types";
+
+import type { Session, ConciergeMode } from "../../types";
 
 interface Props {
   sessions:        Session[];
   activeSessionId: string | null;
-  currentMode:     "app" | "store";
-  storeDetails:    StoreDetails | null;
+  currentMode:     ConciergeMode;
   userEmail:       string;
   onNewChat:       () => void;
   onSelectSession: (sessionId: string) => void;
@@ -29,16 +28,11 @@ function truncateId(id: string): string {
 export default function Sidebar({
   sessions,
   activeSessionId,
-  currentMode,
-  storeDetails,
   userEmail,
   onNewChat,
   onSelectSession,
   onSettings,
 }: Props) {
-  const isStore = currentMode === "store";
-  const [storeExpanded, setStoreExpanded] = useState(true);
-
   // Cap sessions at 5 in the sidebar
   const recentSessions = sessions.slice(0, 5);
 
@@ -46,7 +40,7 @@ export default function Sidebar({
     <aside className="w-72 bg-white border-r border-border-light flex flex-col shrink-0">
       {/* Header */}
       <div className="p-6 pb-4">
-        <h1 className="text-2xl font-black tracking-tighter text-gradient mb-6">Retail AI</h1>
+        <h1 className="text-2xl font-black tracking-tighter text-gradient mb-6">ET Concierge</h1>
 
         {/* New Chat — always visible */}
         <button
@@ -80,77 +74,18 @@ export default function Sidebar({
                 >
                   <div className="flex items-center justify-between">
                     <span className={`text-sm font-medium truncate ${isActive ? "text-black" : "text-black/60"}`}>
-                      {truncateId(s.sessionId)}
+                      {s.sessionName || truncateId(s.sessionId)}
                     </span>
                     <span className="text-[10px] text-neutral-400 shrink-0 ml-2">{timeAgo(s.lastUpdated)}</span>
                   </div>
                   <p className="text-xs text-neutral-400 truncate">
-                    {s.currentMode === "store" ? "🏪 In-store session" : "Online shopping"}
+                    {s.currentMode === "prime-news" ? "📰 Prime News" : "💼 Advisory"}
                   </p>
                 </button>
               );
             })}
           </div>
         </div>
-
-        {/* Store mode panel — only in store mode */}
-        {isStore && storeDetails && (
-          <div>
-            {/* Collapsible store mode button */}
-            <button
-              onClick={() => setStoreExpanded((v) => !v)}
-              className="w-full flex items-center justify-between bg-black text-white py-2.5 px-4 rounded-xl shadow-md mb-2"
-            >
-              <div className="flex items-center gap-2">
-                <span
-                  className="material-symbols-outlined text-lg text-yellow-400"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
-                  storefront
-                </span>
-                <span className="text-sm font-bold tracking-tight">Store Mode</span>
-              </div>
-              <span className="material-symbols-outlined text-white text-sm transition-transform duration-200"
-                style={{ transform: storeExpanded ? "rotate(180deg)" : "rotate(0deg)" }}
-              >
-                expand_more
-              </span>
-            </button>
-
-            {/* Expandable store details */}
-            {storeExpanded && (
-              <div className="space-y-4 pt-1">
-                {/* Store info */}
-                <div className="space-y-1 px-1">
-                  <p className="text-sm font-bold text-black leading-tight">{storeDetails.storeName}</p>
-                  {storeDetails.address && (
-                    <p className="text-[11px] text-neutral-500 leading-snug">{storeDetails.address}</p>
-                  )}
-                  {storeDetails.hours && (
-                    <p className="text-[11px] text-neutral-500">{storeDetails.hours}</p>
-                  )}
-                  {storeDetails.phone && (
-                    <p className="text-[11px] text-neutral-500">{storeDetails.phone}</p>
-                  )}
-                </div>
-
-                {/* Aisle map */}
-                <div>
-                  <h2 className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-2 px-1">Aisle Map</h2>
-                  <div className="space-y-2">
-                    {storeDetails.aisleMap.map((a) => (
-                      <div key={a.label} className="p-3 rounded-lg bg-surface-light border border-black/5 space-y-0.5">
-                        <p className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest">{a.label}</p>
-                        <p className="text-sm font-semibold text-black leading-snug">{a.description}</p>
-                        <p className="text-[11px] text-neutral-400 italic leading-snug">{a.directions}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
-        )}
       </div>
 
       {/* User chip */}

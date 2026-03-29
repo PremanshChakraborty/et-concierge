@@ -25,23 +25,23 @@
 @layer components {
   /* ── Signature gradient — user bubbles, CTAs, text ─────────────────────── */
   .premium-gradient {
-    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+    background-image: linear-gradient(to top, #9683ff 0%, #0c1db8 65%, #020f75 100%);
   }
 
   .premium-gradient-horizontal {
-    background-image: linear-gradient(to right, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 76%, #0c1db8 100%);
+    background-image: linear-gradient(to right, #9683ff 0%, #0c1db8 65%, #020f75 100%);
   }
 
   /* User bubble: gradient anchored to viewport so it "reveals" as you scroll */
   .user-bubble-container {
-    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+    background-image: linear-gradient(to top, #9683ff 0%, #0c1db8 65%, #020f75 100%);
     background-attachment: fixed;
     background-size: 100vw 100vh;
   }
 
   /* Gradient text */
   .text-gradient {
-    background-image: linear-gradient(to right, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+    background-image: linear-gradient(to right, #9683ff 0%, #0c1db8 65%, #020f75 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

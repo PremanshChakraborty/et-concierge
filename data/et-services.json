@@ -1,0 +1,3213 @@
+[
+  {
+    "productId": "ETS-001",
+    "name": "ET Prime Annual Membership",
+    "category": "subscription",
+    "subCategory": "Premium Access",
+    "description": "Unlimited access to ET Prime's exclusive library — 20+ sector deep-dives, 4,000+ stock reports, the digital edition of The Economic Times, member-only newsletters, and invitations to virtual events with industry leaders. The definitive subscription for serious investors and business professionals.",
+    "price": 1499,
+    "priceModel": "annual",
+    "pageUrl": "https://economictimes.indiatimes.com/prime",
+    "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168d6c?w=400",
+    "targetAudience": [
+      "investor",
+      "professional",
+      "entrepreneur"
+    ],
+    "relevantGoals": [
+      "stay-informed",
+      "market-research",
+      "portfolio-analysis"
+    ],
+    "tags": [
+      "prime",
+      "subscription",
+      "exclusive",
+      "analysis",
+      "sectors",
+      "stock-reports"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "20+ sector deep-dives",
+        "4,000+ stock reports",
+        "ET Digital Edition",
+        "Member newsletters",
+        "Virtual event access"
+      ],
+      "trialAvailable": true,
+      "trialDays": 14
+    }
+  },
+  {
+    "productId": "ETS-002",
+    "name": "ET Prime Monthly Plan",
+    "category": "subscription",
+    "subCategory": "Premium Access",
+    "description": "Month-to-month access to ET Prime without annual commitment. Ideal for professionals who want flexibility — full access to exclusive stories, sector analysis, stock reports, and the digital newspaper edition.",
+    "price": 299,
+    "priceModel": "monthly",
+    "pageUrl": "https://economictimes.indiatimes.com/prime/subscribe",
+    "imageUrl": "https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=400",
+    "targetAudience": [
+      "investor",
+      "professional"
+    ],
+    "relevantGoals": [
+      "stay-informed",
+      "market-research"
+    ],
+    "tags": [
+      "prime",
+      "subscription",
+      "monthly",
+      "flexible"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "Full ET Prime access",
+        "Cancel anytime",
+        "Digital edition"
+      ],
+      "trialAvailable": true,
+      "trialDays": 7
+    }
+  },
+  {
+    "productId": "ETS-003",
+    "name": "ET Prime + Markets Pro Bundle",
+    "category": "subscription",
+    "subCategory": "Premium Bundle",
+    "description": "The ultimate combo for active investors — combines ET Prime's research depth with ET Markets Pro's real-time tools. Get exclusive articles, stock screeners, portfolio analytics, and market alerts in one subscription at 30% savings.",
+    "price": 2499,
+    "priceModel": "annual",
+    "pageUrl": "https://economictimes.indiatimes.com/prime/bundle",
+    "imageUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?w=400",
+    "targetAudience": [
+      "investor",
+      "trader",
+      "hnwi"
+    ],
+    "relevantGoals": [
+      "portfolio-analysis",
+      "active-trading",
+      "market-research"
+    ],
+    "tags": [
+      "prime",
+      "markets",
+      "bundle",
+      "premium",
+      "trading",
+      "research"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "Full ET Prime",
+        "Markets Pro tools",
+        "Real-time alerts",
+        "30% bundle savings"
+      ],
+      "trialAvailable": false,
+      "trialDays": 0
+    }
+  },
+  {
+    "productId": "ETS-004",
+    "name": "ET Digital Pass",
+    "category": "subscription",
+    "subCategory": "Basic Access",
+    "description": "Affordable entry point into the ET ecosystem. Access to the digital newspaper edition, curated daily briefings, and limited premium articles. Perfect for readers who want quality journalism without the full premium commitment.",
+    "price": 499,
+    "priceModel": "annual",
+    "pageUrl": "https://economictimes.indiatimes.com/digital-pass",
+    "imageUrl": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400",
+    "targetAudience": [
+      "general-reader",
+      "student",
+      "professional"
+    ],
+    "relevantGoals": [
+      "stay-informed",
+      "daily-news"
+    ],
+    "tags": [
+      "digital",
+      "newspaper",
+      "basic",
+      "affordable",
+      "daily"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "ET Digital Edition",
+        "5 premium articles/month",
+        "Daily briefing"
+      ],
+      "trialAvailable": true,
+      "trialDays": 30
+    }
+  },
+  {
+    "productId": "ETS-005",
+    "name": "ET Prime Corporate — Team License",
+    "category": "subscription",
+    "subCategory": "Enterprise",
+    "description": "Enterprise-grade access for teams of 5 or more. Bulk pricing, centralised billing, and admin controls. Equip your leadership team, research analysts, and strategy leads with real-time business intelligence from India's most trusted source.",
+    "price": 5999,
+    "priceModel": "annual",
+    "pageUrl": "https://economictimes.indiatimes.com/prime/corporate",
+    "imageUrl": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400",
+    "targetAudience": [
+      "enterprise",
+      "team-lead",
+      "cxo"
+    ],
+    "relevantGoals": [
+      "team-intelligence",
+      "competitive-analysis",
+      "business-strategy"
+    ],
+    "tags": [
+      "corporate",
+      "enterprise",
+      "team",
+      "bulk",
+      "business-intelligence"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "5+ user seats",
+        "Centralised billing",
+        "Admin dashboard",
+        "Priority support"
+      ],
+      "trialAvailable": false,
+      "trialDays": 0
+    }
+  },
+  {
+    "productId": "ETS-006",
+    "name": "ET Prime Student Plan",
+    "category": "subscription",
+    "subCategory": "Student Access",
+    "description": "70% discounted ET Prime for verified college students. Build your business IQ early — access exclusive sector reports, startup stories, and financial literacy content. Valid student ID required.",
+    "price": 449,
+    "priceModel": "annual",
+    "pageUrl": "https://economictimes.indiatimes.com/prime/student",
+    "imageUrl": "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?w=400",
+    "targetAudience": [
+      "student"
+    ],
+    "relevantGoals": [
+      "learning",
+      "career-growth",
+      "financial-literacy"
+    ],
+    "tags": [
+      "student",
+      "discount",
+      "learning",
+      "campus",
+      "career"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "Full ET Prime at 70% off",
+        "Student ID verification",
+        "Career content focus"
+      ],
+      "trialAvailable": true,
+      "trialDays": 14
+    }
+  },
+  {
+    "productId": "ETS-007",
+    "name": "Times Prime Membership (includes ET Prime)",
+    "category": "subscription",
+    "subCategory": "Lifestyle Bundle",
+    "description": "Times Prime bundles ET Prime with 30+ premium subscriptions — Swiggy One, MakeMyTrip, Pharmeasy, Gaana Plus, and more. One membership, dozens of benefits across food, travel, entertainment, and business news.",
+    "price": 1199,
+    "priceModel": "annual",
+    "pageUrl": "https://www.timesprime.com",
+    "imageUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400",
+    "targetAudience": [
+      "general-reader",
+      "professional",
+      "millennial"
+    ],
+    "relevantGoals": [
+      "stay-informed",
+      "lifestyle-savings",
+      "daily-news"
+    ],
+    "tags": [
+      "times-prime",
+      "bundle",
+      "lifestyle",
+      "multi-platform",
+      "savings"
+    ],
+    "partnerBrand": "Times Prime",
+    "details": {
+      "features": [
+        "ET Prime included",
+        "30+ partner benefits",
+        "Swiggy One",
+        "MakeMyTrip perks"
+      ],
+      "trialAvailable": false,
+      "trialDays": 0
+    }
+  },
+  {
+    "productId": "ETS-008",
+    "name": "ET Prime Gift Subscription",
+    "category": "subscription",
+    "subCategory": "Gift",
+    "description": "Gift a year of ET Prime to a colleague, mentee, or family member. Includes a personalised digital gift card and instant activation. The gift that builds careers and portfolios.",
+    "price": 1499,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/prime/gift",
+    "imageUrl": "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=400",
+    "targetAudience": [
+      "gift-giver",
+      "professional"
+    ],
+    "relevantGoals": [
+      "gifting",
+      "networking"
+    ],
+    "tags": [
+      "gift",
+      "subscription",
+      "corporate-gifting",
+      "premium"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "Digital gift card",
+        "Instant activation",
+        "Personal message",
+        "12-month access"
+      ],
+      "trialAvailable": false,
+      "trialDays": 0
+    }
+  },
+  {
+    "productId": "ETS-009",
+    "name": "ET Morning Brief",
+    "category": "newsletter",
+    "subCategory": "Daily Digest",
+    "description": "Start your day with the 10 stories that matter most. Delivered at 7 AM IST, the Morning Brief distils overnight global markets, policy moves, and corporate action into a crisp 5-minute read curated by ET's senior editors.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/newsletters/morning-brief",
+    "imageUrl": "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=400",
+    "targetAudience": [
+      "professional",
+      "investor",
+      "general-reader"
+    ],
+    "relevantGoals": [
+      "stay-informed",
+      "daily-news"
+    ],
+    "tags": [
+      "newsletter",
+      "morning",
+      "daily",
+      "free",
+      "curated",
+      "briefing"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "frequency": "daily",
+      "sampleTopics": [
+        "Global markets overnight",
+        "RBI/SEBI announcements",
+        "Earnings wrap",
+        "Policy updates"
+      ],
+      "deliveryChannel": "email"
+    }
+  },
+  {
+    "productId": "ETS-010",
+    "name": "ET Market Watch",
+    "category": "newsletter",
+    "subCategory": "Markets",
+    "description": "End-of-day market analysis delivered at 5 PM IST. Covers Nifty/Sensex movements, top gainers and losers, FII/DII flows, sectoral analysis, and what to watch for tomorrow. Essential for active market participants.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/newsletters/market-watch",
+    "imageUrl": "https://images.unsplash.com/photo-1579275542618-a1dfed5f54ba?w=400",
+    "targetAudience": [
+      "investor",
+      "trader"
+    ],
+    "relevantGoals": [
+      "portfolio-analysis",
+      "active-trading",
+      "market-research"
+    ],
+    "tags": [
+      "newsletter",
+      "markets",
+      "daily",
+      "free",
+      "stocks",
+      "nifty",
+      "sensex"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "frequency": "daily",
+      "sampleTopics": [
+        "Index analysis",
+        "FII/DII flows",
+        "Top movers",
+        "Sectoral trends"
+      ],
+      "deliveryChannel": "email"
+    }
+  },
+  {
+    "productId": "ETS-011",
+    "name": "CEO Daily by ET",
+    "category": "newsletter",
+    "subCategory": "Leadership",
+    "description": "Curated for CXOs and senior leaders. A weekly deep-dive into boardroom moves, M&A activity, leadership transitions, regulatory changes, and strategic pivots shaping India Inc. Exclusive interviews and commentary from ET's corner-office beat.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/newsletters/ceo-daily",
+    "imageUrl": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=400",
+    "targetAudience": [
+      "cxo",
+      "entrepreneur",
+      "senior-professional"
+    ],
+    "relevantGoals": [
+      "business-strategy",
+      "competitive-analysis",
+      "leadership"
+    ],
+    "tags": [
+      "newsletter",
+      "ceo",
+      "leadership",
+      "weekly",
+      "boardroom",
+      "strategy"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "frequency": "weekly",
+      "sampleTopics": [
+        "M&A tracker",
+        "CXO moves",
+        "Board decisions",
+        "Regulatory outlook"
+      ],
+      "deliveryChannel": "email"
+    }
+  },
+  {
+    "productId": "ETS-012",
+    "name": "ET Sector Spotlight",
+    "category": "newsletter",
+    "subCategory": "Sector Analysis",
+    "description": "Each week, a single sector under the microscope — IT, pharma, BFSI, real estate, auto, FMCG, and more. Covers earnings trends, competitive dynamics, regulatory headwinds, and investment thesis. A must for sectoral investors.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/newsletters/sector-spotlight",
+    "imageUrl": "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400",
+    "targetAudience": [
+      "investor",
+      "analyst",
+      "professional"
+    ],
+    "relevantGoals": [
+      "market-research",
+      "portfolio-analysis",
+      "sector-analysis"
+    ],
+    "tags": [
+      "newsletter",
+      "sectors",
+      "weekly",
+      "free",
+      "analysis",
+      "investment"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "frequency": "weekly",
+      "sampleTopics": [
+        "Sector earnings",
+        "Competitive landscape",
+        "Regulatory impact",
+        "Investment thesis"
+      ],
+      "deliveryChannel": "email"
+    }
+  },
+  {
+    "productId": "ETS-013",
+    "name": "ET IPO Watch",
+    "category": "newsletter",
+    "subCategory": "IPOs",
+    "description": "Never miss an IPO window again. Covers upcoming mainboard and SME IPOs, grey market premiums, subscription status, analyst verdicts, and post-listing performance tracking. Sent every Monday and on IPO open days.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/newsletters/ipo-watch",
+    "imageUrl": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=400",
+    "targetAudience": [
+      "investor",
+      "trader"
+    ],
+    "relevantGoals": [
+      "ipo-investing",
+      "market-research",
+      "new-opportunities"
+    ],
+    "tags": [
+      "newsletter",
+      "ipo",
+      "listing",
+      "grey-market",
+      "subscription-status"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "frequency": "bi-weekly",
+      "sampleTopics": [
+        "Upcoming IPOs",
+        "GMP tracker",
+        "Subscription status",
+        "Post-listing analysis"
+      ],
+      "deliveryChannel": "email"
+    }
+  },
+  {
+    "productId": "ETS-014",
+    "name": "ET Personal Finance Weekly",
+    "category": "newsletter",
+    "subCategory": "Personal Finance",
+    "description": "Practical money management advice for salaried professionals. Covers tax-saving strategies, mutual fund picks, insurance reviews, loan rate comparisons, and retirement planning tips. Every Saturday morning.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/newsletters/personal-finance",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400",
+    "targetAudience": [
+      "salaried",
+      "young-professional",
+      "general-reader"
+    ],
+    "relevantGoals": [
+      "tax-planning",
+      "retirement-planning",
+      "financial-literacy",
+      "saving"
+    ],
+    "tags": [
+      "newsletter",
+      "personal-finance",
+      "weekly",
+      "free",
+      "tax",
+      "mutual-funds",
+      "insurance"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "frequency": "weekly",
+      "sampleTopics": [
+        "Tax-saving instruments",
+        "MF of the week",
+        "EMI calculators",
+        "Insurance checklist"
+      ],
+      "deliveryChannel": "email"
+    }
+  },
+  {
+    "productId": "ETS-015",
+    "name": "ET Tech Pulse",
+    "category": "newsletter",
+    "subCategory": "Technology",
+    "description": "India's tech and startup ecosystem in one newsletter. Covers funding rounds, Big Tech earnings, AI developments, SaaS metrics, fintech regulation, and the people driving India's digital transformation. Every Wednesday.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/newsletters/tech-pulse",
+    "imageUrl": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400",
+    "targetAudience": [
+      "tech-professional",
+      "entrepreneur",
+      "investor"
+    ],
+    "relevantGoals": [
+      "stay-informed",
+      "startup-ecosystem",
+      "tech-trends"
+    ],
+    "tags": [
+      "newsletter",
+      "tech",
+      "startups",
+      "ai",
+      "fintech",
+      "weekly",
+      "free"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "frequency": "weekly",
+      "sampleTopics": [
+        "Funding tracker",
+        "Big Tech India moves",
+        "AI policy",
+        "SaaS growth"
+      ],
+      "deliveryChannel": "email"
+    }
+  },
+  {
+    "productId": "ETS-016",
+    "name": "ET Global Markets Roundup",
+    "category": "newsletter",
+    "subCategory": "Global Markets",
+    "description": "A Sunday evening read that prepares you for the week ahead. Covers Wall Street, European markets, Asian bourses, commodity prices, crude oil, gold, and crypto — with implications for Indian markets highlighted.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/newsletters/global-roundup",
+    "imageUrl": "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?w=400",
+    "targetAudience": [
+      "investor",
+      "trader",
+      "analyst"
+    ],
+    "relevantGoals": [
+      "market-research",
+      "global-investing",
+      "portfolio-analysis"
+    ],
+    "tags": [
+      "newsletter",
+      "global",
+      "markets",
+      "weekly",
+      "free",
+      "wall-street",
+      "crypto",
+      "commodities"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "frequency": "weekly",
+      "sampleTopics": [
+        "US Fed outlook",
+        "Asian markets preview",
+        "Crude & gold",
+        "Crypto weekly"
+      ],
+      "deliveryChannel": "email"
+    }
+  },
+  {
+    "productId": "ETS-017",
+    "name": "ET Markets Pro",
+    "category": "market-tool",
+    "subCategory": "Trading Platform",
+    "description": "Professional-grade market dashboard with real-time BSE/NSE feeds, advanced charting, multi-timeframe analysis, and customisable watchlists. Includes pre-market heatmaps, bulk/block deal alerts, and delivery volume analysis.",
+    "price": 999,
+    "priceModel": "annual",
+    "pageUrl": "https://economictimes.indiatimes.com/markets/pro",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400",
+    "targetAudience": [
+      "trader",
+      "investor",
+      "analyst"
+    ],
+    "relevantGoals": [
+      "active-trading",
+      "portfolio-analysis",
+      "market-research"
+    ],
+    "tags": [
+      "markets",
+      "pro",
+      "trading",
+      "charting",
+      "real-time",
+      "watchlist"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "Real-time BSE/NSE feeds",
+        "Advanced charting",
+        "Pre-market heatmaps",
+        "Bulk deal alerts"
+      ],
+      "platforms": [
+        "web",
+        "android",
+        "ios"
+      ],
+      "dataFrequency": "real-time"
+    }
+  },
+  {
+    "productId": "ETS-018",
+    "name": "Stock Reports Plus",
+    "category": "market-tool",
+    "subCategory": "Equity Research",
+    "description": "AI-powered stock research reports covering 4,000+ BSE/NSE stocks. Each report scores a stock on 5 pillars — earnings, valuation, technicals, peer comparison, and analyst consensus. Updated daily after market close.",
+    "price": 1299,
+    "priceModel": "annual",
+    "pageUrl": "https://economictimes.indiatimes.com/markets/stock-reports-plus",
+    "imageUrl": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400",
+    "targetAudience": [
+      "investor",
+      "analyst"
+    ],
+    "relevantGoals": [
+      "portfolio-analysis",
+      "stock-picking",
+      "fundamental-analysis"
+    ],
+    "tags": [
+      "stock-reports",
+      "ai-research",
+      "equity",
+      "valuation",
+      "earnings",
+      "scoring"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "4,000+ stock coverage",
+        "5-pillar scoring",
+        "Daily updates",
+        "Peer comparison matrix"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "dataFrequency": "daily"
+    }
+  },
+  {
+    "productId": "ETS-019",
+    "name": "ET Stock Screener",
+    "category": "market-tool",
+    "subCategory": "Screening",
+    "description": "Filter the entire BSE/NSE universe using 50+ fundamental and technical parameters — PE ratio, ROE, debt-to-equity, moving averages, RSI, delivery volume, and more. Save custom screens and set alerts.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/markets/stock-screener",
+    "imageUrl": "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=400",
+    "targetAudience": [
+      "investor",
+      "trader",
+      "analyst"
+    ],
+    "relevantGoals": [
+      "stock-picking",
+      "fundamental-analysis",
+      "technical-analysis"
+    ],
+    "tags": [
+      "screener",
+      "filter",
+      "fundamentals",
+      "technicals",
+      "free",
+      "stocks"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "50+ screening parameters",
+        "Custom screen save",
+        "Alert notifications",
+        "Export to CSV"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "dataFrequency": "end-of-day"
+    }
+  },
+  {
+    "productId": "ETS-020",
+    "name": "Big Bull Portfolio Tracker",
+    "category": "market-tool",
+    "subCategory": "Portfolio Intelligence",
+    "description": "Track the public portfolio holdings of India's marquee investors — Rakesh Jhunjhunwala Trust, Dolly Khanna, Vijay Kedia, Ashish Kacholia, and 20+ others. See quarterly changes, new entries, exits, and position sizing.",
+    "price": 499,
+    "priceModel": "annual",
+    "pageUrl": "https://economictimes.indiatimes.com/markets/big-bull-portfolio",
+    "imageUrl": "https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=400",
+    "targetAudience": [
+      "investor"
+    ],
+    "relevantGoals": [
+      "portfolio-analysis",
+      "stock-picking",
+      "investment-ideas"
+    ],
+    "tags": [
+      "big-bull",
+      "portfolio",
+      "ace-investors",
+      "holdings",
+      "tracking"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "20+ marquee investors tracked",
+        "Quarterly change alerts",
+        "New entry/exit signals",
+        "Position size analysis"
+      ],
+      "platforms": [
+        "web",
+        "android"
+      ],
+      "dataFrequency": "quarterly"
+    }
+  },
+  {
+    "productId": "ETS-021",
+    "name": "ET Market Mood Index",
+    "category": "market-tool",
+    "subCategory": "Sentiment",
+    "description": "Proprietary sentiment gauge combining options data, VIX, FII flows, advance-decline ratio, and retail participation metrics into a single fear-greed score. Helps time entry and exit decisions based on crowd psychology.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/markets/market-mood-index",
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400",
+    "targetAudience": [
+      "trader",
+      "investor"
+    ],
+    "relevantGoals": [
+      "active-trading",
+      "market-research",
+      "risk-management"
+    ],
+    "tags": [
+      "sentiment",
+      "fear-greed",
+      "vix",
+      "mood",
+      "free",
+      "contrarian"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "Fear-greed score",
+        "Historical overlay",
+        "Component breakdown",
+        "Daily email alert"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "dataFrequency": "real-time"
+    }
+  },
+  {
+    "productId": "ETS-022",
+    "name": "ET Mutual Fund Research Tool",
+    "category": "market-tool",
+    "subCategory": "Mutual Funds",
+    "description": "Compare 5,000+ mutual fund schemes across AUM, expense ratio, rolling returns, risk-adjusted performance (Sharpe/Sortino), and portfolio overlap. SIP return calculator and tax-efficient switching recommendations.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/mutual-funds/research",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400",
+    "targetAudience": [
+      "investor",
+      "salaried",
+      "financial-advisor"
+    ],
+    "relevantGoals": [
+      "mutual-fund-selection",
+      "portfolio-analysis",
+      "retirement-planning"
+    ],
+    "tags": [
+      "mutual-funds",
+      "compare",
+      "sip",
+      "returns",
+      "expense-ratio",
+      "free"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "5,000+ scheme comparison",
+        "SIP calculator",
+        "Portfolio overlap check",
+        "Tax-efficient switching"
+      ],
+      "platforms": [
+        "web",
+        "android",
+        "ios"
+      ],
+      "dataFrequency": "daily"
+    }
+  },
+  {
+    "productId": "ETS-023",
+    "name": "ET Commodity Tracker",
+    "category": "market-tool",
+    "subCategory": "Commodities",
+    "description": "Live prices for gold, silver, crude oil, natural gas, copper, and agricultural commodities on MCX and NCDEX. Includes global benchmark comparison (COMEX, LME), seasonal trend charts, and import-export duty impact analysis.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/markets/commodities",
+    "imageUrl": "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=400",
+    "targetAudience": [
+      "trader",
+      "investor",
+      "commodity-trader"
+    ],
+    "relevantGoals": [
+      "commodity-trading",
+      "portfolio-diversification",
+      "gold-investing"
+    ],
+    "tags": [
+      "commodities",
+      "gold",
+      "silver",
+      "crude-oil",
+      "mcx",
+      "free"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "Live MCX/NCDEX prices",
+        "Global benchmark comparison",
+        "Seasonal patterns",
+        "Duty impact calculator"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "dataFrequency": "real-time"
+    }
+  },
+  {
+    "productId": "ETS-024",
+    "name": "ET Forex Dashboard",
+    "category": "market-tool",
+    "subCategory": "Currency",
+    "description": "Real-time USD/INR, EUR/INR, GBP/INR, and 20+ currency pair rates with RBI reference rates, NDF market premiums, and forward curve data. Essential for importers, exporters, and forex traders.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/markets/forex",
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400",
+    "targetAudience": [
+      "trader",
+      "importer-exporter",
+      "corporate-treasury"
+    ],
+    "relevantGoals": [
+      "forex-trading",
+      "hedging",
+      "treasury-management"
+    ],
+    "tags": [
+      "forex",
+      "currency",
+      "usd-inr",
+      "rbi",
+      "ndf",
+      "free"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "20+ currency pairs",
+        "RBI reference rates",
+        "NDF premiums",
+        "Forward curve"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "dataFrequency": "real-time"
+    }
+  },
+  {
+    "productId": "ETS-025",
+    "name": "ET Portfolio Analyser",
+    "category": "market-tool",
+    "subCategory": "Portfolio Management",
+    "description": "Upload or manually enter your stock/MF portfolio and get instant analysis — asset allocation breakdown, sector concentration risk, Nifty correlation, dividend yield, and rebalancing suggestions powered by quantitative models.",
+    "price": 799,
+    "priceModel": "annual",
+    "pageUrl": "https://economictimes.indiatimes.com/markets/portfolio-analyser",
+    "imageUrl": "https://images.unsplash.com/photo-1610375461246-83df859d849d?w=400",
+    "targetAudience": [
+      "investor",
+      "hnwi",
+      "financial-advisor"
+    ],
+    "relevantGoals": [
+      "portfolio-analysis",
+      "risk-management",
+      "rebalancing"
+    ],
+    "tags": [
+      "portfolio",
+      "analyser",
+      "asset-allocation",
+      "risk",
+      "rebalancing"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "Auto-import from brokers",
+        "Asset allocation heatmap",
+        "Sector concentration alerts",
+        "Rebalancing suggestions"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "dataFrequency": "daily"
+    }
+  },
+  {
+    "productId": "ETS-026",
+    "name": "ET IPO Tracker",
+    "category": "market-tool",
+    "subCategory": "IPOs",
+    "description": "Complete IPO lifecycle tracking — from DRHP filings to listing day performance. Covers mainboard and SME IPOs with grey market premium updates, subscription data (QIB/HNI/Retail split), allotment status, and post-listing returns tracker.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://economictimes.indiatimes.com/markets/ipo",
+    "imageUrl": "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=400",
+    "targetAudience": [
+      "investor",
+      "trader"
+    ],
+    "relevantGoals": [
+      "ipo-investing",
+      "new-opportunities",
+      "market-research"
+    ],
+    "tags": [
+      "ipo",
+      "listing",
+      "gmp",
+      "subscription",
+      "allotment",
+      "free"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "features": [
+        "DRHP to listing tracking",
+        "GMP live updates",
+        "QIB/HNI/Retail split",
+        "Post-listing returns"
+      ],
+      "platforms": [
+        "web",
+        "android"
+      ],
+      "dataFrequency": "real-time"
+    }
+  },
+  {
+    "productId": "ETS-027",
+    "name": "ET Masterclass: Investing 101 — Building Your First Portfolio",
+    "category": "course",
+    "subCategory": "Investing",
+    "description": "A comprehensive beginner's course covering equity, mutual funds, bonds, and gold. Learn how to set financial goals, assess risk tolerance, build a diversified portfolio, and avoid common beginner mistakes. Taught by SEBI-registered investment advisor Deepak Shenoy.",
+    "price": 2999,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/investing-101",
+    "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400",
+    "targetAudience": [
+      "beginner",
+      "young-professional",
+      "salaried"
+    ],
+    "relevantGoals": [
+      "financial-literacy",
+      "portfolio-building",
+      "first-investment"
+    ],
+    "tags": [
+      "course",
+      "investing",
+      "beginner",
+      "portfolio",
+      "mutual-funds",
+      "equity"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "6 hours",
+      "format": "recorded",
+      "instructor": "Deepak Shenoy, SEBI RIA",
+      "certification": true,
+      "syllabus": [
+        "Asset classes explained",
+        "Risk profiling",
+        "Goal-based investing",
+        "Building your first SIP",
+        "Common mistakes to avoid"
+      ],
+      "startDate": null
+    }
+  },
+  {
+    "productId": "ETS-028",
+    "name": "ET Masterclass: Options Trading Strategies for Intermediate Traders",
+    "category": "course",
+    "subCategory": "Trading",
+    "description": "Go beyond buying calls and puts. Learn iron condors, straddles, bull/bear spreads, and weekly expiry strategies with real P&L case studies from Nifty and Bank Nifty. Includes a live market demo session.",
+    "price": 7999,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/options-trading",
+    "imageUrl": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400",
+    "targetAudience": [
+      "trader",
+      "intermediate-investor"
+    ],
+    "relevantGoals": [
+      "active-trading",
+      "derivatives",
+      "income-generation"
+    ],
+    "tags": [
+      "course",
+      "options",
+      "trading",
+      "nifty",
+      "derivatives",
+      "strategies"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "10 hours",
+      "format": "live + recorded",
+      "instructor": "PR Sundar, Options Trader",
+      "certification": true,
+      "syllabus": [
+        "Option Greeks deep-dive",
+        "Spreads and straddles",
+        "Weekly expiry strategies",
+        "Risk management",
+        "Live market demo"
+      ],
+      "startDate": "2026-04-12"
+    }
+  },
+  {
+    "productId": "ETS-029",
+    "name": "ET Masterclass: Personal Finance for Salaried Professionals",
+    "category": "course",
+    "subCategory": "Personal Finance",
+    "description": "Turn your salary into wealth. Covers budgeting frameworks, emergency funds, tax-saving under old and new regime, optimal insurance coverage, SIP vs lump sum, and retirement corpus calculation. Practical, no-jargon approach.",
+    "price": 1999,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/personal-finance",
+    "imageUrl": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400",
+    "targetAudience": [
+      "salaried",
+      "young-professional"
+    ],
+    "relevantGoals": [
+      "tax-planning",
+      "saving",
+      "retirement-planning",
+      "financial-literacy"
+    ],
+    "tags": [
+      "course",
+      "personal-finance",
+      "salary",
+      "tax",
+      "budgeting",
+      "insurance"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "5 hours",
+      "format": "recorded",
+      "instructor": "Monika Halan, Author of 'Let's Talk Money'",
+      "certification": true,
+      "syllabus": [
+        "50-30-20 budgeting",
+        "Tax regime comparison",
+        "Insurance needs analysis",
+        "SIP strategy",
+        "Retirement calculator"
+      ],
+      "startDate": null
+    }
+  },
+  {
+    "productId": "ETS-030",
+    "name": "ET Masterclass: AI for Business Leaders",
+    "category": "course",
+    "subCategory": "Technology",
+    "description": "Understand GenAI, LLMs, and automation without writing a single line of code. Learn to evaluate AI use cases, assess ROI, manage AI teams, and navigate ethical considerations. Case studies from Indian enterprises.",
+    "price": 5999,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/ai-for-leaders",
+    "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400",
+    "targetAudience": [
+      "cxo",
+      "senior-professional",
+      "entrepreneur"
+    ],
+    "relevantGoals": [
+      "upskilling",
+      "business-strategy",
+      "digital-transformation"
+    ],
+    "tags": [
+      "course",
+      "ai",
+      "genai",
+      "leadership",
+      "digital-transformation",
+      "strategy"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "8 hours",
+      "format": "live + recorded",
+      "instructor": "Anurag Jain, AI Advisor to Fortune 500",
+      "certification": true,
+      "syllabus": [
+        "AI landscape 2026",
+        "GenAI use case evaluation",
+        "ROI framework",
+        "AI team structure",
+        "Ethics and governance"
+      ],
+      "startDate": "2026-04-20"
+    }
+  },
+  {
+    "productId": "ETS-031",
+    "name": "ET Masterclass: Technical Analysis — Charts, Patterns & Indicators",
+    "category": "course",
+    "subCategory": "Trading",
+    "description": "Master candlestick patterns, support/resistance, moving averages, RSI, MACD, and Fibonacci retracements. Build your own trading system with entry/exit rules. Practise on live Nifty and Bank Nifty charts.",
+    "price": 4999,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/technical-analysis",
+    "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400",
+    "targetAudience": [
+      "trader",
+      "beginner",
+      "intermediate-investor"
+    ],
+    "relevantGoals": [
+      "active-trading",
+      "technical-analysis",
+      "chart-reading"
+    ],
+    "tags": [
+      "course",
+      "technical-analysis",
+      "charts",
+      "candlestick",
+      "indicators",
+      "trading"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "12 hours",
+      "format": "recorded",
+      "instructor": "Vivek Bajaj, StockEdge Founder",
+      "certification": true,
+      "syllabus": [
+        "Candlestick mastery",
+        "Support & resistance",
+        "MA/EMA crossovers",
+        "RSI & MACD",
+        "Building a trading system"
+      ],
+      "startDate": null
+    }
+  },
+  {
+    "productId": "ETS-032",
+    "name": "ET Masterclass: Mutual Fund Selection & SIP Maximisation",
+    "category": "course",
+    "subCategory": "Mutual Funds",
+    "description": "Learn to pick the right mutual fund from 5,000+ schemes. Covers direct vs regular, expense ratios, rolling returns vs point-to-point, portfolio overlap analysis, and SIP step-up strategies for wealth compounding.",
+    "price": 1499,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/mutual-fund-selection",
+    "imageUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400",
+    "targetAudience": [
+      "investor",
+      "salaried",
+      "beginner"
+    ],
+    "relevantGoals": [
+      "mutual-fund-selection",
+      "retirement-planning",
+      "portfolio-building"
+    ],
+    "tags": [
+      "course",
+      "mutual-funds",
+      "sip",
+      "direct-plan",
+      "expense-ratio",
+      "wealth"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "4 hours",
+      "format": "recorded",
+      "instructor": "Dhirendra Kumar, Value Research",
+      "certification": false,
+      "syllabus": [
+        "Direct vs regular explained",
+        "Expense ratio impact",
+        "Rolling returns analysis",
+        "SIP step-up math",
+        "Portfolio overlap tool"
+      ],
+      "startDate": null
+    }
+  },
+  {
+    "productId": "ETS-033",
+    "name": "ET Masterclass: Tax Planning Workshop — FY 2026-27",
+    "category": "course",
+    "subCategory": "Tax Planning",
+    "description": "Navigate the new vs old tax regime, maximise Section 80C/80D deductions, understand LTCG/STCG changes, and structure HRA/NPS for optimal savings. Live Q&A with a chartered accountant. Updated for Budget 2026.",
+    "price": 999,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/tax-planning",
+    "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400",
+    "targetAudience": [
+      "salaried",
+      "professional",
+      "freelancer"
+    ],
+    "relevantGoals": [
+      "tax-planning",
+      "saving",
+      "compliance"
+    ],
+    "tags": [
+      "course",
+      "tax",
+      "80c",
+      "income-tax",
+      "budget-2026",
+      "deductions"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "3 hours",
+      "format": "live",
+      "instructor": "CA Rachana Ranade",
+      "certification": false,
+      "syllabus": [
+        "Old vs new regime calculator",
+        "80C/80D optimisation",
+        "LTCG/STCG changes",
+        "HRA+NPS advanced",
+        "Live Q&A"
+      ],
+      "startDate": "2026-04-05"
+    }
+  },
+  {
+    "productId": "ETS-034",
+    "name": "ET Masterclass: Real Estate Investment — Beyond Your First Home",
+    "category": "course",
+    "subCategory": "Real Estate",
+    "description": "Evaluate rental yield vs capital appreciation, understand REITs, navigate RERA, and build a real estate portfolio alongside equities. Covers commercial, residential, and fractional ownership models.",
+    "price": 3999,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/real-estate",
+    "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400",
+    "targetAudience": [
+      "investor",
+      "hnwi",
+      "professional"
+    ],
+    "relevantGoals": [
+      "real-estate-investing",
+      "portfolio-diversification",
+      "passive-income"
+    ],
+    "tags": [
+      "course",
+      "real-estate",
+      "reit",
+      "rera",
+      "rental-yield",
+      "property"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "5 hours",
+      "format": "recorded",
+      "instructor": "Anuj Puri, Chairman ANAROCK",
+      "certification": false,
+      "syllabus": [
+        "Rental yield calculation",
+        "REIT investing guide",
+        "RERA compliance",
+        "Commercial vs residential",
+        "Fractional ownership"
+      ],
+      "startDate": null
+    }
+  },
+  {
+    "productId": "ETS-035",
+    "name": "ET Masterclass: Cryptocurrency & Digital Assets Fundamentals",
+    "category": "course",
+    "subCategory": "Cryptocurrency",
+    "description": "Demystify Bitcoin, Ethereum, and the broader crypto ecosystem. Understand blockchain technology, DeFi protocols, NFT valuations, India's crypto tax framework, and responsible allocation within a traditional portfolio.",
+    "price": 2999,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/crypto-fundamentals",
+    "imageUrl": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400",
+    "targetAudience": [
+      "young-professional",
+      "investor",
+      "tech-professional"
+    ],
+    "relevantGoals": [
+      "crypto-investing",
+      "portfolio-diversification",
+      "tech-trends"
+    ],
+    "tags": [
+      "course",
+      "crypto",
+      "bitcoin",
+      "ethereum",
+      "blockchain",
+      "defi"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "6 hours",
+      "format": "recorded",
+      "instructor": "Nischal Shetty, WazirX Founder",
+      "certification": true,
+      "syllabus": [
+        "Bitcoin & Ethereum explained",
+        "DeFi protocols",
+        "India crypto tax rules",
+        "Portfolio allocation",
+        "Security best practices"
+      ],
+      "startDate": null
+    }
+  },
+  {
+    "productId": "ETS-036",
+    "name": "ET Masterclass: Leadership in Volatile Markets",
+    "category": "course",
+    "subCategory": "Leadership",
+    "description": "How top CEOs lead through uncertainty — recessions, market crashes, geopolitical disruptions. Real-world case studies from 2008 GFC, COVID-19, and the Russia-Ukraine disruption. Build your crisis leadership playbook.",
+    "price": 6999,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/leadership-volatile-markets",
+    "imageUrl": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400",
+    "targetAudience": [
+      "cxo",
+      "senior-professional",
+      "entrepreneur"
+    ],
+    "relevantGoals": [
+      "leadership",
+      "business-strategy",
+      "crisis-management"
+    ],
+    "tags": [
+      "course",
+      "leadership",
+      "crisis",
+      "ceo",
+      "strategy",
+      "recession"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "8 hours",
+      "format": "live + recorded",
+      "instructor": "D. Shivakumar, Group President Aditya Birla",
+      "certification": true,
+      "syllabus": [
+        "Crisis communication",
+        "Cash flow management",
+        "Strategic pivots",
+        "Team morale in downturns",
+        "Case studies: GFC, COVID"
+      ],
+      "startDate": "2026-05-10"
+    }
+  },
+  {
+    "productId": "ETS-037",
+    "name": "ET Masterclass: ESG Investing — The Sustainability Premium",
+    "category": "course",
+    "subCategory": "ESG",
+    "description": "Understand ESG scoring frameworks, BRSR compliance, green bonds, and how sustainability metrics impact long-term stock returns. Learn to screen Indian companies on ESG parameters and build a responsible portfolio.",
+    "price": 2499,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/esg-investing",
+    "imageUrl": "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=400",
+    "targetAudience": [
+      "investor",
+      "analyst",
+      "professional"
+    ],
+    "relevantGoals": [
+      "esg-investing",
+      "portfolio-building",
+      "sustainable-investing"
+    ],
+    "tags": [
+      "course",
+      "esg",
+      "sustainability",
+      "green-bonds",
+      "brsr",
+      "responsible-investing"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "4 hours",
+      "format": "recorded",
+      "instructor": "Hetal Dalal, CEO, IiAS",
+      "certification": true,
+      "syllabus": [
+        "ESG scoring frameworks",
+        "BRSR compliance",
+        "Green bond analysis",
+        "ESG stock screener",
+        "Portfolio construction"
+      ],
+      "startDate": null
+    }
+  },
+  {
+    "productId": "ETS-038",
+    "name": "ET Masterclass: Retirement Planning — The ₹5 Crore Playbook",
+    "category": "course",
+    "subCategory": "Retirement",
+    "description": "Calculate your retirement corpus, build a withdrawal strategy, optimise NPS + PPF + EPF stack, understand annuity products, and plan for healthcare costs in retirement. Designed for 35–50 year olds who are serious about retiring on their terms.",
+    "price": 1999,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/retirement-planning",
+    "imageUrl": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400",
+    "targetAudience": [
+      "salaried",
+      "mid-career",
+      "professional"
+    ],
+    "relevantGoals": [
+      "retirement-planning",
+      "corpus-building",
+      "financial-freedom"
+    ],
+    "tags": [
+      "course",
+      "retirement",
+      "nps",
+      "ppf",
+      "epf",
+      "corpus",
+      "annuity"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "5 hours",
+      "format": "recorded",
+      "instructor": "Pattu (Asan Ideas for Wealth)",
+      "certification": false,
+      "syllabus": [
+        "Corpus calculation with inflation",
+        "NPS tier-1 vs tier-2",
+        "PPF + EPF optimisation",
+        "Bucket withdrawal strategy",
+        "Health cost planning"
+      ],
+      "startDate": null
+    }
+  },
+  {
+    "productId": "ETS-039",
+    "name": "ET Masterclass: Startup Fundraising — From Seed to Series B",
+    "category": "course",
+    "subCategory": "Entrepreneurship",
+    "description": "Learn to build a pitch deck, model unit economics, negotiate term sheets, choose the right investor, and manage cap tables. Taught by a VC partner with case studies from Zerodha, Razorpay, and Meesho.",
+    "price": 4999,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/startup-fundraising",
+    "imageUrl": "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=400",
+    "targetAudience": [
+      "entrepreneur",
+      "startup-founder"
+    ],
+    "relevantGoals": [
+      "startup-growth",
+      "fundraising",
+      "business-planning"
+    ],
+    "tags": [
+      "course",
+      "startup",
+      "fundraising",
+      "pitch-deck",
+      "vc",
+      "term-sheet"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "7 hours",
+      "format": "live + recorded",
+      "instructor": "Anand Daniel, Partner at Accel",
+      "certification": true,
+      "syllabus": [
+        "Pitch deck framework",
+        "Unit economics modeling",
+        "Term sheet negotiation",
+        "Cap table management",
+        "Investor selection"
+      ],
+      "startDate": "2026-04-26"
+    }
+  },
+  {
+    "productId": "ETS-040",
+    "name": "ET Masterclass: Financial Modelling in Excel",
+    "category": "course",
+    "subCategory": "Financial Analysis",
+    "description": "Build 3-statement models, DCF valuations, and LBO analyses from scratch in Excel. Master keyboard shortcuts, dynamic charts, and scenario analysis tables used by investment bankers and equity research analysts.",
+    "price": 5999,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/financial-modelling",
+    "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+    "targetAudience": [
+      "analyst",
+      "professional",
+      "student"
+    ],
+    "relevantGoals": [
+      "upskilling",
+      "career-growth",
+      "fundamental-analysis"
+    ],
+    "tags": [
+      "course",
+      "financial-modelling",
+      "excel",
+      "dcf",
+      "valuation",
+      "investment-banking"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "15 hours",
+      "format": "recorded",
+      "instructor": "Aswath Damodaran (Guest) + ET Academy Team",
+      "certification": true,
+      "syllabus": [
+        "3-statement model",
+        "DCF valuation",
+        "Comparable analysis",
+        "LBO basics",
+        "Scenario & sensitivity tables"
+      ],
+      "startDate": null
+    }
+  },
+  {
+    "productId": "ETS-041",
+    "name": "ET Masterclass: Behavioural Finance — Why Smart People Make Bad Money Decisions",
+    "category": "course",
+    "subCategory": "Psychology",
+    "description": "Explore cognitive biases that destroy portfolio returns — anchoring, loss aversion, herd mentality, recency bias, and overconfidence. Build a personal checklist to make rational investment decisions under pressure.",
+    "price": 1499,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/masterclass/behavioural-finance",
+    "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400",
+    "targetAudience": [
+      "investor",
+      "trader",
+      "professional"
+    ],
+    "relevantGoals": [
+      "investment-discipline",
+      "risk-management",
+      "self-improvement"
+    ],
+    "tags": [
+      "course",
+      "behavioural-finance",
+      "psychology",
+      "bias",
+      "decision-making"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "duration": "4 hours",
+      "format": "recorded",
+      "instructor": "Saurabh Mukherjea, Marcellus Investment Managers",
+      "certification": false,
+      "syllabus": [
+        "12 killer biases",
+        "Loss aversion in Indian markets",
+        "Herd mentality case studies",
+        "Decision checklist builder",
+        "Portfolio journaling"
+      ],
+      "startDate": null
+    }
+  },
+  {
+    "productId": "ETS-042",
+    "name": "ET Wealth Summit 2026",
+    "category": "event",
+    "subCategory": "Wealth Management",
+    "description": "India's premier wealth creation conference. Top fund managers, SEBI officials, and economic thought leaders discuss market outlook, asset allocation strategies, and emerging investment themes for FY27. Exclusive networking dinner with speakers.",
+    "price": 5000,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/wealth-summit-2026",
+    "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400",
+    "targetAudience": [
+      "investor",
+      "hnwi",
+      "financial-advisor"
+    ],
+    "relevantGoals": [
+      "portfolio-analysis",
+      "market-research",
+      "networking"
+    ],
+    "tags": [
+      "event",
+      "summit",
+      "wealth",
+      "investing",
+      "networking",
+      "mumbai"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-05-15",
+      "city": "Mumbai",
+      "venue": "Jio Convention Centre, BKC",
+      "speakers": [
+        "Nilesh Shah (Kotak AMC)",
+        "Radhika Gupta (Edelweiss AMC)",
+        "S. Naren (ICICI Prudential)"
+      ],
+      "capacity": 500,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-043",
+    "name": "ET Global Business Summit 2026",
+    "category": "event",
+    "subCategory": "Business Strategy",
+    "description": "Two-day flagship summit bringing together 100+ global and Indian business leaders, policymakers, and economists. Keynotes on India's growth trajectory, geopolitical risks, trade realignment, and the future of work. Live-streamed with ET Prime virtual pass.",
+    "price": 15000,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/global-business-summit",
+    "imageUrl": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400",
+    "targetAudience": [
+      "cxo",
+      "entrepreneur",
+      "senior-professional"
+    ],
+    "relevantGoals": [
+      "business-strategy",
+      "networking",
+      "global-perspective"
+    ],
+    "tags": [
+      "event",
+      "summit",
+      "global",
+      "business",
+      "ceo",
+      "delhi",
+      "flagship"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-06-20",
+      "city": "New Delhi",
+      "venue": "The Taj Palace, New Delhi",
+      "speakers": [
+        "Finance Minister (Invited)",
+        "Mukesh Ambani (RIL)",
+        "N. Chandrasekaran (Tata Sons)",
+        "Satya Nadella (Microsoft, Virtual)"
+      ],
+      "capacity": 1000,
+      "format": "in-person + virtual"
+    }
+  },
+  {
+    "productId": "ETS-044",
+    "name": "ET Entrepreneur Summit 2026",
+    "category": "event",
+    "subCategory": "Startups",
+    "description": "Where founders meet funders. Pitch competitions, VC panels, founder fireside chats, and a startup expo hall. Covers seed-to-IPO journeys, fundraising strategies, and scaling challenges unique to India. Afterparty networking included.",
+    "price": 3000,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/entrepreneur-summit",
+    "imageUrl": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400",
+    "targetAudience": [
+      "entrepreneur",
+      "startup-founder",
+      "investor"
+    ],
+    "relevantGoals": [
+      "startup-growth",
+      "fundraising",
+      "networking"
+    ],
+    "tags": [
+      "event",
+      "summit",
+      "startup",
+      "founder",
+      "vc",
+      "pitch",
+      "bangalore"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-07-12",
+      "city": "Bengaluru",
+      "venue": "Bangalore International Exhibition Centre",
+      "speakers": [
+        "Kunal Shah (CRED)",
+        "Falguni Nayar (Nykaa)",
+        "Nithin Kamath (Zerodha)"
+      ],
+      "capacity": 800,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-045",
+    "name": "India Financial Summit 2026",
+    "category": "event",
+    "subCategory": "Finance & Banking",
+    "description": "Macroeconomic outlook, banking sector health, NBFC growth, digital payments evolution, and financial inclusion roadmap. Keynotes from RBI, SEBI, and IRDAI leadership. Closed-door roundtables on credit policy and regulatory reform.",
+    "price": 7500,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/india-financial-summit",
+    "imageUrl": "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=400",
+    "targetAudience": [
+      "banker",
+      "cxo",
+      "financial-advisor",
+      "regulator"
+    ],
+    "relevantGoals": [
+      "business-strategy",
+      "regulatory-insight",
+      "networking"
+    ],
+    "tags": [
+      "event",
+      "summit",
+      "banking",
+      "finance",
+      "rbi",
+      "sebi",
+      "regulation"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-08-08",
+      "city": "Mumbai",
+      "venue": "Trident, Nariman Point",
+      "speakers": [
+        "RBI Deputy Governor (Invited)",
+        "Uday Kotak",
+        "Ashishkumar Chauhan (NSE)"
+      ],
+      "capacity": 400,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-046",
+    "name": "ET CXO Roundtable: AI & Business Transformation",
+    "category": "event",
+    "subCategory": "Technology",
+    "description": "Intimate 50-person roundtable for CIOs and CTOs. No keynotes — structured peer discussions on AI implementation challenges, vendor selection, talent gaps, and measuring AI ROI. Chatham House rules. Dinner included.",
+    "price": 10000,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/cxo-roundtable-ai",
+    "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400",
+    "targetAudience": [
+      "cxo",
+      "cio",
+      "cto"
+    ],
+    "relevantGoals": [
+      "digital-transformation",
+      "networking",
+      "business-strategy"
+    ],
+    "tags": [
+      "event",
+      "roundtable",
+      "ai",
+      "cxo",
+      "technology",
+      "exclusive"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-04-25",
+      "city": "Bengaluru",
+      "venue": "ITC Gardenia",
+      "speakers": [
+        "Peer-led discussion — no keynotes"
+      ],
+      "capacity": 50,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-047",
+    "name": "ET Women Leaders Forum 2026",
+    "category": "event",
+    "subCategory": "Leadership",
+    "description": "Celebrating and amplifying women in Indian business. Panels on breaking the glass ceiling, boardroom diversity, women-led startups, and work-life integration. Awards ceremony for ET Businesswoman of the Year.",
+    "price": 2500,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/women-leaders-forum",
+    "imageUrl": "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=400",
+    "targetAudience": [
+      "professional",
+      "entrepreneur",
+      "senior-professional"
+    ],
+    "relevantGoals": [
+      "leadership",
+      "networking",
+      "career-growth"
+    ],
+    "tags": [
+      "event",
+      "women",
+      "leadership",
+      "diversity",
+      "awards",
+      "delhi"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-09-18",
+      "city": "New Delhi",
+      "venue": "The Leela Palace, New Delhi",
+      "speakers": [
+        "Kiran Mazumdar-Shaw (Biocon)",
+        "Arundhati Bhattacharya (Salesforce India)",
+        "Vineeta Singh (SUGAR Cosmetics)"
+      ],
+      "capacity": 300,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-048",
+    "name": "ET Awards for Corporate Excellence 2026",
+    "category": "event",
+    "subCategory": "Awards",
+    "description": "ET's most prestigious annual awards recognising outstanding corporate performance, governance, and innovation. Categories include Company of the Year, CEO of the Year, Emerging Company, and Lifetime Achievement.",
+    "price": 12000,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/corporate-excellence-awards",
+    "imageUrl": "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=400",
+    "targetAudience": [
+      "cxo",
+      "senior-professional",
+      "entrepreneur"
+    ],
+    "relevantGoals": [
+      "networking",
+      "brand-visibility",
+      "industry-recognition"
+    ],
+    "tags": [
+      "event",
+      "awards",
+      "corporate",
+      "excellence",
+      "gala",
+      "mumbai"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-11-22",
+      "city": "Mumbai",
+      "venue": "Grand Hyatt, Mumbai",
+      "speakers": [
+        "Jury panel TBA",
+        "Chief Guest TBA"
+      ],
+      "capacity": 600,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-049",
+    "name": "ET Startup Awards 2026",
+    "category": "event",
+    "subCategory": "Startups",
+    "description": "Awards celebrating India's most innovative startups across categories — Fintech, SaaS, D2C, DeepTech, HealthTech, and Bootstrap Champion. Features a pitch stage for shortlisted startups and VC speed-dating sessions.",
+    "price": 2000,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/startup-awards",
+    "imageUrl": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=400",
+    "targetAudience": [
+      "entrepreneur",
+      "startup-founder",
+      "investor"
+    ],
+    "relevantGoals": [
+      "startup-growth",
+      "networking",
+      "brand-visibility"
+    ],
+    "tags": [
+      "event",
+      "awards",
+      "startup",
+      "pitch",
+      "vc",
+      "bangalore"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-08-28",
+      "city": "Bengaluru",
+      "venue": "Conrad Bengaluru",
+      "speakers": [
+        "Rajan Anandan (Peak XV)",
+        "Vani Kola (Kalaari)",
+        "Founders TBA"
+      ],
+      "capacity": 400,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-050",
+    "name": "ET Marketing & Advertising Summit",
+    "category": "event",
+    "subCategory": "Marketing",
+    "description": "India's top CMOs discuss brand building in the AI era — performance marketing ROI, content commerce, influencer economics, and privacy-first advertising. Includes the ET Brand Equity quiz finals.",
+    "price": 4000,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/marketing-summit",
+    "imageUrl": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400",
+    "targetAudience": [
+      "marketer",
+      "cmo",
+      "entrepreneur"
+    ],
+    "relevantGoals": [
+      "business-strategy",
+      "marketing",
+      "networking"
+    ],
+    "tags": [
+      "event",
+      "summit",
+      "marketing",
+      "advertising",
+      "brand",
+      "cmo"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-10-15",
+      "city": "Mumbai",
+      "venue": "St. Regis, Mumbai",
+      "speakers": [
+        "Piyush Pandey (Ogilvy)",
+        "Shan Jain (Google India)",
+        "CMOs from HUL, ITC, Marico"
+      ],
+      "capacity": 350,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-051",
+    "name": "ET HR World Congress 2026",
+    "category": "event",
+    "subCategory": "Human Resources",
+    "description": "The future of work — AI in recruitment, hybrid workforce management, employee wellness ROI, ESOP structuring, and DEI measurement. CHROs from top 50 Indian companies share playbooks and data.",
+    "price": 3500,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/hr-world-congress",
+    "imageUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400",
+    "targetAudience": [
+      "hr-professional",
+      "chro",
+      "cxo"
+    ],
+    "relevantGoals": [
+      "talent-management",
+      "leadership",
+      "networking"
+    ],
+    "tags": [
+      "event",
+      "congress",
+      "hr",
+      "recruitment",
+      "ai",
+      "hybrid-work",
+      "dei"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-09-05",
+      "city": "Gurugram",
+      "venue": "The Oberoi, Gurugram",
+      "speakers": [
+        "CHROs from TCS, Infosys, Wipro, HUL"
+      ],
+      "capacity": 300,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-052",
+    "name": "ET Infrastructure Summit 2026",
+    "category": "event",
+    "subCategory": "Infrastructure",
+    "description": "India's $1.3 trillion infrastructure push under the microscope — highways, railways, smart cities, green energy, and real estate. Policy deep-dives with NHAI, Railway Board, and Smart Cities Mission officials.",
+    "price": 5000,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/infrastructure-summit",
+    "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400",
+    "targetAudience": [
+      "cxo",
+      "investor",
+      "policy-maker"
+    ],
+    "relevantGoals": [
+      "business-strategy",
+      "sector-analysis",
+      "infrastructure-investing"
+    ],
+    "tags": [
+      "event",
+      "summit",
+      "infrastructure",
+      "roads",
+      "railways",
+      "smart-cities",
+      "green-energy"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-07-25",
+      "city": "New Delhi",
+      "venue": "India Habitat Centre",
+      "speakers": [
+        "NHAI Chairman",
+        "Railway Board Member",
+        "Larsen & Toubro CEO"
+      ],
+      "capacity": 400,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-053",
+    "name": "ET Tech Leaders Conclave 2026",
+    "category": "event",
+    "subCategory": "Technology",
+    "description": "India's top technology executives discuss AI strategy, cloud migration, cybersecurity, and India's position as a global tech talent hub. Includes startup demo zone and VC office hours.",
+    "price": 4000,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/tech-leaders-conclave",
+    "imageUrl": "https://images.unsplash.com/photo-1541354329998-f4d927d9b2c2?w=400",
+    "targetAudience": [
+      "tech-professional",
+      "cto",
+      "entrepreneur"
+    ],
+    "relevantGoals": [
+      "tech-trends",
+      "networking",
+      "digital-transformation"
+    ],
+    "tags": [
+      "event",
+      "conclave",
+      "tech",
+      "ai",
+      "cloud",
+      "cybersecurity",
+      "bangalore"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-06-06",
+      "city": "Bengaluru",
+      "venue": "Shangri-La, Bengaluru",
+      "speakers": [
+        "Debjani Ghosh (Nasscom)",
+        "CTO, Infosys",
+        "CTO, Flipkart"
+      ],
+      "capacity": 500,
+      "format": "in-person + virtual"
+    }
+  },
+  {
+    "productId": "ETS-054",
+    "name": "ET Banking & Finance Summit 2026",
+    "category": "event",
+    "subCategory": "Banking",
+    "description": "Deep-dive into India's banking transformation — digital lending regulations, CBDC roadmap, co-lending models, NPA resolution progress, and fintech-bank partnerships. Intimate format with regulator access.",
+    "price": 6000,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/banking-summit",
+    "imageUrl": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400",
+    "targetAudience": [
+      "banker",
+      "fintech-professional",
+      "investor"
+    ],
+    "relevantGoals": [
+      "business-strategy",
+      "regulatory-insight",
+      "fintech"
+    ],
+    "tags": [
+      "event",
+      "summit",
+      "banking",
+      "fintech",
+      "digital-lending",
+      "cbdc"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-05-30",
+      "city": "Mumbai",
+      "venue": "Four Seasons, Mumbai",
+      "speakers": [
+        "SBI Chairman",
+        "HDFC Bank MD",
+        "PhonePe CEO"
+      ],
+      "capacity": 300,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-055",
+    "name": "ET Real Estate Forum 2026",
+    "category": "event",
+    "subCategory": "Real Estate",
+    "description": "Luxury real estate boom, affordable housing policy, REIT performance, co-living/co-working trends, and NRI investment flows. Developer panels, architect showcases, and a property expo with on-site booking.",
+    "price": 2000,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/real-estate-forum",
+    "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400",
+    "targetAudience": [
+      "investor",
+      "hnwi",
+      "real-estate-professional"
+    ],
+    "relevantGoals": [
+      "real-estate-investing",
+      "portfolio-diversification",
+      "property-buying"
+    ],
+    "tags": [
+      "event",
+      "forum",
+      "real-estate",
+      "reit",
+      "property",
+      "luxury",
+      "affordable-housing"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-10-03",
+      "city": "Gurugram",
+      "venue": "DLF CyberHub Convention Centre",
+      "speakers": [
+        "DLF Chairman",
+        "Godrej Properties MD",
+        "ANAROCK Chairman"
+      ],
+      "capacity": 500,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-056",
+    "name": "ET SME Growth Summit 2026",
+    "category": "event",
+    "subCategory": "SME",
+    "description": "Designed for small and medium business owners. Covers GST compliance, access to credit, digital transformation on a budget, export opportunities, and government schemes. Free mentoring sessions with MSME ministry officials.",
+    "price": 1500,
+    "priceModel": "one-time",
+    "pageUrl": "https://economictimes.indiatimes.com/events/sme-growth-summit",
+    "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400",
+    "targetAudience": [
+      "sme-owner",
+      "entrepreneur"
+    ],
+    "relevantGoals": [
+      "business-growth",
+      "compliance",
+      "digital-transformation"
+    ],
+    "tags": [
+      "event",
+      "summit",
+      "sme",
+      "msme",
+      "gst",
+      "credit",
+      "export"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "date": "2026-08-15",
+      "city": "Pune",
+      "venue": "Hyatt Regency, Pune",
+      "speakers": [
+        "MSME Secretary",
+        "Zoho CEO",
+        "CRED Business Head"
+      ],
+      "capacity": 600,
+      "format": "in-person"
+    }
+  },
+  {
+    "productId": "ETS-057",
+    "name": "HDFC Infinia Credit Card",
+    "category": "financial-service",
+    "subCategory": "Credit Card",
+    "description": "India's most aspirational credit card — 5X reward points on all spends, complimentary domestic and international lounge access, global travel insurance, and milestone benefits. Invitation-only for high-income earners.",
+    "price": 12500,
+    "priceModel": "annual",
+    "pageUrl": "https://www.hdfcbank.com/personal/pay/cards/credit-cards/infinia-credit-card",
+    "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400",
+    "targetAudience": [
+      "hnwi",
+      "frequent-traveller",
+      "senior-professional"
+    ],
+    "relevantGoals": [
+      "premium-rewards",
+      "travel",
+      "lifestyle"
+    ],
+    "tags": [
+      "credit-card",
+      "hdfc",
+      "infinia",
+      "rewards",
+      "lounge-access",
+      "premium"
+    ],
+    "partnerBrand": "HDFC Bank",
+    "details": {
+      "provider": "HDFC Bank",
+      "productType": "credit-card",
+      "eligibility": {
+        "minIncome": 2400000,
+        "minAge": 21
+      },
+      "benefits": [
+        "5X reward points",
+        "Unlimited lounge access",
+        "₹10,000 milestone reward",
+        "Global travel insurance"
+      ],
+      "annualFee": 12500
+    }
+  },
+  {
+    "productId": "ETS-058",
+    "name": "SBI SimplyCLICK Credit Card",
+    "category": "financial-service",
+    "subCategory": "Credit Card",
+    "description": "Designed for online spenders — 10X rewards on Amazon, Cleartrip, Apollo 24|7 and other partner platforms. ₹500 Amazon voucher as welcome gift. No annual fee for first year, waived on ₹1L annual spend.",
+    "price": 499,
+    "priceModel": "annual",
+    "pageUrl": "https://www.sbicard.com/en/personal/credit-cards/shopping/simplyclick-sbi-card.page",
+    "imageUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400",
+    "targetAudience": [
+      "young-professional",
+      "online-shopper"
+    ],
+    "relevantGoals": [
+      "cashback",
+      "online-shopping",
+      "rewards"
+    ],
+    "tags": [
+      "credit-card",
+      "sbi",
+      "online",
+      "amazon",
+      "cashback",
+      "entry-level"
+    ],
+    "partnerBrand": "SBI Card",
+    "details": {
+      "provider": "SBI Card",
+      "productType": "credit-card",
+      "eligibility": {
+        "minIncome": 300000,
+        "minAge": 21
+      },
+      "benefits": [
+        "10X rewards on partners",
+        "₹500 Amazon welcome",
+        "Fuel surcharge waiver",
+        "1% cashback on all spends"
+      ],
+      "annualFee": 499
+    }
+  },
+  {
+    "productId": "ETS-059",
+    "name": "ICICI Prudential iProtect Smart — Term Insurance",
+    "category": "financial-service",
+    "subCategory": "Insurance",
+    "description": "Pure term life insurance with ₹1 crore cover starting at ₹490/month for a 30-year-old non-smoker. Optional critical illness, accidental death, and income benefit riders. 98.6% claim settlement ratio.",
+    "price": 5880,
+    "priceModel": "annual",
+    "pageUrl": "https://www.iciciprulife.com/term-insurance/iprotect-smart.html",
+    "imageUrl": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400",
+    "targetAudience": [
+      "salaried",
+      "young-professional",
+      "parent"
+    ],
+    "relevantGoals": [
+      "life-insurance",
+      "family-protection",
+      "financial-planning"
+    ],
+    "tags": [
+      "insurance",
+      "term",
+      "icici",
+      "life-cover",
+      "claim-settlement",
+      "affordable"
+    ],
+    "partnerBrand": "ICICI Prudential",
+    "details": {
+      "provider": "ICICI Prudential Life Insurance",
+      "productType": "term-insurance",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "₹1 Cr cover from ₹490/mo",
+        "98.6% claim settlement",
+        "Critical illness rider",
+        "Income benefit option"
+      ],
+      "annualFee": null
+    }
+  },
+  {
+    "productId": "ETS-060",
+    "name": "HDFC Life Click 2 Protect Life — Term Plan",
+    "category": "financial-service",
+    "subCategory": "Insurance",
+    "description": "Comprehensive term plan with life cover up to ₹10 crore. Flexible payout options — lump sum, monthly income, or lump sum + monthly income. Covers 64 critical illnesses with optional rider. Tax benefits under 80C and 10(10D).",
+    "price": 7200,
+    "priceModel": "annual",
+    "pageUrl": "https://www.hdfclife.com/term-insurance-plans/click-2-protect-life",
+    "imageUrl": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400",
+    "targetAudience": [
+      "salaried",
+      "professional",
+      "parent"
+    ],
+    "relevantGoals": [
+      "life-insurance",
+      "family-protection",
+      "tax-planning"
+    ],
+    "tags": [
+      "insurance",
+      "term",
+      "hdfc-life",
+      "critical-illness",
+      "tax-saving",
+      "flexible"
+    ],
+    "partnerBrand": "HDFC Life",
+    "details": {
+      "provider": "HDFC Life Insurance",
+      "productType": "term-insurance",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "Up to ₹10 Cr cover",
+        "3 payout options",
+        "64 critical illness cover",
+        "80C tax benefit"
+      ],
+      "annualFee": null
+    }
+  },
+  {
+    "productId": "ETS-061",
+    "name": "SBI Bluechip Fund — SIP",
+    "category": "financial-service",
+    "subCategory": "Mutual Fund",
+    "description": "Large-cap focused equity fund with a 15-year track record of consistent outperformance. Invests in top 100 companies by market cap. Start SIP from ₹500/month. Ideal for conservative equity investors seeking long-term wealth creation.",
+    "price": 500,
+    "priceModel": "monthly-sip",
+    "pageUrl": "https://www.sbimf.com/en-us/equity-fund/sbi-bluechip-fund",
+    "imageUrl": "https://images.unsplash.com/photo-1559526324-593bc073d938?w=400",
+    "targetAudience": [
+      "investor",
+      "salaried",
+      "beginner"
+    ],
+    "relevantGoals": [
+      "wealth-creation",
+      "long-term-investing",
+      "retirement-planning"
+    ],
+    "tags": [
+      "mutual-fund",
+      "sip",
+      "sbi",
+      "large-cap",
+      "bluechip",
+      "equity"
+    ],
+    "partnerBrand": "SBI Mutual Fund",
+    "details": {
+      "provider": "SBI Mutual Fund",
+      "productType": "equity-mutual-fund",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "Large-cap stability",
+        "15-year track record",
+        "SIP from ₹500",
+        "ELSS tax benefit (80C)"
+      ],
+      "annualFee": null
+    }
+  },
+  {
+    "productId": "ETS-062",
+    "name": "Axis Long Term Equity Fund — ELSS SIP",
+    "category": "financial-service",
+    "subCategory": "Mutual Fund",
+    "description": "Tax-saving ELSS fund with a 3-year lock-in. Invests in high-conviction mid and large-cap picks. Dual benefit — ₹1.5 lakh tax deduction under 80C and equity market participation. SIP from ₹500/month.",
+    "price": 500,
+    "priceModel": "monthly-sip",
+    "pageUrl": "https://www.axismf.com/mutual-fund-scheme/axis-long-term-equity-fund",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400",
+    "targetAudience": [
+      "salaried",
+      "young-professional"
+    ],
+    "relevantGoals": [
+      "tax-planning",
+      "wealth-creation",
+      "80c-deduction"
+    ],
+    "tags": [
+      "mutual-fund",
+      "elss",
+      "axis",
+      "tax-saving",
+      "sip",
+      "80c"
+    ],
+    "partnerBrand": "Axis Mutual Fund",
+    "details": {
+      "provider": "Axis Mutual Fund",
+      "productType": "elss-mutual-fund",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "₹1.5L tax deduction (80C)",
+        "3-year lock-in",
+        "High-conviction picks",
+        "SIP from ₹500"
+      ],
+      "annualFee": null
+    }
+  },
+  {
+    "productId": "ETS-063",
+    "name": "Zerodha Demat & Trading Account",
+    "category": "financial-service",
+    "subCategory": "Brokerage",
+    "description": "India's largest discount broker — zero brokerage on equity delivery, flat ₹20/order on intraday and F&O. Advanced charting with Kite, Smallcase integration, Coin for direct MFs, and Varsity for free investing education.",
+    "price": 200,
+    "priceModel": "one-time",
+    "pageUrl": "https://zerodha.com/open-account",
+    "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400",
+    "targetAudience": [
+      "trader",
+      "investor",
+      "beginner"
+    ],
+    "relevantGoals": [
+      "active-trading",
+      "first-investment",
+      "low-cost-investing"
+    ],
+    "tags": [
+      "brokerage",
+      "zerodha",
+      "demat",
+      "discount-broker",
+      "kite",
+      "trading"
+    ],
+    "partnerBrand": "Zerodha",
+    "details": {
+      "provider": "Zerodha Broking",
+      "productType": "demat-account",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "Zero delivery brokerage",
+        "₹20 flat intraday/F&O",
+        "Kite charting",
+        "Coin for direct MFs"
+      ],
+      "annualFee": 300
+    }
+  },
+  {
+    "productId": "ETS-064",
+    "name": "Angel One Trading Account",
+    "category": "financial-service",
+    "subCategory": "Brokerage",
+    "description": "Full-service broker with discount pricing — zero brokerage on delivery, ₹20/order on F&O. Smart API for algo trading, ARQ Prime AI-powered recommendations, and integrated mutual fund and IPO application.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://www.angelone.in/open-demat-account",
+    "imageUrl": "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=400",
+    "targetAudience": [
+      "trader",
+      "investor",
+      "algo-trader"
+    ],
+    "relevantGoals": [
+      "active-trading",
+      "algo-trading",
+      "low-cost-investing"
+    ],
+    "tags": [
+      "brokerage",
+      "angel-one",
+      "demat",
+      "algo",
+      "api",
+      "ipo"
+    ],
+    "partnerBrand": "Angel One",
+    "details": {
+      "provider": "Angel One",
+      "productType": "demat-account",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "Free account opening",
+        "Zero delivery brokerage",
+        "Smart API (algo)",
+        "ARQ Prime AI picks"
+      ],
+      "annualFee": 240
+    }
+  },
+  {
+    "productId": "ETS-065",
+    "name": "HDFC Home Loan",
+    "category": "financial-service",
+    "subCategory": "Loan",
+    "description": "Home loans starting at 8.50% p.a. with tenure up to 30 years. Flexible EMI options, top-up loan facility, and balance transfer from other lenders. Online application with doorstep document pickup in 48 cities.",
+    "price": 0,
+    "priceModel": "interest-rate",
+    "pageUrl": "https://www.hdfc.com/home-loans",
+    "imageUrl": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400",
+    "targetAudience": [
+      "home-buyer",
+      "salaried",
+      "professional"
+    ],
+    "relevantGoals": [
+      "home-purchase",
+      "property-buying",
+      "loan"
+    ],
+    "tags": [
+      "loan",
+      "home-loan",
+      "hdfc",
+      "mortgage",
+      "emi",
+      "property"
+    ],
+    "partnerBrand": "HDFC Ltd",
+    "details": {
+      "provider": "HDFC Ltd",
+      "productType": "home-loan",
+      "eligibility": {
+        "minIncome": 300000,
+        "minAge": 21
+      },
+      "benefits": [
+        "Starting 8.50% p.a.",
+        "Up to 30-year tenure",
+        "Top-up facility",
+        "Balance transfer option"
+      ],
+      "annualFee": null
+    }
+  },
+  {
+    "productId": "ETS-066",
+    "name": "Max Bupa Health Companion — Health Insurance",
+    "category": "financial-service",
+    "subCategory": "Insurance",
+    "description": "Comprehensive health insurance with ₹5L to ₹1 Cr cover. Cashless treatment at 6,000+ hospitals, no co-pay, annual health check-ups, and AYUSH treatment cover. Family floater option for up to 6 members.",
+    "price": 8500,
+    "priceModel": "annual",
+    "pageUrl": "https://www.nivabupa.com/health-insurance-plans/health-companion.html",
+    "imageUrl": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400",
+    "targetAudience": [
+      "salaried",
+      "parent",
+      "professional"
+    ],
+    "relevantGoals": [
+      "health-insurance",
+      "family-protection",
+      "financial-planning"
+    ],
+    "tags": [
+      "insurance",
+      "health",
+      "max-bupa",
+      "cashless",
+      "family-floater",
+      "ayush"
+    ],
+    "partnerBrand": "Niva Bupa",
+    "details": {
+      "provider": "Niva Bupa Health Insurance",
+      "productType": "health-insurance",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "₹5L to ₹1 Cr cover",
+        "6,000+ cashless hospitals",
+        "No co-pay",
+        "AYUSH cover"
+      ],
+      "annualFee": null
+    }
+  },
+  {
+    "productId": "ETS-067",
+    "name": "Star Health Family Health Optima — Health Insurance",
+    "category": "financial-service",
+    "subCategory": "Insurance",
+    "description": "Family floater health plan with ₹5L to ₹25L cover. 14,000+ network hospitals, automatic recharge (Sum Insured restored after a claim in the same year), maternity cover, and no upper age limit for renewal.",
+    "price": 12000,
+    "priceModel": "annual",
+    "pageUrl": "https://www.starhealth.in/health-insurance/family-health-optima",
+    "imageUrl": "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=400",
+    "targetAudience": [
+      "parent",
+      "salaried",
+      "professional"
+    ],
+    "relevantGoals": [
+      "health-insurance",
+      "family-protection"
+    ],
+    "tags": [
+      "insurance",
+      "health",
+      "star-health",
+      "family-floater",
+      "cashless",
+      "maternity"
+    ],
+    "partnerBrand": "Star Health",
+    "details": {
+      "provider": "Star Health Insurance",
+      "productType": "health-insurance",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "14,000+ network hospitals",
+        "Automatic recharge",
+        "Maternity cover",
+        "Lifelong renewal"
+      ],
+      "annualFee": null
+    }
+  },
+  {
+    "productId": "ETS-068",
+    "name": "National Pension System (NPS) — Tier 1",
+    "category": "financial-service",
+    "subCategory": "Retirement",
+    "description": "Government-backed retirement savings scheme with market-linked returns. Tax benefits under 80CCD(1B) — additional ₹50,000 deduction over 80C. Choose your fund manager and asset allocation (equity, corporate bonds, government securities).",
+    "price": 500,
+    "priceModel": "monthly-sip",
+    "pageUrl": "https://www.npstrust.org.in",
+    "imageUrl": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400",
+    "targetAudience": [
+      "salaried",
+      "professional",
+      "mid-career"
+    ],
+    "relevantGoals": [
+      "retirement-planning",
+      "tax-planning",
+      "corpus-building"
+    ],
+    "tags": [
+      "nps",
+      "retirement",
+      "pension",
+      "80ccd",
+      "tax-saving",
+      "government"
+    ],
+    "partnerBrand": "NPS Trust",
+    "details": {
+      "provider": "NPS Trust (PFRDA)",
+      "productType": "pension-scheme",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "Extra ₹50K tax deduction (80CCD)",
+        "Choose fund manager",
+        "Flexible asset allocation",
+        "Government-regulated"
+      ],
+      "annualFee": null
+    }
+  },
+  {
+    "productId": "ETS-069",
+    "name": "Public Provident Fund (PPF) Account",
+    "category": "financial-service",
+    "subCategory": "Savings",
+    "description": "India's safest long-term investment — sovereign guarantee, 7.1% p.a. (tax-free), 15-year tenure with partial withdrawal after 7 years. Ideal for risk-averse investors and retirees wanting guaranteed returns with EEE tax status.",
+    "price": 500,
+    "priceModel": "monthly-sip",
+    "pageUrl": "https://www.india.gov.in/spotlight/public-provident-fund",
+    "imageUrl": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=400",
+    "targetAudience": [
+      "salaried",
+      "risk-averse",
+      "retiree"
+    ],
+    "relevantGoals": [
+      "safe-investing",
+      "tax-planning",
+      "retirement-planning"
+    ],
+    "tags": [
+      "ppf",
+      "savings",
+      "sovereign-guarantee",
+      "tax-free",
+      "risk-free",
+      "80c"
+    ],
+    "partnerBrand": null,
+    "details": {
+      "provider": "Post Office / Banks",
+      "productType": "savings-scheme",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "Sovereign guarantee",
+        "7.1% tax-free returns",
+        "EEE tax status",
+        "80C deduction"
+      ],
+      "annualFee": null
+    }
+  },
+  {
+    "productId": "ETS-070",
+    "name": "Bajaj Finance Fixed Deposit",
+    "category": "financial-service",
+    "subCategory": "Fixed Deposit",
+    "description": "Corporate FD offering up to 8.85% p.a. for senior citizens (8.35% for others). AAA/FAAA rated by CRISIL and ICRA. Flexible tenures from 12 to 60 months, monthly interest payout option, and online management.",
+    "price": 15000,
+    "priceModel": "one-time",
+    "pageUrl": "https://www.bajajfinserv.in/fixed-deposit",
+    "imageUrl": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400",
+    "targetAudience": [
+      "retiree",
+      "risk-averse",
+      "hnwi"
+    ],
+    "relevantGoals": [
+      "safe-investing",
+      "passive-income",
+      "capital-preservation"
+    ],
+    "tags": [
+      "fd",
+      "fixed-deposit",
+      "bajaj",
+      "aaa-rated",
+      "senior-citizen",
+      "monthly-income"
+    ],
+    "partnerBrand": "Bajaj Finance",
+    "details": {
+      "provider": "Bajaj Finance Ltd",
+      "productType": "fixed-deposit",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "Up to 8.85% p.a.",
+        "AAA/FAAA rated",
+        "12-60 month tenure",
+        "Monthly payout option"
+      ],
+      "annualFee": null
+    }
+  },
+  {
+    "productId": "ETS-071",
+    "name": "ICICI Lombard Motor Insurance — Comprehensive",
+    "category": "financial-service",
+    "subCategory": "Insurance",
+    "description": "Comprehensive car insurance with own-damage cover, third-party liability, roadside assistance, and zero depreciation add-on. Cashless claims at 12,000+ garages. Instant online renewal with no inspection needed.",
+    "price": 8000,
+    "priceModel": "annual",
+    "pageUrl": "https://www.icicilombard.com/motor-insurance",
+    "imageUrl": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400",
+    "targetAudience": [
+      "car-owner",
+      "professional"
+    ],
+    "relevantGoals": [
+      "auto-insurance",
+      "asset-protection"
+    ],
+    "tags": [
+      "insurance",
+      "motor",
+      "car",
+      "icici-lombard",
+      "zero-depreciation",
+      "roadside"
+    ],
+    "partnerBrand": "ICICI Lombard",
+    "details": {
+      "provider": "ICICI Lombard General Insurance",
+      "productType": "motor-insurance",
+      "eligibility": {},
+      "benefits": [
+        "Own damage + third-party",
+        "12,000+ cashless garages",
+        "Zero depreciation add-on",
+        "24/7 roadside assistance"
+      ],
+      "annualFee": null
+    }
+  },
+  {
+    "productId": "ETS-072",
+    "name": "Groww Mutual Fund Platform",
+    "category": "financial-service",
+    "subCategory": "Investment Platform",
+    "description": "Commission-free direct mutual fund investing. Browse 5,000+ schemes, compare returns, and start SIPs in under 2 minutes. Also offers stocks, FDs, and digital gold on the same app. KYC completion in 10 minutes.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://groww.in/mutual-funds",
+    "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400",
+    "targetAudience": [
+      "beginner",
+      "young-professional",
+      "investor"
+    ],
+    "relevantGoals": [
+      "first-investment",
+      "mutual-fund-selection",
+      "low-cost-investing"
+    ],
+    "tags": [
+      "platform",
+      "groww",
+      "mutual-fund",
+      "direct-plan",
+      "commission-free",
+      "app"
+    ],
+    "partnerBrand": "Groww",
+    "details": {
+      "provider": "Groww",
+      "productType": "investment-platform",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "Zero commission (direct plans)",
+        "5,000+ schemes",
+        "Stocks + MF + FD in one app",
+        "10-min KYC"
+      ],
+      "annualFee": 0
+    }
+  },
+  {
+    "productId": "ETS-073",
+    "name": "Smallcase — Thematic Stock Portfolios",
+    "category": "financial-service",
+    "subCategory": "Investment Platform",
+    "description": "Invest in curated baskets of stocks and ETFs built around themes — electric vehicles, digital India, rising rural demand, all-weather investing. Created by SEBI-registered research analysts. Rebalancing alerts included.",
+    "price": 100,
+    "priceModel": "per-smallcase",
+    "pageUrl": "https://www.smallcase.com",
+    "imageUrl": "https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=400",
+    "targetAudience": [
+      "investor",
+      "young-professional",
+      "intermediate-investor"
+    ],
+    "relevantGoals": [
+      "thematic-investing",
+      "portfolio-diversification",
+      "stock-picking"
+    ],
+    "tags": [
+      "smallcase",
+      "thematic",
+      "portfolio",
+      "etf",
+      "rebalancing",
+      "curated"
+    ],
+    "partnerBrand": "Smallcase",
+    "details": {
+      "provider": "Smallcase Technologies",
+      "productType": "thematic-portfolio",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "SEBI-registered analysts",
+        "Theme-based investing",
+        "Auto-rebalancing alerts",
+        "Linked to your broker"
+      ],
+      "annualFee": null
+    }
+  },
+  {
+    "productId": "ETS-074",
+    "name": "ET Money Genius — SIP & Tax Optimiser",
+    "category": "financial-service",
+    "subCategory": "Investment Platform",
+    "description": "AI-powered mutual fund advisory that recommends tax-efficient SIPs based on your income, age, and goals. Features smart SIP step-up, portfolio health check, and ELSS optimisation. ₹99/month for Genius advice, free for basic.",
+    "price": 99,
+    "priceModel": "monthly",
+    "pageUrl": "https://www.etmoney.com",
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400",
+    "targetAudience": [
+      "salaried",
+      "young-professional",
+      "beginner"
+    ],
+    "relevantGoals": [
+      "tax-planning",
+      "mutual-fund-selection",
+      "financial-planning"
+    ],
+    "tags": [
+      "platform",
+      "et-money",
+      "genius",
+      "sip",
+      "tax",
+      "ai-advisory"
+    ],
+    "partnerBrand": "ET Money",
+    "details": {
+      "provider": "ET Money (Times Internet)",
+      "productType": "investment-advisory",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "AI-powered SIP advice",
+        "Tax optimisation",
+        "Smart step-up SIP",
+        "Portfolio health check"
+      ],
+      "annualFee": 1188
+    }
+  },
+  {
+    "productId": "ETS-075",
+    "name": "Paytm Money — Stocks & Mutual Funds",
+    "category": "financial-service",
+    "subCategory": "Investment Platform",
+    "description": "Integrated investing on India's most-used payments app. Zero brokerage on equity delivery, direct MF investing, instant IPO application via UPI, and digital gold starting at ₹1. Seamless KYC for existing Paytm users.",
+    "price": 0,
+    "priceModel": "free",
+    "pageUrl": "https://www.paytmmoney.com",
+    "imageUrl": "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=400",
+    "targetAudience": [
+      "beginner",
+      "young-professional"
+    ],
+    "relevantGoals": [
+      "first-investment",
+      "low-cost-investing",
+      "ipo-investing"
+    ],
+    "tags": [
+      "platform",
+      "paytm",
+      "stocks",
+      "mutual-fund",
+      "ipo",
+      "digital-gold"
+    ],
+    "partnerBrand": "Paytm Money",
+    "details": {
+      "provider": "Paytm Money Ltd",
+      "productType": "investment-platform",
+      "eligibility": {
+        "minAge": 18
+      },
+      "benefits": [
+        "Zero delivery brokerage",
+        "UPI IPO application",
+        "Direct MF plans",
+        "Digital gold from ₹1"
+      ],
+      "annualFee": 0
+    }
+  },
+  {
+    "productId": "ETS-076",
+    "name": "SBI Personal Loan",
+    "category": "financial-service",
+    "subCategory": "Loan",
+    "description": "Pre-approved personal loans for SBI salary account holders from 11% p.a. Get up to ₹20 lakh with minimal documentation. Instant disbursement through YONO app. No collateral required, flexible EMI tenure up to 6 years.",
+    "price": 0,
+    "priceModel": "interest-rate",
+    "pageUrl": "https://sbi.co.in/web/personal-banking/loans/personal-loans",
+    "imageUrl": "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?w=400",
+    "targetAudience": [
+      "salaried",
+      "professional"
+    ],
+    "relevantGoals": [
+      "emergency-fund",
+      "personal-loan",
+      "cash-flow"
+    ],
+    "tags": [
+      "loan",
+      "personal-loan",
+      "sbi",
+      "pre-approved",
+      "yono",
+      "instant"
+    ],
+    "partnerBrand": "SBI",
+    "details": {
+      "provider": "State Bank of India",
+      "productType": "personal-loan",
+      "eligibility": {
+        "minIncome": 300000,
+        "minAge": 21
+      },
+      "benefits": [
+        "From 11% p.a.",
+        "Up to ₹20 lakh",
+        "Instant YONO disbursement",
+        "No collateral"
+      ],
+      "annualFee": null
+    }
+  }
+]

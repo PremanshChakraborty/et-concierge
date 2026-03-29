@@ -1,10 +1,10 @@
 /**
- * graph.ts — LangGraph StateGraph: ReAct agent + mode switch routing
+ * graph.ts — ET Concierge LangGraph StateGraph
  *
  * Regular chat flow:
- *   START → input → session → llm ──[search_products]──→ tool → llm (loop)
- *                               └──[structured_response]──→ persist → END
- *                               └──[error]────────────────→ errorHandler → END
+ *   START → input → session → llm ──[search_et_catalog / search_prime_news]──→ tool → llm (loop)
+ *                              └──[structured_response]──→ persist → END
+ *                              └──[error]────────────────→ errorHandler → END
  *
  * Mode switch flow:
  *   START → input → modeSwitch → llm → persist → END
@@ -44,8 +44,9 @@ async function errorNode(
   console.error("[errorNode]", state.error);
   return {
     responseText:      "I'm sorry, something went wrong. Please try again.",
-    responseProducts:  [],
-    followUpQuestions: ["Can you rephrase your question?", "What are you looking for today?"],
+    responseServices:  [],
+    responseArticles:  [],
+    followUpQuestions: ["What would you like to explore?", "Can you rephrase your question?"],
   };
 }
 
@@ -71,7 +72,7 @@ const builder = new StateGraph(StateAnnotation)
   // Regular chat: session → llm
   .addEdge("session", "llm")
 
-  // Mode switch: modeSwitch → llm (Claude generates the welcome)
+  // Mode switch: modeSwitch → llm (generates the welcome)
   .addEdge("modeSwitch", "llm")
 
   .addConditionalEdges("llm", routeAfterLlm, {

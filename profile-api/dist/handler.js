@@ -1084,7 +1084,7 @@ async function verifyToken(authHeader) {
   return payload.sub;
 }
 
-// src/routes/stores.ts
+// src/routes/sessions.ts
 var import_lib_dynamodb2 = require("@aws-sdk/lib-dynamodb");
 
 // src/db.ts
@@ -1097,7 +1097,6 @@ var db = import_lib_dynamodb.DynamoDBDocumentClient.from(raw, {
 });
 var SESSION_TABLE = process.env.SESSION_TABLE ?? "Session";
 var USER_PROFILE_TABLE = process.env.USER_PROFILE_TABLE ?? "UserProfile";
-var STORES_TABLE = process.env.STORES_TABLE ?? "Stores";
 
 // src/response.ts
 var BASE_HEADERS = {
@@ -1105,9 +1104,6 @@ var BASE_HEADERS = {
 };
 function ok(data) {
   return { statusCode: 200, headers: BASE_HEADERS, body: JSON.stringify(data) };
-}
-function badRequest(message) {
-  return { statusCode: 400, headers: BASE_HEADERS, body: JSON.stringify({ error: message }) };
 }
 function unauthorized(message = "Unauthorized") {
   return { statusCode: 401, headers: BASE_HEADERS, body: JSON.stringify({ error: message }) };
@@ -1121,57 +1117,11 @@ function serverError(err) {
   return { statusCode: 500, headers: BASE_HEADERS, body: JSON.stringify({ error: msg }) };
 }
 
-// src/routes/stores.ts
-async function validateStore(body) {
-  if (!body) return badRequest("Request body is required");
-  let storeCode;
-  try {
-    ({ storeCode } = JSON.parse(body));
-  } catch {
-    return badRequest("Invalid JSON body");
-  }
-  if (!storeCode || typeof storeCode !== "string" || storeCode.trim().length === 0) {
-    return badRequest("storeCode is required");
-  }
-  const storeId = storeCode.toUpperCase().trim();
-  const result = await db.send(new import_lib_dynamodb2.GetCommand({
-    TableName: STORES_TABLE,
-    Key: { storeId }
-  }));
-  if (!result.Item) {
-    return notFound(`No store found with code "${storeId}". Please check the code and try again.`);
-  }
-  const store = result.Item;
-  const aisleMap = [];
-  if (store.aisleMap && typeof store.aisleMap === "object") {
-    for (const [label, value] of Object.entries(store.aisleMap)) {
-      aisleMap.push({
-        label,
-        description: value?.description ?? "",
-        directions: value?.directions ?? ""
-      });
-    }
-  }
-  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  const today = days[(/* @__PURE__ */ new Date()).getDay()];
-  const todayHours = store.hours?.[today];
-  const hoursStr = todayHours ? `Open today ${todayHours.replace("-", " \u2013 ")}` : "Hours unavailable";
-  return ok({
-    storeId: store.storeId,
-    storeName: store.name,
-    address: store.address,
-    hours: hoursStr,
-    phone: store.phone,
-    aisleMap
-  });
-}
-
 // src/routes/sessions.ts
-var import_lib_dynamodb3 = require("@aws-sdk/lib-dynamodb");
 async function listSessions(userId) {
-  const result = await db.send(new import_lib_dynamodb3.QueryCommand({
+  const result = await db.send(new import_lib_dynamodb2.QueryCommand({
     TableName: SESSION_TABLE,
-    IndexName: "userId-lastUpdated-index",
+    IndexName: "userId-lastUpdated-index-v2",
     KeyConditionExpression: "userId = :uid",
     ExpressionAttributeValues: { ":uid": userId },
     ScanIndexForward: false,
@@ -1180,19 +1130,17 @@ async function listSessions(userId) {
   }));
   const sessions = (result.Items ?? []).map((item) => ({
     sessionId: item.sessionId,
+    sessionName: item.sessionName || null,
     lastUpdated: item.lastUpdated ?? (/* @__PURE__ */ new Date(0)).toISOString(),
-    currentMode: item.currentMode ?? "app",
-    currentStoreId: item.currentStoreId ?? null,
-    currentStoreName: item.currentStoreName ?? null
+    currentMode: item.currentMode ?? "advisory"
   }));
   return ok({ sessions });
 }
 async function getSessionHistory(userId, sessionId) {
-  const result = await db.send(new import_lib_dynamodb3.GetCommand({
+  const result = await db.send(new import_lib_dynamodb2.GetCommand({
     TableName: SESSION_TABLE,
     Key: { sessionId },
-    // Project only the fields we need for the history view
-    ProjectionExpression: "sessionId, userId, #h, currentMode, currentStoreId, currentStoreName",
+    ProjectionExpression: "sessionId, sessionName, userId, #h, currentMode",
     ExpressionAttributeNames: { "#h": "history" }
   }));
   if (!result.Item) {
@@ -1203,133 +1151,31 @@ async function getSessionHistory(userId, sessionId) {
   }
   return ok({
     sessionId: result.Item.sessionId,
-    currentMode: result.Item.currentMode ?? "app",
-    currentStoreId: result.Item.currentStoreId ?? null,
-    currentStoreName: result.Item.currentStoreName ?? null,
+    sessionName: result.Item.sessionName || null,
+    currentMode: result.Item.currentMode ?? "advisory",
     history: result.Item.history ?? []
   });
 }
 
 // src/routes/profile.ts
-var import_lib_dynamodb4 = require("@aws-sdk/lib-dynamodb");
-async function getProfile(userId) {
-  const result = await db.send(new import_lib_dynamodb4.GetCommand({
+var import_lib_dynamodb3 = require("@aws-sdk/lib-dynamodb");
+async function getUserProfile(userId) {
+  const result = await db.send(new import_lib_dynamodb3.GetCommand({
     TableName: USER_PROFILE_TABLE,
     Key: { userId }
   }));
-  return result.Item;
-}
-async function ensureProfile(userId) {
-  const existing = await getProfile(userId);
-  if (!existing) {
-    await db.send(new import_lib_dynamodb4.PutCommand({
-      TableName: USER_PROFILE_TABLE,
-      Item: { userId, cart: [], wishlist: [], lastUpdated: (/* @__PURE__ */ new Date()).toISOString() },
-      ConditionExpression: "attribute_not_exists(userId)"
-    }));
+  if (!result.Item) {
+    return ok({ profile: {} });
   }
-}
-async function getCart(userId) {
-  const profile = await getProfile(userId);
-  const cart = profile?.cart ?? [];
-  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  return ok({ cart, total });
-}
-async function addToCart(userId, body) {
-  if (!body) return badRequest("Request body is required");
-  let item;
-  try {
-    item = JSON.parse(body);
-  } catch {
-    return badRequest("Invalid JSON body");
-  }
-  if (!item.productId || !item.size || typeof item.price !== "number") {
-    return badRequest("productId, size, and price are required");
-  }
-  await ensureProfile(userId);
-  const profile = await getProfile(userId);
-  const cart = profile?.cart ?? [];
-  const existingIdx = cart.findIndex(
-    (c) => c.productId === item.productId && c.size === item.size
-  );
-  let updatedCart;
-  if (existingIdx >= 0) {
-    updatedCart = cart.map(
-      (c, i) => i === existingIdx ? { ...c, quantity: c.quantity + (item.quantity ?? 1) } : c
-    );
-  } else {
-    updatedCart = [...cart, { ...item, quantity: item.quantity ?? 1 }];
-  }
-  await db.send(new import_lib_dynamodb4.UpdateCommand({
-    TableName: USER_PROFILE_TABLE,
-    Key: { userId },
-    UpdateExpression: "SET cart = :cart, lastUpdated = :ts",
-    ExpressionAttributeValues: {
-      ":cart": updatedCart,
-      ":ts": (/* @__PURE__ */ new Date()).toISOString()
-    }
-  }));
-  return ok({ cart: updatedCart });
-}
-async function removeFromCart(userId, productId) {
-  const profile = await getProfile(userId);
-  const cart = (profile?.cart ?? []).filter((c) => c.productId !== productId);
-  await db.send(new import_lib_dynamodb4.UpdateCommand({
-    TableName: USER_PROFILE_TABLE,
-    Key: { userId },
-    UpdateExpression: "SET cart = :cart, lastUpdated = :ts",
-    ExpressionAttributeValues: { ":cart": cart, ":ts": (/* @__PURE__ */ new Date()).toISOString() }
-  }));
-  return ok({ cart });
-}
-async function getWishlist(userId) {
-  const profile = await getProfile(userId);
-  return ok({ wishlist: profile?.wishlist ?? [] });
-}
-async function addToWishlist(userId, body) {
-  if (!body) return badRequest("Request body is required");
-  let item;
-  try {
-    item = JSON.parse(body);
-  } catch {
-    return badRequest("Invalid JSON body");
-  }
-  if (!item.productId || typeof item.price !== "number") {
-    return badRequest("productId and price are required");
-  }
-  await ensureProfile(userId);
-  const profile = await getProfile(userId);
-  const wishlist = profile?.wishlist ?? [];
-  if (!wishlist.some((w) => w.productId === item.productId)) {
-    wishlist.push(item);
-    await db.send(new import_lib_dynamodb4.UpdateCommand({
-      TableName: USER_PROFILE_TABLE,
-      Key: { userId },
-      UpdateExpression: "SET wishlist = :wishlist, lastUpdated = :ts",
-      ExpressionAttributeValues: { ":wishlist": wishlist, ":ts": (/* @__PURE__ */ new Date()).toISOString() }
-    }));
-  }
-  return ok({ wishlist });
-}
-async function removeFromWishlist(userId, productId) {
-  const profile = await getProfile(userId);
-  const wishlist = (profile?.wishlist ?? []).filter(
-    (w) => w.productId !== productId
-  );
-  await db.send(new import_lib_dynamodb4.UpdateCommand({
-    TableName: USER_PROFILE_TABLE,
-    Key: { userId },
-    UpdateExpression: "SET wishlist = :wishlist, lastUpdated = :ts",
-    ExpressionAttributeValues: { ":wishlist": wishlist, ":ts": (/* @__PURE__ */ new Date()).toISOString() }
-  }));
-  return ok({ wishlist });
+  return ok({
+    profile: result.Item
+  });
 }
 
 // src/handler.ts
 async function handler(event) {
   const method = (event.requestContext.http.method ?? "").toUpperCase();
   const rawPath = event.rawPath ?? "";
-  const body = event.body ?? null;
   const authHeader = event.headers?.["authorization"] ?? event.headers?.["Authorization"];
   let userId;
   try {
@@ -1339,8 +1185,8 @@ async function handler(event) {
     return unauthorized(msg);
   }
   try {
-    if (method === "POST" && rawPath === "/stores/validate") {
-      return await validateStore(body);
+    if (method === "GET" && rawPath === "/profile") {
+      return await getUserProfile(userId);
     }
     if (method === "GET" && rawPath === "/sessions") {
       return await listSessions(userId);
@@ -1348,22 +1194,6 @@ async function handler(event) {
     if (method === "GET" && rawPath.startsWith("/sessions/")) {
       const sessionId = decodeURIComponent(rawPath.split("/sessions/")[1]);
       return await getSessionHistory(userId, sessionId);
-    }
-    if (rawPath === "/profile/cart") {
-      if (method === "GET") return await getCart(userId);
-      if (method === "POST") return await addToCart(userId, body);
-    }
-    if (method === "DELETE" && rawPath.startsWith("/profile/cart/")) {
-      const productId = decodeURIComponent(rawPath.split("/profile/cart/")[1]);
-      return await removeFromCart(userId, productId);
-    }
-    if (rawPath === "/profile/wishlist") {
-      if (method === "GET") return await getWishlist(userId);
-      if (method === "POST") return await addToWishlist(userId, body);
-    }
-    if (method === "DELETE" && rawPath.startsWith("/profile/wishlist/")) {
-      const productId = decodeURIComponent(rawPath.split("/profile/wishlist/")[1]);
-      return await removeFromWishlist(userId, productId);
     }
     return notFound(`No route matched: ${method} ${rawPath}`);
   } catch (err) {

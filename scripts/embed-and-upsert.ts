@@ -2,34 +2,20 @@
 /**
  * embed-and-upsert.ts
  *
- * Generates vector embeddings for all products using Amazon Bedrock
- * (Titan Embeddings v2, dim=1024) and upserts them into a Pinecone index.
+ * Dual-index embedding pipeline for ET AI Concierge.
  *
- * Prerequisites:
- *   npm install @pinecone-database/pinecone @aws-sdk/client-bedrock-runtime
- *   aws configure  (credentials with AmazonBedrockFullAccess)
- *   PINECONE_API_KEY set as environment variable (or passed via --pinecone-key=)
- *
- * Pinecone index must be created first (see instructions below):
- *   - Name:      retail-products
- *   - Dimension: 1024
- *   - Metric:    cosine
- *   - Cloud:     aws / us-east-1  (free Serverless tier)
+ * Index 1: et-services  — 1024d Titan v2, static (~76 entries)
+ * Index 2: et-news      — 256d  Titan v2, dynamic (~40 articles)
  *
  * Usage:
- *   # Set API key in env (recommended)
- *   set PINECONE_API_KEY=your-key-here
- *   npx ts-node scripts/embed-and-upsert.ts
+ *   npx ts-node scripts/embed-and-upsert.ts                       # embed both
+ *   npx ts-node scripts/embed-and-upsert.ts --target=services     # services only
+ *   npx ts-node scripts/embed-and-upsert.ts --target=articles     # articles only
+ *   npx ts-node scripts/embed-and-upsert.ts --dry-run             # test one embed
  *
- *   # Or pass it directly
- *   npx ts-node scripts/embed-and-upsert.ts --pinecone-key=your-key-here
- *
- * Flags:
- *   --pinecone-key=KEY   Pinecone API key (overrides env var)
- *   --index=NAME         Pinecone index name (default: retail-products)
- *   --region=REGION      AWS region for Bedrock (default: us-east-1)
- *   --batch=N            Products per upsert batch (default: 50)
- *   --dry-run            Embed one product only, print vector, no upsert
+ * Environment:
+ *   PINECONE_API_KEY  (required)
+ *   AWS credentials   (required — with AmazonBedrockFullAccess)
  */
 
 import {
@@ -48,207 +34,275 @@ const cfg: ProjectConfig = fs.existsSync(configPath)
   : {};
 
 const args = process.argv.slice(2);
-const DRY_RUN         = args.includes("--dry-run");
-const PINECONE_KEY    = (() => {
+const DRY_RUN = args.includes("--dry-run");
+const TARGET = (() => {
+  const arg = args.find((a) => a.startsWith("--target="));
+  return arg ? arg.split("=")[1] : "both";
+})();
+const PINECONE_KEY = (() => {
   const arg = args.find((a) => a.startsWith("--pinecone-key="));
   return arg ? arg.split("=")[1] : (process.env.PINECONE_API_KEY ?? "");
 })();
-const INDEX_NAME      = (() => {
-  const arg = args.find((a) => a.startsWith("--index="));
-  return arg ? arg.split("=")[1] : (cfg.pineconeIndex ?? "retail-products");
-})();
-const REGION          = (() => {
+const REGION = (() => {
   const arg = args.find((a) => a.startsWith("--region="));
   return arg ? arg.split("=")[1] : (cfg.awsRegion ?? "us-east-1");
 })();
-const BATCH_SIZE      = (() => {
-  const arg = args.find((a) => a.startsWith("--batch="));
-  return arg ? parseInt(arg.split("=")[1], 10) : 50;
-})();
+const BATCH_SIZE = 50;
 
-// Bedrock model for embeddings
+// Index config
+const SERVICES_INDEX = "et-services";
+const NEWS_INDEX     = "et-news";
+const SERVICES_DIM   = 1024;
+const NEWS_DIM       = 256;
+
 const BEDROCK_MODEL_ID = "amazon.titan-embed-text-v2:0";
-const EMBEDDING_DIM    = 1024;
 
 // ---------- Types ----------
-interface Product {
-  productId:   string;
-  name:        string;
-  category:    string;
+interface ETService {
+  productId: string;
+  name: string;
+  category: string;
   subCategory: string;
   description: string;
-  price:       number;
-  imageUrl?:   string;
-  sizes?:      string[];
-  colors?:     string[];
-  tags?:       string[];
+  price: number;
+  priceModel: string;
+  pageUrl: string;
+  imageUrl?: string;
+  targetAudience?: string[];
+  relevantGoals?: string[];
+  tags?: string[];
+  partnerBrand?: string | null;
+  details?: Record<string, unknown>;
 }
 
-// ---------- Helpers ----------
-/**
- * Build a rich text string from a product — this is what gets embedded.
- * More descriptive text = better semantic search results.
- */
-function buildEmbedText(product: Product): string {
+interface ETArticle {
+  articleId: string;
+  title: string;
+  summary: string;
+  sourceUrl: string;
+  category: string;
+  published_at: number;
+  author: string;
+  imageUrl?: string;
+  tags?: string[];
+}
+
+// ---------- Embed text builders ----------
+function buildServiceEmbedText(s: ETService): string {
   const parts = [
-    product.name,
-    product.description,
-    `Category: ${product.category}`,
-    `Type: ${product.subCategory}`,
-    product.tags?.length ? `Tags: ${product.tags.join(", ")}` : "",
-    product.colors?.length ? `Colors: ${product.colors.join(", ")}` : "",
-    `Price: ₹${product.price}`,
+    s.name,
+    s.description,
+    `Category: ${s.category}`,
+    `Type: ${s.subCategory}`,
+    s.targetAudience?.length ? `For: ${s.targetAudience.join(", ")}` : "",
+    s.relevantGoals?.length ? `Goals: ${s.relevantGoals.join(", ")}` : "",
+    s.tags?.length ? `Tags: ${s.tags.join(", ")}` : "",
+    s.partnerBrand ? `Partner: ${s.partnerBrand}` : "",
+    `Price: ₹${s.price} (${s.priceModel})`,
   ];
   return parts.filter(Boolean).join(". ");
 }
 
-/**
- * Call Amazon Bedrock Titan Embeddings v2 to get a 1024-dimension vector.
- */
+function buildArticleEmbedText(a: ETArticle): string {
+  const parts = [
+    a.title,
+    a.summary,
+    `Category: ${a.category}`,
+    a.tags?.length ? `Tags: ${a.tags.join(", ")}` : "",
+  ];
+  return parts.filter(Boolean).join(". ");
+}
+
+// ---------- Embedding call ----------
 async function embedText(
   client: BedrockRuntimeClient,
-  text: string
+  text: string,
+  dimensions: number
 ): Promise<number[]> {
-  const payload = {
-    inputText: text,
-    dimensions: EMBEDDING_DIM,
-    normalize: true,
-  };
-
   const command = new InvokeModelCommand({
     modelId: BEDROCK_MODEL_ID,
     contentType: "application/json",
     accept: "application/json",
-    body: JSON.stringify(payload),
+    body: JSON.stringify({ inputText: text, dimensions, normalize: true }),
   });
-
   const response = await client.send(command);
   const body = JSON.parse(new TextDecoder().decode(response.body));
   return body.embedding as number[];
 }
 
-/**
- * Sleep helper for rate limiting
- */
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+// ---------- Pipeline: Services ----------
+async function embedServices(bedrock: BedrockRuntimeClient, pinecone: Pinecone) {
+  const dataPath = path.join(__dirname, "../data/et-services.json");
+  if (!fs.existsSync(dataPath)) {
+    console.error(`❌  et-services.json not found at ${dataPath}`);
+    return;
+  }
+  const services: ETService[] = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
+  console.log(`\n📦  Services loaded: ${services.length}`);
+  console.log(`    Index: ${SERVICES_INDEX} (dim=${SERVICES_DIM})\n`);
+
+  const index = pinecone.index(SERVICES_INDEX);
+  let success = 0, errors = 0;
+
+  for (let i = 0; i < services.length; i += BATCH_SIZE) {
+    const batch = services.slice(i, i + BATCH_SIZE);
+    const batchNum = Math.floor(i / BATCH_SIZE) + 1;
+    const total = Math.ceil(services.length / BATCH_SIZE);
+    console.log(`  ⚙️  Batch ${batchNum}/${total} — items ${i + 1} to ${Math.min(i + BATCH_SIZE, services.length)}`);
+
+    const vectors: { id: string; values: number[]; metadata: Record<string, any> }[] = [];
+
+    for (const s of batch) {
+      try {
+        const text = buildServiceEmbedText(s);
+        const embedding = await embedText(bedrock, text, SERVICES_DIM);
+        vectors.push({
+          id: s.productId,
+          values: embedding,
+          metadata: {
+            productId: s.productId,
+            name: s.name,
+            category: s.category,
+            subCategory: s.subCategory,
+            price: s.price,
+            priceModel: s.priceModel,
+            pageUrl: s.pageUrl,
+            imageUrl: s.imageUrl ?? "",
+            tags: s.tags ?? [],
+            targetAudience: s.targetAudience ?? [],
+            relevantGoals: s.relevantGoals ?? [],
+            partnerBrand: s.partnerBrand ?? "",
+          },
+        });
+        success++;
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : String(err);
+        console.error(`    ⚠️  Failed ${s.productId}: ${msg}`);
+        errors++;
+      }
+      await sleep(200);
+    }
+
+    if (vectors.length > 0) {
+      await index.upsert(vectors);
+      console.log(`    ✅  Upserted ${vectors.length} vectors`);
+    }
+    if (i + BATCH_SIZE < services.length) await sleep(500);
+  }
+
+  console.log(`\n  📊  Services: ${success} embedded, ${errors} errors`);
+}
+
+// ---------- Pipeline: Articles ----------
+async function embedArticles(bedrock: BedrockRuntimeClient, pinecone: Pinecone) {
+  const dataPath = path.join(__dirname, "../data/et-articles.json");
+  if (!fs.existsSync(dataPath)) {
+    console.error(`❌  et-articles.json not found at ${dataPath}`);
+    return;
+  }
+  const articles: ETArticle[] = JSON.parse(fs.readFileSync(dataPath, "utf-8"));
+  console.log(`\n📰  Articles loaded: ${articles.length}`);
+  console.log(`    Index: ${NEWS_INDEX} (dim=${NEWS_DIM})\n`);
+
+  const index = pinecone.index(NEWS_INDEX);
+  let success = 0, errors = 0;
+
+  for (let i = 0; i < articles.length; i += BATCH_SIZE) {
+    const batch = articles.slice(i, i + BATCH_SIZE);
+    const batchNum = Math.floor(i / BATCH_SIZE) + 1;
+    const total = Math.ceil(articles.length / BATCH_SIZE);
+    console.log(`  ⚙️  Batch ${batchNum}/${total} — items ${i + 1} to ${Math.min(i + BATCH_SIZE, articles.length)}`);
+
+    const vectors: { id: string; values: number[]; metadata: Record<string, any> }[] = [];
+
+    for (const a of batch) {
+      try {
+        const text = buildArticleEmbedText(a);
+        const embedding = await embedText(bedrock, text, NEWS_DIM);
+        vectors.push({
+          id: a.articleId,
+          values: embedding,
+          metadata: {
+            articleId: a.articleId,
+            title: a.title,
+            summary: a.summary,
+            sourceUrl: a.sourceUrl,
+            category: a.category,
+            published_at: a.published_at,
+            imageUrl: a.imageUrl ?? "",
+            tags: a.tags ?? [],
+          },
+        });
+        success++;
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : String(err);
+        console.error(`    ⚠️  Failed ${a.articleId}: ${msg}`);
+        errors++;
+      }
+      await sleep(200);
+    }
+
+    if (vectors.length > 0) {
+      await index.upsert(vectors);
+      console.log(`    ✅  Upserted ${vectors.length} vectors`);
+    }
+    if (i + BATCH_SIZE < articles.length) await sleep(500);
+  }
+
+  console.log(`\n  📊  Articles: ${success} embedded, ${errors} errors`);
+}
+
 // ---------- Main ----------
 async function main() {
-  console.log(`\n🚀  Retail AI — Pinecone Embedding Pipeline`);
-  console.log(`    Index   : ${INDEX_NAME}`);
-  console.log(`    Model   : ${BEDROCK_MODEL_ID} (dim=${EMBEDDING_DIM})`);
+  console.log(`\n🚀  ET AI Concierge — Dual-Index Embedding Pipeline`);
+  console.log(`    Target  : ${TARGET}`);
   console.log(`    Region  : ${REGION}`);
-  console.log(`    Batch   : ${BATCH_SIZE}`);
   console.log(`    Dry Run : ${DRY_RUN}`);
   console.log(`─────────────────────────────────────\n`);
 
   if (!PINECONE_KEY) {
     console.error("❌  PINECONE_API_KEY is required.");
-    console.error("    Set it with:  set PINECONE_API_KEY=your-key-here");
-    console.error("    Or pass:      --pinecone-key=your-key-here");
     process.exit(1);
   }
 
-  // Load products
-  const productsPath = path.join(__dirname, "../data/products.json");
-  if (!fs.existsSync(productsPath)) {
-    console.error(`❌  products.json not found at ${productsPath}`);
-    console.error("    Run: npm run merge  first");
-    process.exit(1);
-  }
-  const products: Product[] = JSON.parse(fs.readFileSync(productsPath, "utf-8"));
-  console.log(`📦  Products loaded: ${products.length}\n`);
-
-  // Bedrock client
   const bedrock = new BedrockRuntimeClient({ region: REGION });
-
-  // Pinecone client
   const pinecone = new Pinecone({ apiKey: PINECONE_KEY });
-  const index = pinecone.index(INDEX_NAME);
 
-  // DRY RUN — embed one product and print the vector shape
+  // DRY RUN
   if (DRY_RUN) {
-    const sample = products[0];
-    const text = buildEmbedText(sample);
-    console.log(`🧪  DRY RUN — embedding first product only`);
-    console.log(`    Product : ${sample.productId} — ${sample.name}`);
-    console.log(`    Text    : "${text.slice(0, 120)}..."\n`);
+    const services: ETService[] = JSON.parse(
+      fs.readFileSync(path.join(__dirname, "../data/et-services.json"), "utf-8")
+    );
+    const sample = services[0];
+    const text = buildServiceEmbedText(sample);
+    console.log(`🧪  DRY RUN — embedding first service`);
+    console.log(`    Item : ${sample.productId} — ${sample.name}`);
+    console.log(`    Text : "${text.slice(0, 120)}..."\n`);
 
-    console.log("    Calling Bedrock Titan Embeddings v2...");
-    const vector = await embedText(bedrock, text);
-    console.log(`\n✅  Embedding successful!`);
-    console.log(`    Dimension  : ${vector.length}`);
-    console.log(`    First 5 vals: [${vector.slice(0, 5).map((v) => v.toFixed(6)).join(", ")}]`);
-    console.log(`\n🟡  DRY RUN complete — no data was upserted to Pinecone.`);
+    const vec1024 = await embedText(bedrock, text, 1024);
+    console.log(`    ✅  1024d vector: [${vec1024.slice(0, 3).map(v => v.toFixed(6)).join(", ")}, ...]`);
+
+    const vec256 = await embedText(bedrock, text, 256);
+    console.log(`    ✅  256d  vector: [${vec256.slice(0, 3).map(v => v.toFixed(6)).join(", ")}, ...]`);
+
+    console.log(`\n🟡  DRY RUN complete — no data upserted.`);
     return;
   }
 
-  // FULL RUN — embed all products in batches and upsert to Pinecone
-  let successCount = 0;
-  let errorCount = 0;
-
-  for (let i = 0; i < products.length; i += BATCH_SIZE) {
-    const batch = products.slice(i, i + BATCH_SIZE);
-    const batchNum = Math.floor(i / BATCH_SIZE) + 1;
-    const totalBatches = Math.ceil(products.length / BATCH_SIZE);
-    console.log(`⚙️   Batch ${batchNum}/${totalBatches} — products ${i + 1} to ${Math.min(i + BATCH_SIZE, products.length)}`);
-
-    const vectors: { id: string; values: number[]; metadata: Record<string, string | number | boolean | string[]> }[] = [];
-
-    for (const product of batch) {
-      try {
-        const text = buildEmbedText(product);
-        const embedding = await embedText(bedrock, text);
-
-        vectors.push({
-          id: product.productId,
-          values: embedding,
-          metadata: {
-            productId:   product.productId,
-            name:        product.name,
-            category:    product.category,
-            subCategory: product.subCategory,
-            price:       product.price,
-            imageUrl:    product.imageUrl ?? "",
-            tags:        product.tags   ?? [],
-            colors:      product.colors ?? [],
-            sizes:       product.sizes  ?? [],
-          },
-        });
-
-        successCount++;
-      } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : String(err);
-        console.error(`  ⚠️  Failed to embed ${product.productId}: ${msg}`);
-        errorCount++;
-      }
-
-      // Small delay to avoid Bedrock rate limits (60 req/min on free tier)
-      await sleep(200);
-    }
-
-    // Upsert the batch to Pinecone
-    if (vectors.length > 0) {
-      await index.upsert(vectors);
-      console.log(`    ✅  Upserted ${vectors.length} vectors`);
-    }
-
-    // Brief pause between batches
-    if (i + BATCH_SIZE < products.length) {
-      await sleep(500);
-    }
+  // FULL RUN
+  if (TARGET === "both" || TARGET === "services") {
+    await embedServices(bedrock, pinecone);
+  }
+  if (TARGET === "both" || TARGET === "articles") {
+    await embedArticles(bedrock, pinecone);
   }
 
-  // Summary
   console.log(`\n─────────────────────────────────────`);
-  console.log(`✅  Embedded + upserted : ${successCount} products`);
-  if (errorCount > 0) {
-    console.warn(`⚠️  Errors             : ${errorCount} products (see above)`);
-  }
-  console.log(`\n🎯  Pinecone index "${INDEX_NAME}" is ready for vector search!`);
-  console.log(`    Verify at: https://app.pinecone.io`);
+  console.log(`🎯  Pipeline complete! Verify at: https://app.pinecone.io`);
 }
 
 main().catch((err) => {

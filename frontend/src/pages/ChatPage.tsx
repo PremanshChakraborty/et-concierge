@@ -1,55 +1,36 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { v4 as uuid } from "uuid";
-import type { CartItem, ChatState, ChatTurn, ProductCard, Session, StoreDetails, WishlistItem } from "../types";
+import type { ChatState, ChatTurn, ConciergeMode, Session, UserProfile } from "../types";
 import { getAccessToken, getCurrentUserEmail, signOut } from "../lib/auth";
 import { sendChat, sendModeSwitch } from "../lib/api";
-import { getSessions, getSessionHistory, validateStoreCode, addToCart, addToWishlist, getCart } from "../lib/profileApi";
+import { getSessions, getSessionHistory, getUserProfile } from "../lib/profileApi";
 import { loadSessionId, saveSessionId, clearSessionId } from "../lib/session";
 
 import Sidebar from "../components/layout/Sidebar";
 import ChatHeader from "../components/layout/ChatHeader";
-import ProductDrawer from "../components/layout/ProductDrawer";
+import ContentDrawer from "../components/layout/ProductDrawer";
 import ChatHistory from "../components/chat/ChatHistory";
 import ChatInput from "../components/chat/ChatInput";
-import StoreCodeModal from "../components/modals/StoreCodeModal";
 import SettingsPanel from "../components/modals/SettingsPanel";
 
 function now() { return new Date().toISOString(); }
 
 /**
  * loadSession — single encapsulated helper for all session restore scenarios.
- * Fetches the session's chat history, then if it's a store session, fetches
- * the full store details (including aisle map) via the stores API.
+ * Fetches the session's chat history and metadata.
  * Caches turns in the provided Map to avoid re-fetching on repeated switches.
- *
- * Used by both:
- *   - loadInitial (page mount / refresh)
- *   - selectSession (sidebar session switch)
  */
 async function loadSession(
   sessionId: string,
   token: string,
-  cache: Map<string, { turns: ChatTurn[]; currentMode: "app" | "store"; storeDetails: StoreDetails | null }>,
+  cache: Map<string, { turns: ChatTurn[]; currentMode: ConciergeMode; sessionName?: string | null }>,
 ): Promise<{
-  turns:        ChatTurn[];
-  currentMode:  "app" | "store";
-  storeDetails: StoreDetails | null;
+  turns:       ChatTurn[];
+  currentMode: ConciergeMode;
+  sessionName?: string | null;
 }> {
-  // 1. Fetch history + session metadata
   const hist = await getSessionHistory(sessionId, token);
-
-  // 2. If in store mode, fetch full store details (address, hours, aisle map)
-  let storeDetails: StoreDetails | null = null;
-  if (hist.currentMode === "store" && hist.currentStoreId) {
-    try {
-      storeDetails = await validateStoreCode(hist.currentStoreId, token);
-    } catch {
-      // Store fetch failed — degrade gracefully
-    }
-  }
-
-  // 3. Cache the full result so re-switching is instant and store details are included
-  const result = { turns: hist.turns, currentMode: hist.currentMode, storeDetails };
+  const result = { turns: hist.turns, currentMode: hist.currentMode, sessionName: hist.sessionName };
   cache.set(sessionId, result);
   return result;
 }
@@ -60,36 +41,43 @@ interface Props {
 }
 
 export default function ChatPage({ onSignOut }: Props) {
-  const [state, setState]           = useState<ChatState>({ sessionId: loadSessionId(), turns: [], loading: false, error: null, currentMode: "app", storeDetails: null });
+  const [state, setState]           = useState<ChatState>({ sessionId: loadSessionId(), sessionName: null, turns: [], loading: false, error: null, currentMode: "advisory" });
   const [sessions, setSessions]     = useState<Session[]>([]);
-  const [cart, setCart]             = useState<CartItem[]>([]);
+  const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
   const [userEmail, setUserEmail]   = useState("...");
-  const [showStore, setShowStore]   = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const [stickyChip, setStickyChip] = useState<{ toMode: "app" | "store"; storeName?: string } | null>(null);
+  const [stickyChip, setStickyChip] = useState<{ toMode: ConciergeMode } | null>(null);
 
-  // Session cache — stores full loadSession result (turns + mode + storeDetails)
-  const sessionCache = useRef<Map<string, { turns: ChatTurn[]; currentMode: "app" | "store"; storeDetails: StoreDetails | null }>>(new Map());
+  // Session cache — stores full loadSession result (turns + mode)
+  const sessionCache = useRef<Map<string, { turns: ChatTurn[]; currentMode: ConciergeMode; sessionName?: string | null }>>(new Map());
 
-  // Compute drawer products from the latest assistant turn — no extra state needed
-  const drawerProducts = useMemo<ProductCard[]>(() => {
-    const lastAssistant = [...state.turns].reverse().find((t) => t.role === "assistant");
-    return lastAssistant?.products ?? [];
-  }, [state.turns]);
+  const [spotlightTurnId, setSpotlightTurnId] = useState<string | null>(null);
 
-  // Load on mount — restore sessions, cart, and current session state
+  // Compute drawer items: either the actively spotlighted turn, or the latest assistant turn with cards
+  const activeFocusTurn = useMemo(() => {
+    if (spotlightTurnId) {
+      const turn = state.turns.find(t => t.id === spotlightTurnId);
+      if (turn && (turn.services?.length || turn.articles?.length)) return turn;
+    }
+    return [...state.turns].reverse().find((t) => t.role === "assistant" && (t.services?.length || t.articles?.length));
+  }, [state.turns, spotlightTurnId]);
+
+  const drawerServices = activeFocusTurn?.services ?? [];
+  const drawerArticles = activeFocusTurn?.articles ?? [];
+
+  // Load on mount — restore sessions and current session state
   useEffect(() => {
     async function loadInitial() {
       try {
         const token = await getAccessToken();
-        const [email, sessionList, cartItems] = await Promise.all([
+        const [email, sessionList, profileData] = await Promise.all([
           getCurrentUserEmail(),
           getSessions(token),
-          getCart(token),
+          getUserProfile(token).catch(() => null)
         ]);
         setUserEmail(email);
         setSessions(sessionList);
-        setCart(cartItems);
+        if (profileData) setUserProfile(profileData);
 
         const savedId = loadSessionId();
         if (savedId) {
@@ -106,6 +94,7 @@ export default function ChatPage({ onSignOut }: Props) {
   // ── Send message ──────────────────────────────────────────────────────────
   const sendMessage = useCallback(async (message: string) => {
     if (state.loading) return;
+    setSpotlightTurnId(null);
 
     const userTurn: ChatTurn = { id: uuid(), role: "user", message, ts: now() };
     setState((s) => ({ ...s, loading: true, error: null, turns: [...s.turns, userTurn] }));
@@ -116,17 +105,20 @@ export default function ChatPage({ onSignOut }: Props) {
 
       if (data.sessionId) {
         saveSessionId(data.sessionId);
-        // Add to sidebar history if new
         setSessions((prev) => {
           const exists = prev.some((s) => s.sessionId === data.sessionId);
-          return exists ? prev : [{ sessionId: data.sessionId, lastUpdated: now(), currentMode: data.currentMode }, ...prev];
+          if (exists) {
+            return prev.map(s => s.sessionId === data.sessionId ? { ...s, lastUpdated: now(), currentMode: data.currentMode, sessionName: data.sessionName || s.sessionName } : s);
+          }
+          return [{ sessionId: data.sessionId, sessionName: data.sessionName, lastUpdated: now(), currentMode: data.currentMode }, ...prev];
         });
       }
 
       const assistantTurn: ChatTurn = {
         id: uuid(), role: "assistant",
         text: data.text,
-        products: data.products,
+        services: data.services,
+        articles: data.articles,
         followUpQuestions: data.followUpQuestions,
         ts: now(),
       };
@@ -134,6 +126,7 @@ export default function ChatPage({ onSignOut }: Props) {
         ...s,
         loading: false,
         sessionId: data.sessionId,
+        sessionName: data.sessionName || s.sessionName,
         currentMode: data.currentMode,
         turns: [...s.turns, assistantTurn],
       }));
@@ -144,33 +137,23 @@ export default function ChatPage({ onSignOut }: Props) {
   }, [state.loading, state.sessionId]);
 
   // ── Mode switch ───────────────────────────────────────────────────────────
-  async function handleModeSwitch(details: StoreDetails) {
+  async function handleToggleMode() {
     if (!state.sessionId) return;
-    setShowStore(false);
-    // Inject a mode_switch chip into the chat
-    const switchTurn: ChatTurn = { id: uuid(), role: "mode_switch", toMode: "store", storeName: details.storeName, ts: now() };
-    setState((s) => ({ ...s, loading: true, storeDetails: details, turns: [...s.turns, switchTurn] }));
+    const newMode: ConciergeMode = state.currentMode === "advisory" ? "prime-news" : "advisory";
+    const switchTurn: ChatTurn = { id: uuid(), role: "mode_switch", toMode: newMode, ts: now() };
+    setState((s) => ({ ...s, loading: true, turns: [...s.turns, switchTurn] }));
     try {
       const token = await getAccessToken();
-      const data = await sendModeSwitch(state.sessionId, "store", token, details.storeId, details.storeName);
-      const assistantTurn: ChatTurn = { id: uuid(), role: "assistant", text: data.text, products: data.products, followUpQuestions: data.followUpQuestions, ts: now() };
-      setState((s) => ({ ...s, loading: false, currentMode: "store", turns: [...s.turns, assistantTurn] }));
-    } catch {
-      setState((s) => ({ ...s, loading: false }));
-    }
-  }
-
-  async function handleSwitchToOnline() {
-    if (!state.sessionId) return;
-    // Inject a mode_switch chip into the chat
-    const switchTurn: ChatTurn = { id: uuid(), role: "mode_switch", toMode: "app", ts: now() };
-    setState((s) => ({ ...s, loading: true, storeDetails: null, turns: [...s.turns, switchTurn] }));
-    setStickyChip(null);
-    try {
-      const token = await getAccessToken();
-      const data = await sendModeSwitch(state.sessionId, "app", token);
-      const assistantTurn: ChatTurn = { id: uuid(), role: "assistant", text: data.text, products: data.products, followUpQuestions: data.followUpQuestions, ts: now() };
-      setState((s) => ({ ...s, loading: false, currentMode: "app", turns: [...s.turns, assistantTurn] }));
+      const data = await sendModeSwitch(state.sessionId, newMode, token);
+      const assistantTurn: ChatTurn = {
+        id: uuid(), role: "assistant",
+        text: data.text,
+        services: data.services,
+        articles: data.articles,
+        followUpQuestions: data.followUpQuestions,
+        ts: now(),
+      };
+      setState((s) => ({ ...s, loading: false, currentMode: newMode, turns: [...s.turns, assistantTurn] }));
     } catch {
       setState((s) => ({ ...s, loading: false }));
     }
@@ -179,7 +162,7 @@ export default function ChatPage({ onSignOut }: Props) {
   // ── New chat ──────────────────────────────────────────────────────────────
   function newChat() {
     clearSessionId();
-    setState({ sessionId: null, turns: [], loading: false, error: null, currentMode: "app", storeDetails: null });
+    setState({ sessionId: null, sessionName: null, turns: [], loading: false, error: null, currentMode: "advisory" });
   }
 
   // ── Select session from history ────────────────────────────────────────────────
@@ -187,15 +170,13 @@ export default function ChatPage({ onSignOut }: Props) {
     saveSessionId(sessionId);
     setStickyChip(null);
 
-    // Cache hit — instant restore with full session data (turns + mode + storeDetails)
     const cached = sessionCache.current.get(sessionId);
     if (cached) {
       setState({ sessionId, ...cached, loading: false, error: null });
       return;
     }
 
-    // Not cached — show loading state then call loadSession
-    setState({ sessionId, turns: [], loading: true, error: null, currentMode: "app", storeDetails: null });
+    setState({ sessionId, sessionName: null, turns: [], loading: true, error: null, currentMode: "advisory" });
     try {
       const token = await getAccessToken();
       const restored = await loadSession(sessionId, token, sessionCache.current);
@@ -203,22 +184,6 @@ export default function ChatPage({ onSignOut }: Props) {
     } catch {
       setState((s) => ({ ...s, loading: false }));
     }
-  }
-
-  // ── Cart / Wishlist ───────────────────────────────────────────────────────
-  async function handleAddToCart(item: CartItem) {
-    try {
-      const token = await getAccessToken();
-      const updatedCart = await addToCart(item, token);
-      setCart(updatedCart);
-    } catch (e) { console.error(e); }
-  }
-
-  async function handleAddToWishlist(item: WishlistItem) {
-    try {
-      const token = await getAccessToken();
-      await addToWishlist(item, token);
-    } catch (e) { console.error(e); }
   }
 
   // ── Sign out ──────────────────────────────────────────────────────────────
@@ -231,19 +196,13 @@ export default function ChatPage({ onSignOut }: Props) {
   return (
     <div className="flex h-screen w-full relative font-display">
       {/* Modals */}
-      {showStore && (
-        <StoreCodeModal
-          onClose={() => setShowStore(false)}
-          onConfirm={handleModeSwitch}
-          validateCode={(code) => getAccessToken().then((t) => validateStoreCode(code, t))}
-        />
-      )}
       {showSettings && (
         <SettingsPanel
           userEmail={userEmail}
-          cart={cart}
+          userProfile={userProfile}
           onSignOut={handleSignOut}
           onClose={() => setShowSettings(false)}
+          onCompleteProfile={() => sendMessage("I want to complete my profile")}
         />
       )}
 
@@ -251,8 +210,6 @@ export default function ChatPage({ onSignOut }: Props) {
       <Sidebar
         sessions={sessions}
         activeSessionId={state.sessionId}
-        currentMode={state.currentMode}
-        storeDetails={state.storeDetails}
         userEmail={userEmail}
         onNewChat={newChat}
         onSelectSession={selectSession}
@@ -263,10 +220,9 @@ export default function ChatPage({ onSignOut }: Props) {
       <main key={state.sessionId ?? "new"} className="flex-1 flex flex-col relative bg-white">
         <ChatHeader
           sessionId={state.sessionId}
+          sessionName={state.sessionName}
           currentMode={state.currentMode}
-          storeName={state.storeDetails?.storeName}
-          onOpenStoreModal={() => setShowStore(true)}
-          onSwitchToOnline={handleSwitchToOnline}
+          onToggleMode={handleToggleMode}
           stickyChip={stickyChip}
         />
         {state.error && (
@@ -278,20 +234,21 @@ export default function ChatPage({ onSignOut }: Props) {
           turns={state.turns}
           loading={state.loading}
           onSelectChip={sendMessage}
-          onActiveModeChange={(toMode, storeName) =>
-            setStickyChip(toMode ? { toMode, storeName } : null)
+          onActiveModeChange={(toMode) =>
+            setStickyChip(toMode ? { toMode } : null)
           }
+          activeSpotlightId={activeFocusTurn?.id ?? null}
+          onShowInSpotlight={setSpotlightTurnId}
         />
 
         <ChatInput onSend={sendMessage} disabled={state.loading} />
       </main>
 
-      {/* Product Drawer */}
-      <ProductDrawer
-        products={drawerProducts}
+      {/* Content Drawer */}
+      <ContentDrawer
+        services={drawerServices}
+        articles={drawerArticles}
         currentMode={state.currentMode}
-        onAddToCart={handleAddToCart}
-        onAddToWishlist={handleAddToWishlist}
       />
     </div>
   );

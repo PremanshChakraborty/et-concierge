@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import type { ChatTurn } from "../../types";
+import type { ChatTurn, ConciergeMode } from "../../types";
 import UserBubble from "./UserBubble";
 import AssistantTurn from "./AssistantTurn";
 import TypingIndicator from "./TypingIndicator";
@@ -10,10 +10,12 @@ interface Props {
   loading: boolean;
   onSelectChip: (q: string) => void;
   /** Called whenever a mode_switch chip enters/leaves the viewport — used by ChatHeader for the sticky chip */
-  onActiveModeChange?: (toMode: "app" | "store" | null, storeName?: string) => void;
+  onActiveModeChange?: (toMode: ConciergeMode | null) => void;
+  activeSpotlightId?: string | null;
+  onShowInSpotlight?: (turnId: string) => void;
 }
 
-export default function ChatHistory({ turns, loading, onSelectChip, onActiveModeChange }: Props) {
+export default function ChatHistory({ turns, loading, onSelectChip, onActiveModeChange, activeSpotlightId, onShowInSpotlight }: Props) {
   const bottomRef = useRef<HTMLDivElement>(null);
   const chipRefs  = useRef<Map<string, HTMLDivElement>>(new Map());
 
@@ -34,19 +36,15 @@ export default function ChatHistory({ turns, loading, onSelectChip, onActiveMode
 
     const observers: IntersectionObserver[] = [];
 
-    // For each chip: when it scrolls OUT of view (above the header), report its mode as "active"
     modeSwitchTurns.forEach((turn) => {
       const el = chipRefs.current.get(turn.id);
       if (!el) return;
 
       const obs = new IntersectionObserver(
         ([entry]) => {
-          // chip just scrolled up/out of view → its mode is now "current"
           if (!entry.isIntersecting && entry.boundingClientRect.top < 0) {
-            onActiveModeChange?.(turn.toMode ?? null, turn.storeName);
+            onActiveModeChange?.(turn.toMode ?? null);
           }
-          // chip came back into view → possibly no longer the sticky one
-          // We let the last out-of-view chip win (handled by ChatHeader)
         },
         { threshold: 0 },
       );
@@ -70,7 +68,7 @@ export default function ChatHistory({ turns, loading, onSelectChip, onActiveMode
                   else chipRefs.current.delete(turn.id);
                 }}
               >
-                <ModeSwitchChip toMode={turn.toMode ?? "app"} storeName={turn.storeName} />
+                <ModeSwitchChip toMode={turn.toMode ?? "advisory"} />
               </div>
             );
           }
@@ -80,10 +78,14 @@ export default function ChatHistory({ turns, loading, onSelectChip, onActiveMode
           return (
             <AssistantTurn
               key={turn.id}
+              turnId={turn.id}
               text={turn.text ?? ""}
-              products={turn.products ?? []}
+              services={turn.services ?? []}
+              articles={turn.articles ?? []}
               followUpQuestions={turn.followUpQuestions ?? []}
               onSelectChip={onSelectChip}
+              isSpotlight={activeSpotlightId === turn.id}
+              onShowInSpotlight={onShowInSpotlight}
             />
           );
         })}

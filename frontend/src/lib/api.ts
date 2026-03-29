@@ -1,9 +1,9 @@
 /**
  * lib/api.ts — Orchestrator client.
- * Connects to the real Lambda Function URL from day one.
+ * Connects to the real Lambda Function URL.
  */
 
-import type { ChatApiResponse } from "../types";
+import type { ChatApiResponse, ConciergeMode } from "../types";
 
 const BASE = import.meta.env.VITE_ORCHESTRATOR_URL as string;
 
@@ -34,16 +34,14 @@ export async function sendChat(
   );
 }
 
-/** Mode-switch event (app ↔ store). No user text sent. */
+/** Mode-switch event (advisory ↔ prime-news). No user text sent. */
 export async function sendModeSwitch(
   sessionId: string,
-  mode: "app" | "store",
+  mode: ConciergeMode,
   token: string,
-  storeId?: string,
-  storeName?: string,
 ): Promise<ChatApiResponse> {
   return post<ChatApiResponse>(
-    { type: "mode_switch", sessionId, mode, storeId, storeName },
+    { type: "mode_switch", sessionId, mode },
     token,
   );
 }

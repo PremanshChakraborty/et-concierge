@@ -1,13 +1,13 @@
 /**
- * nodes/inputNode.ts
+ * nodes/inputNode.ts — ET Concierge
  * Validates and normalises the incoming request.
  * Handles two request types:
  *   1. Regular chat:   { sessionId?, message }
- *   2. Mode switch:    { type: "mode_switch", sessionId, mode, storeId?, storeName? }
+ *   2. Mode switch:    { type: "mode_switch", sessionId, mode: "advisory" | "prime-news" }
  */
 
 import { v4 as uuidv4 } from "uuid";
-import { OrchestratorState } from "../state";
+import { OrchestratorState, ConciergeMode } from "../state";
 
 export async function inputNode(
   state: OrchestratorState
@@ -20,10 +20,11 @@ export async function inputNode(
     // Mode switch path
     if (state.isModeSwitch) {
       if (!state.requestedMode) {
-        return { error: "mode_switch request must include 'mode' field (app | store)" };
+        return { error: "mode_switch request must include 'mode' field (advisory | prime-news)" };
       }
-      if (state.requestedMode === "store" && !state.requestedStoreId) {
-        return { error: "mode_switch to store mode must include 'storeId'" };
+      const validModes: ConciergeMode[] = ["advisory", "prime-news"];
+      if (!validModes.includes(state.requestedMode)) {
+        return { error: `Invalid mode '${state.requestedMode}'. Must be 'advisory' or 'prime-news'.` };
       }
       return { sessionId, error: null };
     }

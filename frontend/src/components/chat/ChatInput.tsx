@@ -36,7 +36,7 @@ export default function ChatInput({ onSend, disabled }: Props) {
     <div className="p-6 bg-gradient-to-t from-white via-white to-transparent">
       <div className="max-w-2xl mx-auto">
         {/* items-end keeps send button anchored to bottom-right as textarea grows */}
-        <div className="relative flex gap-2 items-end bg-neutral-50 border border-border-light rounded-2xl shadow-xl focus-within:border-black/30 transition-colors pl-3 pr-2 py-2">
+        <div className="relative flex gap-2 items-end bg-neutral-50 border border-border-light rounded-2xl shadow-xl focus-within:border-black/30 transition-colors pl-4 pr-1.5 py-1.5">
           <textarea
             ref={ref}
             rows={1}
@@ -49,7 +49,7 @@ export default function ChatInput({ onSend, disabled }: Props) {
           <button
             onClick={handleSend}
             disabled={disabled}
-            className="text-white rounded-xl hover:opacity-80 transition-transform bg-black size-9 flex items-center justify-center shrink-0 disabled:opacity-40 disabled:scale-100 mb-0.5"
+            className="text-white rounded-xl hover:opacity-80 transition-transform bg-primary size-9 flex items-center justify-center shrink-0 disabled:opacity-40 disabled:scale-100 mb-0.5"
           >
             <span className="material-symbols-outlined text-[18px]">send</span>
           </button>

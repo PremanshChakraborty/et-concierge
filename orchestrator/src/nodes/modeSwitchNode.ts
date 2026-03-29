@@ -1,88 +1,95 @@
 /**
- * nodes/modeSwitchNode.ts
+ * nodes/modeSwitchNode.ts — ET Concierge
  *
- * Handles a mode_switch request:
- * 1. Appends an event marker to session history in DynamoDB
- * 2. Updates session metadata (currentMode, currentStoreId, currentStoreName)
- * 3. Injects a crafted LLM trigger prompt so Claude generates a natural welcome
- *    (this trigger is NOT persisted — it's ephemeral, for this invocation only)
+ * Handles advisory ↔ prime-news mode switch:
+ * 1. Appends event marker to session history
+ * 2. Updates session metadata (currentMode) — preserves currentServices/currentArticles
+ * 3. Injects ephemeral LLM trigger prompt for natural welcome
  */
 
 import { PutCommand, GetCommand } from "@aws-sdk/lib-dynamodb";
 import { dynamoDb, SESSION_TABLE } from "../clients/dynamodb";
-import { ChatMessage, OrchestratorState } from "../state";
+import { ChatMessage, ETServiceCard, ETArticleCard, OrchestratorState, ConciergeMode } from "../state";
 
 const TTL_30_DAYS = 30 * 24 * 60 * 60;
 
 export async function modeSwitchNode(
   state: OrchestratorState
 ): Promise<Partial<OrchestratorState>> {
-  const mode      = state.requestedMode ?? "app";
-  const storeId   = state.requestedStoreId ?? null;
-  const storeName = state.requestedStoreName ?? null;
-  const now       = new Date().toISOString();
-  const ttl       = Math.floor(Date.now() / 1000) + TTL_30_DAYS;
+  const mode: ConciergeMode = state.requestedMode ?? "advisory";
+  const now  = new Date().toISOString();
+  const ttl  = Math.floor(Date.now() / 1000) + TTL_30_DAYS;
 
   try {
-    // Load existing session (to preserve history + userId)
+    // Load existing session to preserve history + structured data
     const existing = await dynamoDb.send(
       new GetCommand({ TableName: SESSION_TABLE, Key: { sessionId: state.sessionId } })
     );
-    const existingHistory: ChatMessage[] = existing.Item?.history ?? [];
+    const existingHistory: ChatMessage[]     = existing.Item?.history ?? [];
+    const existingServices: ETServiceCard[]  = existing.Item?.currentServices ?? [];
+    const existingArticles: ETArticleCard[]  = existing.Item?.currentArticles ?? [];
+    const existingSessionName: string | null = (existing.Item?.sessionName as string) ?? null;
+    const existingProfile: any               = existing.Item?.userProfile ?? null;
 
-    // Build the event marker that goes into history
+    // Event marker for history
     const eventMarker: ChatMessage = {
-      role:  "event",
-      type:  "mode_switch",
-      content: mode === "store"
-        ? `Switched to Store Mode — ${storeName ?? storeId ?? "Unknown Store"}`
-        : "Switched to App Mode",
+      role:    "event",
+      type:    "mode_switch",
+      content: mode === "prime-news"
+        ? "Switched to Prime News Mode"
+        : "Switched to Advisory Mode",
       mode,
-      storeId:   storeId ?? undefined,
-      storeName: storeName ?? undefined,
       ts: now,
     };
 
     const updatedHistory = [...existingHistory, eventMarker];
 
-    // Write updated session
+    // Write updated session — preserve structured data across mode switches
     await dynamoDb.send(
       new PutCommand({
         TableName: SESSION_TABLE,
         Item: {
           sessionId:        state.sessionId,
           userId:           state.userId,
+          sessionName:      existingSessionName,
+          userProfile:      existingProfile,
           history:          updatedHistory,
           currentMode:      mode,
-          currentStoreId:   storeId ?? null,
-          currentStoreName: storeName ?? null,
+          currentServices:  existingServices,
+          currentArticles:  existingArticles,
           lastUpdated:      now,
           ttl,
         },
       })
     );
 
-    console.log(`[modeSwitchNode] Session ${state.sessionId} switched to mode=${mode} store=${storeId}`);
+    console.log(`[modeSwitchNode] Session ${state.sessionId} switched to mode=${mode}`);
 
-    // Build the ephemeral LLM trigger prompt (Claude uses this to generate the welcome — not saved)
-    const llmTrigger = mode === "store"
-      ? `The customer has just switched to Store Mode and is now at ${storeName ?? storeId}. ` +
-        `Welcome them warmly. Briefly describe what you can help with in-store: ` +
-        `live stock availability, in-store item discovery, nearby store alternatives if something's out of stock, ` +
-        `and personalised style suggestions based on what's actually available here. Keep it to 3-4 sentences.`
-      : `The customer has switched back to App Mode (browsing from their phone). ` +
-        `Acknowledge the switch briefly and invite them to continue shopping or ask a question.`;
+    // Ephemeral LLM trigger — used to generate natural welcome (NOT persisted)
+    // For News mode: instructs LLM to proactively search articles based on conversation so far
+    // For Advisory: instructs LLM to ask profiling questions immediately
+    const llmTrigger = mode === "prime-news"
+      ? `The user has switched to Prime News Mode. ` +
+        `Look at the conversation history to understand what topics interest this user. ` +
+        `IMMEDIATELY call search_prime_news with a query based on their interests from the conversation so far. ` +
+        `Do NOT ask "what would you like to read?" — proactively surface articles you think they'll find valuable. ` +
+        `In your response, welcome them briefly and present the articles. Keep the welcome to 1 sentence.`
+      : `The user has switched to Advisory Mode. ` +
+        `Look at the user's last few messages right before they switched. If they were asking for details about a specific service, you now have access to that service's full context in your "Currently recommended services". ` +
+        `Answer their question natively using that context right away. Do NOT do a new catalog search if the details are already in context.\n` +
+        `If they weren't asking about a specific service, welcome them warmly in 1 sentence, then ask 1-2 specific questions to understand what they need. ` +
+        `You will focus more on user profile building in this mode than in news mode.`+
+        `Base your questions on what you already know from the conversation history. Do NOT search the catalog yet — understand the user first.`;
 
     return {
-      // Pass mode metadata to subsequent nodes (sessionNode won't re-read since modeSwitchNode just wrote it)
       sessionHistory:   updatedHistory,
+      sessionName:      existingSessionName,
+      userProfile:      existingProfile,
       currentMode:      mode,
-      currentStoreId:   storeId,
-      currentStoreName: storeName,
-      // Ephemeral trigger — llmNode uses this as userMessage
-      userMessage: llmTrigger,
-      // Signal to persistNode: event already saved, only save the AI reply
-      isModeSwitch: true,
+      currentServices:  existingServices,
+      currentArticles:  existingArticles,
+      userMessage:      llmTrigger,
+      isModeSwitch:     true,
     };
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err);

@@ -1,10 +1,10 @@
 /**
  * src/lib/profileApi.ts — Profile API client
  *
- * All functions call the deployed retail-ai-profile-api Lambda Function URL.
+ * Calls the deployed et-concierge-profile-api Lambda Function URL.
  */
 
-import type { CartItem, ChatTurn, ProductCard, Session, StoreDetails, WishlistItem } from "../types";
+import type { ChatTurn, ConciergeMode, ETServiceCard, ETArticleCard, Session, UserProfile } from "../types";
 import { v4 as uuid } from "uuid";
 
 const BASE = (import.meta.env.VITE_PROFILE_API_URL as string).replace(/\/$/, "");
@@ -33,22 +33,11 @@ async function request<T>(
   return res.json() as Promise<T>;
 }
 
-// ── Store validation ──────────────────────────────────────────────────────────
-
-export async function validateStoreCode(
-  storeCode: string,
-  token: string,
-): Promise<StoreDetails> {
-  return request<StoreDetails>("/stores/validate", token, {
-    method: "POST",
-    body:   JSON.stringify({ storeCode }),
-  });
-}
-
 // ── Session history ───────────────────────────────────────────────────────────
 
 export async function getSessions(token: string): Promise<Session[]> {
   const { sessions } = await request<{ sessions: Session[] }>("/sessions", token);
+  console.log("getSessions response:", sessions);
   return sessions;
 }
 
@@ -57,19 +46,17 @@ interface RawChatMessage {
   role:       "user" | "assistant" | "event";
   content:    string;
   ts:         string;
-  products?:  ProductCard[];  // present on assistant turns that returned suggestions
+  services?:  ETServiceCard[];
+  articles?:  ETArticleCard[];
   type?:      "mode_switch";
-  mode?:      "app" | "store";
-  storeId?:   string;
-  storeName?: string;
+  mode?:      ConciergeMode;
 }
 
 interface SessionHistoryResponse {
-  sessionId:        string;
-  currentMode:      "app" | "store";
-  currentStoreId:   string | null;
-  currentStoreName: string | null;
-  history:          RawChatMessage[];
+  sessionId:   string;
+  sessionName: string | null;
+  currentMode: ConciergeMode;
+  history:     RawChatMessage[];
 }
 
 /** Convert the orchestrator's internal ChatMessage history to frontend ChatTurn[]  */
@@ -77,76 +64,41 @@ function historyToTurns(history: RawChatMessage[]): ChatTurn[] {
   return history.map((msg) => {
     const id = uuid();
     if (msg.role === "event" && msg.type === "mode_switch") {
-      return { id, role: "mode_switch" as const, toMode: msg.mode ?? "app", storeName: msg.storeName, ts: msg.ts };
+      return { id, role: "mode_switch" as const, toMode: msg.mode ?? "advisory", ts: msg.ts };
     }
     if (msg.role === "user") {
       return { id, role: "user" as const, message: msg.content, ts: msg.ts };
     }
-    // assistant — include stored products (empty array if none)
-    return { id, role: "assistant" as const, text: msg.content, products: msg.products ?? [], followUpQuestions: [], ts: msg.ts };
+    // assistant — include stored services and articles
+    return {
+      id,
+      role: "assistant" as const,
+      text: msg.content,
+      services: msg.services ?? [],
+      articles: msg.articles ?? [],
+      followUpQuestions: [],
+      ts: msg.ts,
+    };
   });
 }
 
 /** Fetch full chat history for a session; returns turns and session metadata. */
 export async function getSessionHistory(sessionId: string, token: string): Promise<{
-  turns:            ChatTurn[];
-  currentMode:      "app" | "store";
-  currentStoreId:   string | null;
-  currentStoreName: string | null;
+  turns:       ChatTurn[];
+  currentMode: ConciergeMode;
+  sessionName: string | null;
 }> {
   const data = await request<SessionHistoryResponse>(`/sessions/${encodeURIComponent(sessionId)}`, token);
   return {
-    turns:            historyToTurns(data.history),
-    currentMode:      data.currentMode,
-    currentStoreId:   data.currentStoreId,
-    currentStoreName: data.currentStoreName,
+    turns:       historyToTurns(data.history),
+    currentMode: data.currentMode,
+    sessionName: data.sessionName || null,
   };
 }
 
-// ── Cart ──────────────────────────────────────────────────────────────────────
+// ── Profile ───────────────────────────────────────────────────────────────────
 
-export async function getCart(token: string): Promise<CartItem[]> {
-  const { cart } = await request<{ cart: CartItem[] }>("/profile/cart", token);
-  return cart;
-}
-
-export async function addToCart(item: CartItem, token: string): Promise<CartItem[]> {
-  const { cart } = await request<{ cart: CartItem[] }>("/profile/cart", token, {
-    method: "POST",
-    body:   JSON.stringify(item),
-  });
-  return cart;
-}
-
-export async function removeFromCart(productId: string, token: string): Promise<CartItem[]> {
-  const { cart } = await request<{ cart: CartItem[] }>(
-    `/profile/cart/${encodeURIComponent(productId)}`,
-    token,
-    { method: "DELETE" },
-  );
-  return cart;
-}
-
-// ── Wishlist ──────────────────────────────────────────────────────────────────
-
-export async function getWishlist(token: string): Promise<WishlistItem[]> {
-  const { wishlist } = await request<{ wishlist: WishlistItem[] }>("/profile/wishlist", token);
-  return wishlist;
-}
-
-export async function addToWishlist(item: WishlistItem, token: string): Promise<WishlistItem[]> {
-  const { wishlist } = await request<{ wishlist: WishlistItem[] }>("/profile/wishlist", token, {
-    method: "POST",
-    body:   JSON.stringify(item),
-  });
-  return wishlist;
-}
-
-export async function removeFromWishlist(productId: string, token: string): Promise<WishlistItem[]> {
-  const { wishlist } = await request<{ wishlist: WishlistItem[] }>(
-    `/profile/wishlist/${encodeURIComponent(productId)}`,
-    token,
-    { method: "DELETE" },
-  );
-  return wishlist;
+export async function getUserProfile(token: string): Promise<UserProfile> {
+  const { profile } = await request<{ profile: UserProfile }>("/profile", token);
+  return profile;
 }

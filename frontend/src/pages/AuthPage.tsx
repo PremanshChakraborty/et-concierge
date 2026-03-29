@@ -55,10 +55,10 @@ export default function AuthPage({ onAuthenticated }: Props) {
         <h1
           className="text-3xl font-black tracking-tighter text-gradient text-center mb-2"
         >
-          Retail AI
+          ET Concierge
         </h1>
         <p className="text-xs text-center text-neutral-400 uppercase tracking-widest font-medium mb-10">
-          {view === "confirm" ? "Check your email" : "Your AI fashion assistant"}
+          {view === "confirm" ? "Check your email" : "Your ET Ecosystem Assistant"}
         </p>
 
         {/* Sign In */}
@@ -105,9 +105,9 @@ export default function AuthPage({ onAuthenticated }: Props) {
           </form>
         )}
 
-        <p className="text-[10px] text-center text-neutral-300 mt-10 uppercase tracking-widest font-medium">
+        {/* <p className="text-[10px] text-center text-neutral-300 mt-10 uppercase tracking-widest font-medium">
           Powered by Retail AI Premium Engine
-        </p>
+        </p> */}
       </div>
     </div>
   );

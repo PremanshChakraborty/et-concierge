@@ -13,7 +13,7 @@ export class RetailAiStack extends cdk.Stack {
 
     // ── 1. Cognito User Pool ───────────────────────────────────────────────
     const userPool = new cognito.UserPool(this, "RetailAiUserPool", {
-      userPoolName:           "retail-ai-user-pool",
+      userPoolName:           "et-concierge-user-pool",
       selfSignUpEnabled:      true,
       signInAliases:          { email: true },
       autoVerify:             { email: true },
@@ -30,7 +30,7 @@ export class RetailAiStack extends cdk.Stack {
 
     const userPoolClient = new cognito.UserPoolClient(this, "RetailAiWebClient", {
       userPool,
-      userPoolClientName:    "retail-ai-web-client",
+      userPoolClientName:    "et-concierge-web-client",
       authFlows: {
         userSrp:             true,
         userPassword:        false,
@@ -50,16 +50,16 @@ export class RetailAiStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.RETAIN,
     });
 
-    // GSI: query sessions by userId (profile-api GET /sessions)
+    // GSI: query sessions by userId
     sessionTable.addGlobalSecondaryIndex({
-      indexName:        "userId-lastUpdated-index",
+      indexName:        "userId-lastUpdated-index-v2",
       partitionKey:     { name: "userId",      type: dynamodb.AttributeType.STRING },
       sortKey:          { name: "lastUpdated", type: dynamodb.AttributeType.STRING },
       projectionType:   dynamodb.ProjectionType.INCLUDE,
-      nonKeyAttributes: ["currentMode"],
+      nonKeyAttributes: ["currentMode", "sessionName"],
     });
 
-    // ── 3. DynamoDB UserProfile table (NEW) ───────────────────────────────
+    // ── 3. DynamoDB UserProfile table ─────────────────────────────────────
     const userProfileTable = new dynamodb.Table(this, "UserProfileTable", {
       tableName:    "UserProfile",
       partitionKey: { name: "userId", type: dynamodb.AttributeType.STRING },
@@ -67,38 +67,37 @@ export class RetailAiStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.RETAIN,
     });
 
-    // ── 4. Stores table (EXISTING — import, do not recreate) ─────────────
-    // Populated via seed script. storeId is the code users enter (e.g. "STR-001").
-    const storesTable = dynamodb.Table.fromTableName(this, "StoresTable", "Stores");
-
-    // ── 5. Pinecone API key from Secrets Manager ──────────────────────────
+    // ── 4. Pinecone API key from Secrets Manager ──────────────────────────
     const pineconeSecret = secretsmanager.Secret.fromSecretNameV2(
       this, "PineconeSecret", "retail-ai/pinecone-api-key"
     );
 
-    // ── 6. Orchestrator Lambda (unchanged) ────────────────────────────────
+    // ── 5. Orchestrator Lambda ────────────────────────────────────────────
     const orchestratorFn = new lambda.Function(this, "OrchestratorFn", {
-      functionName: "retail-ai-orchestrator",
+      functionName: "et-concierge-orchestrator",
       runtime:      lambda.Runtime.NODEJS_20_X,
       handler:      "handler.handler",
       code:         lambda.Code.fromAsset(
         path.join(__dirname, "../../orchestrator/dist")
       ),
-      timeout:       cdk.Duration.seconds(60),
+      timeout:       cdk.Duration.seconds(120),
       memorySize:    512,
       environment: {
-        BEDROCK_REGION:       this.region,
-        SESSION_TABLE:        sessionTable.tableName,
-        PINECONE_INDEX:       "retail-products",
-        COGNITO_USER_POOL_ID: userPool.userPoolId,
-        COGNITO_CLIENT_ID:    userPoolClient.userPoolClientId,
-        PINECONE_API_KEY:     pineconeSecret.secretValue.unsafeUnwrap(),
+        BEDROCK_REGION:          this.region,
+        SESSION_TABLE:           sessionTable.tableName,
+        PINECONE_SERVICES_INDEX: "et-services",
+        PINECONE_NEWS_INDEX:     "et-news",
+        COGNITO_USER_POOL_ID:    userPool.userPoolId,
+        COGNITO_CLIENT_ID:       userPoolClient.userPoolClientId,
+        PINECONE_API_KEY:        pineconeSecret.secretValue.unsafeUnwrap(),
+        GOOGLE_API_KEY:          process.env.GOOGLE_API_KEY ?? "",
+        PROFILES_TABLE:          userProfileTable.tableName,
       },
     });
 
-    // ── 7. Profile API Lambda (NEW) ───────────────────────────────────────
+    // ── 6. Profile API Lambda ─────────────────────────────────────────────
     const profileApiFn = new lambda.Function(this, "ProfileApiFn", {
-      functionName: "retail-ai-profile-api",
+      functionName: "et-concierge-profile-api",
       runtime:      lambda.Runtime.NODEJS_20_X,
       handler:      "handler.handler",
       code:         lambda.Code.fromAsset(
@@ -109,24 +108,20 @@ export class RetailAiStack extends cdk.Stack {
       environment: {
         SESSION_TABLE:        sessionTable.tableName,
         USER_PROFILE_TABLE:   userProfileTable.tableName,
-        STORES_TABLE:         storesTable.tableName,
         COGNITO_USER_POOL_ID: userPool.userPoolId,
         COGNITO_CLIENT_ID:    userPoolClient.userPoolClientId,
       },
     });
 
-    // ── 8. IAM permissions ────────────────────────────────────────────────
+    // ── 7. IAM permissions ────────────────────────────────────────────────
 
     // Orchestrator
     sessionTable.grantReadWriteData(orchestratorFn);
+    userProfileTable.grantReadWriteData(orchestratorFn);
     orchestratorFn.addToRolePolicy(new iam.PolicyStatement({
       actions:   ["bedrock:InvokeModel"],
       resources: [
-        // Foundation models — wildcard region required because Nova Premier's
-        // cross-region inference profile routes to any US region at runtime.
         `arn:aws:bedrock:*::foundation-model/*`,
-        // Account-scoped inference profile resource (us-east-1 only — this is
-        // where the inference profile object itself lives).
         `arn:aws:bedrock:${this.region}:${this.account}:inference-profile/*`,
       ],
     }));
@@ -134,9 +129,8 @@ export class RetailAiStack extends cdk.Stack {
     // Profile API
     sessionTable.grantReadData(profileApiFn);
     userProfileTable.grantReadWriteData(profileApiFn);
-    storesTable.grantReadData(profileApiFn);
 
-    // ── 9. Lambda Function URLs ───────────────────────────────────────────
+    // ── 8. Lambda Function URLs ───────────────────────────────────────────
     const fnUrl = orchestratorFn.addFunctionUrl({
       authType: lambda.FunctionUrlAuthType.NONE,
       cors: {
@@ -162,14 +156,14 @@ export class RetailAiStack extends cdk.Stack {
       },
     });
 
-    // ── 10. Stack Outputs ─────────────────────────────────────────────────
+    // ── 9. Stack Outputs ─────────────────────────────────────────────────
     new cdk.CfnOutput(this, "OrchestratorUrl", {
       value:       fnUrl.url,
-      description: "Orchestrator Lambda Function URL",
+      description: "ET Concierge Orchestrator Lambda Function URL",
     });
     new cdk.CfnOutput(this, "ProfileApiUrl", {
       value:       profileApiUrl.url,
-      description: "Profile API Function URL — stores/sessions/cart/wishlist",
+      description: "ET Concierge Profile API Function URL",
     });
     new cdk.CfnOutput(this, "UserPoolId", {
       value:       userPool.userPoolId,

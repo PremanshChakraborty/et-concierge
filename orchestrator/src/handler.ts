@@ -1,14 +1,14 @@
-// handler.ts — Lambda Function URL entry point with Cognito JWT auth
+// handler.ts — Lambda Function URL entry point for ET AI Concierge
 // All requests must carry a valid Cognito JWT in the Authorization header.
-// The userId (Cognito sub) is extracted and passed into the graph.
 //
 // Request body variants:
 //   Regular chat:  { sessionId?, message }
-//   Mode switch:   { type: "mode_switch", sessionId, mode: "store"|"app", storeId?, storeName? }
+//   Mode switch:   { type: "mode_switch", sessionId, mode: "advisory"|"prime-news" }
 
 import { APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from "aws-lambda";
 import { CognitoJwtVerifier } from "aws-jwt-verify";
 import { graph } from "./graph";
+import { ConciergeMode } from "./state";
 
 // ── JWT Verifier (singleton, initialised once per cold start) ──────────────
 
@@ -28,9 +28,7 @@ interface ChatRequest {
 interface ModeSwitchRequest {
   type:       "mode_switch";
   sessionId:  string;
-  mode:       "app" | "store";
-  storeId?:   string;
-  storeName?: string;
+  mode:       ConciergeMode;
 }
 
 type IncomingRequest = ChatRequest | ModeSwitchRequest;
@@ -82,21 +80,19 @@ export const handler = async (
     return respond(400, { error: "Invalid JSON body" });
   }
 
-  // ── 3. Build graph input based on request type ───────────────────────────
+  // ── 3. Build graph input ─────────────────────────────────────────────────
   let graphInput: Record<string, unknown>;
 
   if (isModeSwitchRequest(req)) {
     if (!req.sessionId) {
       return respond(400, { error: "mode_switch request requires sessionId" });
     }
-    console.log("[handler] mode_switch", { userId, mode: req.mode, storeId: req.storeId });
+    console.log("[handler] mode_switch", { userId, mode: req.mode });
     graphInput = {
       userId,
-      sessionId:          req.sessionId,
-      isModeSwitch:       true,
-      requestedMode:      req.mode,
-      requestedStoreId:   req.storeId   ?? null,
-      requestedStoreName: req.storeName ?? null,
+      sessionId:     req.sessionId,
+      isModeSwitch:  true,
+      requestedMode: req.mode,
     };
   } else {
     if (!req.message?.trim()) {
@@ -116,8 +112,10 @@ export const handler = async (
 
     return respond(finalState.error ? 500 : 200, {
       sessionId:         finalState.sessionId,
+      sessionName:       finalState.sessionName ?? null,
       text:              finalState.responseText,
-      products:          finalState.responseProducts,
+      services:          finalState.responseServices,
+      articles:          finalState.responseArticles,
       followUpQuestions: finalState.followUpQuestions,
       currentMode:       finalState.currentMode,
       error:             finalState.error ?? null,
@@ -128,7 +126,7 @@ export const handler = async (
     return respond(500, {
       sessionId: (req as ChatRequest).sessionId ?? "",
       text: "An unexpected error occurred. Please try again.",
-      products: [], followUpQuestions: [], error: msg,
+      services: [], articles: [], followUpQuestions: [], error: msg,
     });
   }
 };

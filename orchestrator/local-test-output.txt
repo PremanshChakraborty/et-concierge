@@ -1,14 +1,138 @@
-C:\Users\preet\retail-ai\orchestrator\src\clients\pinecone.ts:8
-  throw new Error("PINECONE_API_KEY environment variable is required");
-        ^
-Error: PINECONE_API_KEY environment variable is required
-    at Object.<anonymous> (C:\Users\preet\retail-ai\orchestrator\src\clients\pinecone.ts:8:9)
-    at Module._compile (node:internal/modules/cjs/loader:1730:14)
-    at Module.m._compile (C:\Users\preet\retail-ai\orchestrator\node_modules\ts-node\src\index.ts:1618:23)
-    at node:internal/modules/cjs/loader:1895:10
-    at Object.require.extensions.<computed> [as .ts] (C:\Users\preet\retail-ai\orchestrator\node_modules\ts-node\src\index.ts:1621:12)
-    at Module.load (node:internal/modules/cjs/loader:1465:32)
-    at Function._load (node:internal/modules/cjs/loader:1282:12)
-    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
-    at Module.require (node:internal/modules/cjs/loader:1487:12)
+≡ƒÜÇ  ET AI Concierge ΓÇö Aggressive Local Test
+
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+≡ƒº¬  TEST 1: Direct search (Advisory)
+≡ƒôñ  Query: "Show me courses for options trading and technical analysis"
+    Session: (new)
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+[sessionNode] Failed to load from PROFILES_TABLE for user local-test-user: ResourceNotFoundException: Requested resource not found
+    at AwsJson1_0Protocol.handleError (C:\Users\preet\retail-ai\orchestrator\node_modules\@aws-sdk\core\dist-cjs\submodules\protocols\index.js:767:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async AwsJson1_0Protocol.deserializeResponse (C:\Users\preet\retail-ai\orchestrator\node_modules\@smithy\core\dist-cjs\submodules\protocols\index.js:518:13)
+    at async C:\Users\preet\retail-ai\orchestrator\node_modules\@smithy\core\dist-cjs\submodules\schema\index.js:27:24
+    at async C:\Users\preet\retail-ai\orchestrator\node_modules\@aws-sdk\lib-dynamodb\dist-cjs\index.js:107:34
+    at async C:\Users\preet\retail-ai\orchestrator\node_modules\@smithy\core\dist-cjs\index.js:120:20
+    at async C:\Users\preet\retail-ai\orchestrator\node_modules\@smithy\middleware-retry\dist-cjs\index.js:251:46
+    at async C:\Users\preet\retail-ai\orchestrator\node_modules\@aws-sdk\middleware-logger\dist-cjs\index.js:5:26
+    at async RunnableCallable.sessionNode (C:\Users\preet\retail-ai\orchestrator\src\nodes\sessionNode.ts:34:31)
+    at async RunnableCallable.invoke (C:\Users\preet\retail-ai\orchestrator\node_modules\@langchain\langgraph\src\utils.ts:124:18) {
+  '$fault': 'client',
+  '$retryable': undefined,
+  '$metadata': {
+    httpStatusCode: 400,
+    requestId: 'TQHT7LJ6KCSC0U6B58A4KNVPQFVV4KQNSO5AEMVJF66Q9ASUAAJG',
+    extendedRequestId: undefined,
+    cfId: undefined,
+    attempts: 1,
+    totalRetryDelay: 0
+  },
+  __type: 'com.amazonaws.dynamodb.v20120810#ResourceNotFoundException'
+}
+[llmNode] contextBlock: null (no previous services/articles)
+
+[llmNode] ΓòÉΓòÉΓòÉ ITER 1 ΓòÉΓòÉΓòÉ
+[llmNode] mode=advisory agentMessages=0
+[llmNode] Total messages: 2
+[llmNode]   [0] system len=4934
+[llmNode]   [1] human len=58
+[llmNode]       content: "Show me courses for options trading and technical analysis..."
+[llmNode] Response tool_calls: [search_et_catalog] stop_reason=unknown
+[llmNode] Usage: {"input_tokens":1635,"output_tokens":140,"total_tokens":1775,"input_token_details":{"text":1635,"cache_read":0},"output_token_details":{"reasoning":111}}
+[toolNode] search_et_catalog query="courses for options trading and technical analysis" topK=8
+[llmNode] contextBlock: null (no previous services/articles)
+
+[llmNode] ΓòÉΓòÉΓòÉ ITER 3 ΓòÉΓòÉΓòÉ
+[llmNode] mode=advisory agentMessages=2
+[llmNode] Total messages: 4
+[llmNode]   [0] system len=4934
+[llmNode]   [1] human len=58
+[llmNode]       content: "Show me courses for options trading and technical analysis..."
+[llmNode]   [2] ai len=858 tool_calls=1
+[llmNode]   [3] tool len=2891 tool_call_id=lc-tool-call-5aed7313cc494a3b9d23c931821cf6af
+[llmNode]       content: "Found 8 ET services:
+
+1. productId: ETS-031  (score: 0.584)
+   Name: ET Masterclass: Technical Analysis ΓÇö Charts, Patterns & Indicators
+   Category: course ΓÇ║ Trading
+   Price: Γé╣4999 (one-time)
+   Page..."
+[llmNode] Response tool_calls: [structured_response] stop_reason=unknown
+[llmNode] Usage: {"input_tokens":2622,"output_tokens":311,"total_tokens":2933,"input_token_details":{"text":2622,"cache_read":0},"output_token_details":{"reasoning":147}}
+[persistNode] Session ses_7b2e7e3d-11b0-434d-ad8d-380458d8c0d0 | mode=advisory | turns=2 | services=2 | articles=0
+
+Γ£à  Mode       : advisory
+≡ƒÆ¼  Text       : Certainly! I found a couple of excellent ET Masterclasses that could be perfect for you. These courses cover both technical analysis and options trading strategies to help you enhance your trading skills.
+≡ƒôª  Services   : 2
+    ΓÇó ET Masterclass: Technical Analysis ΓÇö Charts, Patterns & Indicators [course] ΓÇö Γé╣4999
+      "This course covers charts, patterns, and indicators essential for technical analysis in trading."
+    ΓÇó ET Masterclass: Options Trading Strategies for Intermediate Traders [course] ΓÇö Γé╣7999
+      "This masterclass focuses on options trading strategies, ideal for intermediate traders looking to deepen their knowledge."
+≡ƒô░  Articles   : 0
+≡ƒÆí  Follow-ups :
+    ΓÇó Are you a beginner or an intermediate trader?
+    ΓÇó What are your primary goals for learning options trading and technical analysis?
+    ΓÇó Would you like to explore other courses related to investing or finance?
+    sessionId  : ses_7b2e7e3d-11b0-434d-ad8d-380458d8c0d0
+
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+≡ƒº¬  TEST 2: Follow-up (same session)
+≡ƒôñ  Query: "Tell me more about the first one"
+    Session: ses_7b2e7e3d-11b0-434d-ad8d-380458d8c0d0
+ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ
+[sessionNode] Failed to load from PROFILES_TABLE for user local-test-user: ResourceNotFoundException: Requested resource not found
+    at AwsJson1_0Protocol.handleError (C:\Users\preet\retail-ai\orchestrator\node_modules\@aws-sdk\core\dist-cjs\submodules\protocols\index.js:767:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async AwsJson1_0Protocol.deserializeResponse (C:\Users\preet\retail-ai\orchestrator\node_modules\@smithy\core\dist-cjs\submodules\protocols\index.js:518:13)
+    at async C:\Users\preet\retail-ai\orchestrator\node_modules\@smithy\core\dist-cjs\submodules\schema\index.js:27:24
+    at async C:\Users\preet\retail-ai\orchestrator\node_modules\@aws-sdk\lib-dynamodb\dist-cjs\index.js:107:34
+    at async C:\Users\preet\retail-ai\orchestrator\node_modules\@smithy\core\dist-cjs\index.js:120:20
+    at async C:\Users\preet\retail-ai\orchestrator\node_modules\@smithy\middleware-retry\dist-cjs\index.js:251:46
+    at async C:\Users\preet\retail-ai\orchestrator\node_modules\@aws-sdk\middleware-logger\dist-cjs\index.js:5:26
+    at async RunnableCallable.sessionNode (C:\Users\preet\retail-ai\orchestrator\src\nodes\sessionNode.ts:34:31)
+    at async RunnableCallable.invoke (C:\Users\preet\retail-ai\orchestrator\node_modules\@langchain\langgraph\src\utils.ts:124:18) {
+  '$fault': 'client',
+  '$retryable': undefined,
+  '$metadata': {
+    httpStatusCode: 400,
+    requestId: 'DM9DDTGMTKN0TL2JLEODIK81NFVV4KQNSO5AEMVJF66Q9ASUAAJG',
+    extendedRequestId: undefined,
+    cfId: undefined,
+    attempts: 1,
+    totalRetryDelay: 0
+  },
+  __type: 'com.amazonaws.dynamodb.v20120810#ResourceNotFoundException'
+}
+[llmNode] contextBlock: "[Currently recommended services:
+  - ETS-031 | "ET Masterclass: Technical Analysis ΓÇö Charts, Patterns & Indicators" | course | Γé╣4999 (one-time) | Page: https://economictimes.indiatimes.com/masterclass/technical-analysis
+    Reason: This course covers charts, patterns, and indicators essential for technical analysis in trading.
+  - ETS-028 | "ET Masterclass: Options Trading Strategies for Intermediate Traders" | course | Γé╣7999 (one-time) | Page: https://economictimes.indiatimes.com/masterclass/options-trading
+    Reason: This masterclass focuses on options trading strategies, ideal for intermediate traders looking to deepen their knowledge.]"
+
+[llmNode] ΓòÉΓòÉΓòÉ ITER 1 ΓòÉΓòÉΓòÉ
+[llmNode] mode=advisory agentMessages=0
+[llmNode] Total messages: 5
+[llmNode]   [0] system len=4934
+[llmNode]   [1] human len=58
+[llmNode]       content: "Show me courses for options trading and technical analysis..."
+[llmNode]   [2] ai len=204
+[llmNode]   [3] human len=648
+[llmNode]       content: "[Currently recommended services:
+  - ETS-031 | "ET Masterclass: Technical Analysis ΓÇö Charts, Patterns & Indicators" | course | Γé╣4999 (one-time) | Page: https://economictimes.indiatimes.com/masterclass..."
+[llmNode]   [4] human len=32
+[llmNode]       content: "Tell me more about the first one..."
+[llmNode] Response tool_calls: [structured_response] stop_reason=unknown
+[llmNode] Usage: {"input_tokens":1840,"output_tokens":327,"total_tokens":2167,"input_token_details":{"text":1840,"cache_read":0},"output_token_details":{"reasoning":136}}
+[persistNode] Session ses_7b2e7e3d-11b0-434d-ad8d-380458d8c0d0 | mode=advisory | turns=4 | services=1 | articles=0
+
+Γ£à  Mode       : advisory
+≡ƒÆ¼  Text       : The "ET Masterclass: Technical Analysis ΓÇö Charts, Patterns & Indicators" (ETS-031) is a comprehensive course designed to equip you with essential technical analysis skills. It covers various aspects like understanding charts, identifying patterns, and utilizing key indicators to make informed trading decisions. This masterclass is available for a one-time fee of Γé╣4999. You can find more details and enroll at: https://economictimes.indiatimes.com/masterclass/technical-analysis
+≡ƒôª  Services   : 1
+    ΓÇó ET Masterclass: Technical Analysis ΓÇö Charts, Patterns & Indicators [course] ΓÇö Γé╣4999
+      "This course covers charts, patterns, and indicators essential for technical analysis in trading."
+≡ƒô░  Articles   : 0
+≡ƒÆí  Follow-ups :
+    ΓÇó What are the prerequisites for this course?
+    ΓÇó Can you tell me more about the options trading course?
+    ΓÇó Are there any other courses on trading strategies?
+    sessionId  : ses_7b2e7e3d-11b0-434d-ad8d-380458d8c0d0

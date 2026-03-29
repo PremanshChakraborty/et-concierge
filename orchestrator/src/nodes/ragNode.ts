@@ -1,22 +1,26 @@
 /**
- * nodes/ragNode.ts — Pure utility: executes a Pinecone semantic search.
- * Called by toolNode when Claude invokes the search_products tool.
- * No longer a graph node itself.
+ * nodes/ragNode.ts — Dual-index Pinecone semantic search for ET Concierge
+ *
+ * Exports two search functions (no longer a graph node):
+ *   searchServices() → et-services index (1024d)
+ *   searchArticles() → et-news index (256d)
  */
 
 import { InvokeModelCommand } from "@aws-sdk/client-bedrock-runtime";
-import { bedrockClient, TITAN_EMBED_MODEL, EMBED_DIM } from "../clients/bedrock";
-import { pineconeIndex } from "../clients/pinecone";
-import { RetrievedProduct } from "../state";
+import { bedrockClient, TITAN_EMBED_MODEL, EMBED_DIM, NEWS_EMBED_DIM } from "../clients/bedrock";
+import { servicesIndex, newsIndex } from "../clients/pinecone";
+import { RetrievedItem } from "../state";
 
-async function embedQuery(text: string): Promise<number[]> {
+// ── Embedding helper ───────────────────────────────────────────────────────
+
+async function embedQuery(text: string, dimensions: number): Promise<number[]> {
   const command = new InvokeModelCommand({
     modelId: TITAN_EMBED_MODEL,
     contentType: "application/json",
     accept: "application/json",
     body: JSON.stringify({
       inputText: text,
-      dimensions: EMBED_DIM,
+      dimensions,
       normalize: true,
     }),
   });
@@ -25,30 +29,54 @@ async function embedQuery(text: string): Promise<number[]> {
   return body.embedding as number[];
 }
 
+// ── Search functions ───────────────────────────────────────────────────────
+
 /**
- * Embeds `query` with Bedrock Titan v2, then fetches `topK` results from Pinecone.
- * topK is clamped to [10, 25] defensively (Claude should respect the tool schema,
- * but belt-and-suspenders never hurts).
+ * Semantic search on the et-services index (1024d).
+ * Used by search_et_catalog tool.
  */
-export async function executeSearch(
+export async function searchServices(
   query: string,
   topK: number
-): Promise<RetrievedProduct[]> {
-  const clampedTopK = Math.min(25, Math.max(10, topK));
+): Promise<RetrievedItem[]> {
+  const clampedTopK = Math.min(25, Math.max(5, topK));
+  const queryVector = await embedQuery(query, EMBED_DIM);
 
-  const queryVector = await embedQuery(query);
-
-  const results = await pineconeIndex.query({
+  const results = await servicesIndex.query({
     vector: queryVector,
     topK: clampedTopK,
     includeMetadata: true,
   });
 
   return (results.matches ?? []).map((match) => ({
-    productId: match.id,
-    name:      String(match.metadata?.name ?? ""),
-    score:     match.score ?? 0,
-    metadata:  (match.metadata ?? {}) as Record<string, string | number | string[]>,
+    id:       match.id,
+    name:     String(match.metadata?.name ?? ""),
+    score:    match.score ?? 0,
+    metadata: (match.metadata ?? {}) as Record<string, string | number | boolean | string[]>,
   }));
 }
 
+/**
+ * Semantic search on the et-news index (256d).
+ * Used by search_prime_news tool.
+ */
+export async function searchArticles(
+  query: string,
+  topK: number
+): Promise<RetrievedItem[]> {
+  const clampedTopK = Math.min(15, Math.max(3, topK));
+  const queryVector = await embedQuery(query, NEWS_EMBED_DIM);
+
+  const results = await newsIndex.query({
+    vector: queryVector,
+    topK: clampedTopK,
+    includeMetadata: true,
+  });
+
+  return (results.matches ?? []).map((match) => ({
+    id:       match.id,
+    name:     String(match.metadata?.title ?? ""),
+    score:    match.score ?? 0,
+    metadata: (match.metadata ?? {}) as Record<string, string | number | boolean | string[]>,
+  }));
+}

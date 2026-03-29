@@ -13,6 +13,5 @@ export const db = DynamoDBDocumentClient.from(raw, {
 });
 
 // Table names from environment (set by CDK)
-export const SESSION_TABLE     = process.env.SESSION_TABLE     ?? "Session";
+export const SESSION_TABLE      = process.env.SESSION_TABLE      ?? "Session";
 export const USER_PROFILE_TABLE = process.env.USER_PROFILE_TABLE ?? "UserProfile";
-export const STORES_TABLE       = process.env.STORES_TABLE       ?? "Stores";

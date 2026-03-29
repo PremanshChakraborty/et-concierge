@@ -15,3 +15,4 @@ export const dynamoDb = DynamoDBDocumentClient.from(rawClient, {
 });
 
 export const SESSION_TABLE   = process.env.SESSION_TABLE   ?? "Session";
+export const PROFILES_TABLE  = process.env.PROFILES_TABLE  ?? "UserProfiles";
