@@ -1,6 +1,5 @@
 import { useState } from "react";
 import type { ConciergeMode } from "../../types";
-import ModeSwitchChip from "../chat/ModeSwitchChip";
 
 interface Props {
   sessionId:      string | null;
@@ -16,10 +15,8 @@ export default function ChatHeader({
   sessionName,
   currentMode,
   onToggleMode,
-  stickyChip,
 }: Props) {
   const isNews = currentMode === "prime-news";
-  const showStickyChip = stickyChip !== null;
   const [showInfo, setShowInfo] = useState(false);
 
   return (

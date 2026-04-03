@@ -214,6 +214,7 @@ export default function ChatPage({ onSignOut }: Props) {
         onNewChat={newChat}
         onSelectSession={selectSession}
         onSettings={() => setShowSettings(true)}
+        currentMode={state.currentMode}
       />
 
       {/* Main — key forces full remount on session switch, resetting all child state */}
