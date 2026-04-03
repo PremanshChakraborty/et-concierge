@@ -2,7 +2,7 @@ name: Deploy Frontend to Pages
 
 on:
   push:
-    branches: ["et-concierge"] # Change this if you used the orphan branch! (e.g., 'et-concierge-submission')
+    branches: ["main"] # Change this if you used the orphan branch! (e.g., 'et-concierge-submission')
     paths:
       - "frontend/**" # Optimization: Only triggers if you actually change frontend code
 
