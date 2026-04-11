@@ -8,6 +8,5 @@
 /profile-api/.env
 
 /frontend/node_modules
-/frontend/.env
 
 /cdk.out
