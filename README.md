@@ -1,8 +1,18 @@
+<div align="center">
+
 # ET AI Concierge
 
-> **Live Demo → [https://premanshchakraborty.github.io/et-concierge/](https://premanshchakraborty.github.io/et-concierge/)**
+*An intent-driven AI concierge for the Economic Times ecosystem. It understands who you are, learns from natural conversation, and surfaces the right ET services, news, and products at the exact moment of intent.*
 
-An intent-driven AI concierge for the Economic Times ecosystem. It understands who you are, learns from natural conversation, and surfaces the right ET services, news, and products at the exact moment of intent — without a single form field.
+<br/>
+
+[![Live Demo](https://img.shields.io/badge/▶%20Live%20Demo-premanshchakraborty.github.io%2Fet--concierge-000000?style=for-the-badge&logoColor=white)](https://premanshchakraborty.github.io/et-concierge/)
+
+[![Deploy](https://img.shields.io/github/actions/workflow/status/PremanshChakraborty/et-concierge/deploy.yml?label=GitHub%20Pages&style=flat-square)](https://github.com/PremanshChakraborty/et-concierge/actions)
+[![React](https://img.shields.io/badge/React-TypeScript-61DAFB?style=flat-square&logo=react)](https://react.dev)
+[![AWS](https://img.shields.io/badge/AWS-Serverless-FF9900?style=flat-square&logo=amazonaws)](https://aws.amazon.com)
+
+</div>
 
 ---
 
@@ -68,4 +78,4 @@ GOOGLE_API_KEY=... npx cdk deploy --require-approval never
 
 ---
 
-*Built for the ET Hackathon 2025.*
+*Built for the ET GEN-AI Hackathon 2026.*
